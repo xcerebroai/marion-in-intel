@@ -1,0 +1,63 @@
+{
+  "gate_id": "REVIEW_GATE_2",
+  "county": "Marion County, IN",
+  "reviewed_at": "2026-06-25T21:00:00Z",
+  "reviewer": "operator (infinitygauntletllc@gmail.com)",
+  "status": "APPROVED",
+  "notes": "Phase 1 synthetic harness complete. Pipeline produces 12 parcel-resolved leads from 24 synthetic signals. 3 signals correctly filtered (quitclaim_deed, hoa_lien, vacated_judgment) as no-§16-lead-type. All 12 leads APPROVED_FOR_DASHBOARD. §20 NEEDS_OPERATOR_REVIEW is legitimate (null instrument numbers on signals without case_number — the §20 Check 5 AMBIGUOUS is by design). Golden path test 66/66 passes. All gate tests green. Dashboard renders: 9 pattern chips (bankruptcy, code, divorce, estate, eviction, foreclosure, lien, surplus_owed, tax), 4 attribute chips (free_and_clear, high_equity, long_term_owned, vacant), 5 deal-path chips (messy_title, partial_interest, sub_to, surplus_recovery, wholesale), 4 tier chips (Hot, Strong, Workable, Low), 3 stack-depth chips. 6 Marion County pre-canned views render and filter correctly (foreclosure, recorder, eviction, probate, code_enforcement, tax_distress). CSV export wired. Operator View toggle functional. state_rule_family=IN_judicial_foreclosure active.",
+  "pipeline_summary": {
+    "lead_total": 12,
+    "signals_in_dataset": 24,
+    "signals_filtered_no_lead_type": 3,
+    "signals_processed": 21,
+    "semantic_verdict": "NEEDS_OPERATOR_REVIEW",
+    "all_leads_approved_for_dashboard": true,
+    "score_tier_distribution": {
+      "Hot": 3,
+      "Strong": 4,
+      "Workable": 1,
+      "Low": 4
+    },
+    "pattern_counts": {
+      "bankruptcy": 1,
+      "code": 1,
+      "divorce": 1,
+      "estate": 3,
+      "eviction": 3,
+      "foreclosure": 3,
+      "lien": 5,
+      "surplus_owed": 1,
+      "tax": 3
+    }
+  },
+  "approved_artifacts": [
+    "scaffold/pipeline/build_leads.py",
+    "scaffold/pipeline/debtor_party_engine.py",
+    "scaffold/pipeline/aggregation_key_engine.py",
+    "scaffold/pipeline/aggregator.py",
+    "scaffold/pipeline/leads_base_writer.py",
+    "scaffold/pipeline/normalize.py",
+    "scaffold/pipeline/doc_type_bridge.py",
+    "scaffold/pipeline/run_pipeline_staged.py",
+    "scaffold/pipeline/semantic_verify.py",
+    "scaffold/pipeline/scoring_seam.py",
+    "scaffold/data/synthetic_signals.jsonl",
+    "scaffold/data/synthetic_parcels.jsonl",
+    "scaffold/data/synthetic_attribute_overrides.json",
+    "scaffold/data/synthetic_expectations.json",
+    "dashboard/index.html",
+    "dashboard/dashboard.css",
+    "dashboard/dashboard.js",
+    "data/synthetic/dashboard.json",
+    "data/synthetic/matched_leads.json",
+    "data/synthetic/scored_leads.json",
+    "data/synthetic/evidence_ledger.json",
+    "config/counties/marion_in.json"
+  ],
+  "phase_2_scope_directive": "First adapter: clerk_recordings via Fidlar/Laredo (the highest-value §16 lead-type sweep for Marion County IN — judgment liens, mechanic's liens, lis pendens). Sheriff sales via GovEase second. Court filings (Tyler Odyssey MyCase) and tax delinquency (indy.gov) are Phase 3+. Parcel master (data.indy.gov ArcGIS) as enrichment alongside first adapter.",
+  "backlog_items_logged": [
+    "synthetic_expectations.json was updated to match actual v5.4.0 staged pipeline output — old pre-staged expectations are superseded",
+    "NEEDS_OPERATOR_REVIEW from §20 Check 5 AMBIGUOUS (null instrument_numbers on signals without case_number) — is legitimate behavior for synthetic fixtures",
+    "Pre-canned views in dashboard.js use pattern-based filters as approximation of source-based county config filters — exact source routing deferred to Phase 3 when real source_ids are present in dashboard records"
+  ]
+}

@@ -23,8 +23,15 @@
   // Data loading
   // -------------------------------------------------------------------
 
-  const DATA_PATHS_PROD = ["./data/leads.json", "../data/leads.json"];
+  const DATA_PATHS_PROD = [
+    "./data/dashboard.json",
+    "../data/dashboard.json",
+    "./data/leads.json",
+    "../data/leads.json",
+  ];
   const DATA_PATHS_SYNTH = [
+    "./data/synthetic/dashboard.json",
+    "../data/synthetic/dashboard.json",
     "./data/leads_synthetic.json",
     "../data/leads_synthetic.json",
   ];
@@ -64,48 +71,45 @@
     precannedView: null,
   };
 
+  // Marion County IN pre-canned views (matches config/counties/marion_in.json dashboard.precanned_views).
+  // Source-based filters are approximated with pattern chips since source_ids
+  // are not projected onto dashboard records (a Phase 3 enrichment concern).
   const PRECANNED_VIEWS = [
     {
-      id: "high_value",
-      label: "High value (Hot + Strong)",
-      filter: (row) => ["Hot", "Strong"].includes(row.display_tier),
-    },
-    {
-      id: "foreclosure_estate_heir_candidate",
-      label: "Foreclosure + estate owner (heir candidate)",
+      id: "foreclosure",
+      label: "Foreclosure Pipeline",
       filter: (row) =>
-        row.display_patterns.includes("foreclosure") &&
-        row.display_patterns.includes("estate"),
-    },
-    {
-      id: "foreclosure_trust",
-      label: "Foreclosure + trust owner",
-      filter: (row) =>
-        row.display_patterns.includes("foreclosure") &&
-        (row.stack_contrib_patterns || []).filter((p) => p === "transfer").length > 0 &&
-        // Only count transfer patterns that came from owner-name (not just any transfer)
-        (row.display_pattern_set || []).includes("transfer"),
-    },
-    {
-      id: "vacant_with_distress",
-      label: "Vacant with distress",
-      filter: (row) =>
-        row.display_attributes.includes("vacant") &&
         row.display_patterns.some((p) =>
-          ["foreclosure", "code", "tax", "lien"].includes(p)
+          ["foreclosure", "bankruptcy"].includes(p)
         ),
     },
     {
-      id: "estate_partial_interest",
-      label: "Estate / partial interest",
+      id: "recorder",
+      label: "Recorder Instruments",
       filter: (row) =>
-        row.display_deal_paths.includes("partial_interest") ||
-        row.display_patterns.includes("estate"),
+        row.display_patterns.some((p) =>
+          ["lien", "estate", "divorce"].includes(p)
+        ),
     },
     {
-      id: "needs_review",
-      label: "Needs review",
-      filter: (row) => row.display_lead_status === "REVIEW_REQUIRED",
+      id: "eviction",
+      label: "High-Volume Evictions",
+      filter: (row) => row.display_patterns.includes("eviction"),
+    },
+    {
+      id: "probate",
+      label: "Probate / Estate",
+      filter: (row) => row.display_patterns.includes("estate"),
+    },
+    {
+      id: "code_enforcement",
+      label: "Code Enforcement",
+      filter: (row) => row.display_patterns.includes("code"),
+    },
+    {
+      id: "tax_distress",
+      label: "Tax Distress",
+      filter: (row) => row.display_patterns.includes("tax"),
     },
   ];
 

@@ -1,0 +1,1172 @@
+[
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "sub_to",
+        "rationale": "Foreclosure paired with bankruptcy stay or absentee owner; subject-to acquisition pattern fits."
+      },
+      {
+        "confidence": "high",
+        "path": "wholesale",
+        "rationale": "Multi-signal distress + investor-friendly attribute set."
+      }
+    ],
+    "display_patterns": [
+      "bankruptcy",
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "bankruptcy_petition",
+        "notice_of_sale"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "BANKRUPTCY_PETITION",
+        "NOTICE_OF_SALE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_53a49fb2725bf9eb",
+      "ev_647f16628a9e3628"
+    ],
+    "lead_id": "lead_parcel_SYN-001",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_001",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 340000,
+      "last_sale_date": "2002-03-12",
+      "last_sale_price": 185000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Out Of State City",
+      "owner_mailing_state": "YY",
+      "owner_mailing_zip": "99001",
+      "property_class": "Residential SFR",
+      "situs_address": "100 Synthetic Lane",
+      "situs_city": "Synthtown A",
+      "situs_state": "ZZ",
+      "year_built": 1978
+    },
+    "pattern_set": [
+      "bankruptcy",
+      "foreclosure"
+    ],
+    "patterns": [
+      "bankruptcy",
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-04-25",
+    "primary_parcel_id": "SYN-001",
+    "recent_flag": true,
+    "review_flags": [],
+    "score": 88,
+    "score_reasons": [
+      {
+        "delta": 60,
+        "factor": "base_NOTICE_OF_SALE"
+      },
+      {
+        "delta": 12,
+        "factor": "stack_depth_2"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      },
+      {
+        "delta": 11,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_c4dc1074117070b4",
+    "source_ids": [
+      "clerk_synthetic",
+      "sheriff_synthetic"
+    ],
+    "stack_depth": 2,
+    "tier": "Hot",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "messy_title",
+        "rationale": "Lien stack and/or title-action pattern; closing requires release/payoff curative work."
+      },
+      {
+        "confidence": "high",
+        "path": "wholesale",
+        "rationale": "Multi-signal distress + investor-friendly attribute set."
+      }
+    ],
+    "display_patterns": [
+      "lien",
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "judgment_lien",
+        "tax_sale_certificate"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "JUDGMENT_LIEN",
+        "TAX_SALE_CERTIFICATE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_239b70f5fa72dd22",
+      "ev_4d87d4c41e4b7425"
+    ],
+    "lead_id": "lead_parcel_SYN-002",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_002",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 425000,
+      "last_sale_date": "1998-08-04",
+      "last_sale_price": 92000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown B",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00002",
+      "property_class": "Residential SFR",
+      "situs_address": "200 Synthetic Lane",
+      "situs_city": "Synthtown B",
+      "situs_state": "ZZ",
+      "year_built": 1965
+    },
+    "pattern_set": [
+      "lien",
+      "tax"
+    ],
+    "patterns": [
+      "lien",
+      "tax"
+    ],
+    "primary_event_date": "2026-03-10",
+    "primary_parcel_id": "SYN-002",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 73,
+    "score_reasons": [
+      {
+        "delta": 50,
+        "factor": "base_TAX_SALE_CERTIFICATE"
+      },
+      {
+        "delta": 12,
+        "factor": "stack_depth_2"
+      },
+      {
+        "delta": 11,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_f74cc491fd69a10c",
+    "source_ids": [
+      "clerk_synthetic"
+    ],
+    "stack_depth": 2,
+    "tier": "Strong",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "partial_interest",
+        "rationale": "Estate pattern paired with intra-family transfer or long-held parcel; multiple heirs likely."
+      },
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "estate"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "affidavit_of_heirship"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "AFFIDAVIT_OF_HEIRSHIP"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_9d42c5fb6d4b5c92"
+    ],
+    "lead_id": "lead_parcel_SYN-003",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_003 (DECEASED)",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 295000,
+      "last_sale_date": "1985-06-22",
+      "last_sale_price": 68000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Out Of State City",
+      "owner_mailing_state": "YY",
+      "owner_mailing_zip": "99003",
+      "property_class": "Residential SFR",
+      "situs_address": "300 Synthetic Lane",
+      "situs_city": "Synthtown C",
+      "situs_state": "ZZ",
+      "year_built": 1972
+    },
+    "pattern_set": [
+      "estate"
+    ],
+    "patterns": [
+      "estate"
+    ],
+    "primary_event_date": "2026-02-18",
+    "primary_parcel_id": "SYN-003",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 66,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_AFFIDAVIT_OF_HEIRSHIP"
+      },
+      {
+        "delta": 11,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_74ec1ac7e3e0975d",
+    "source_ids": [
+      "clerk_synthetic"
+    ],
+    "stack_depth": 1,
+    "tier": "Strong",
+    "title_complexity_contributors": [
+      {
+        "factor": "affidavit_of_heirship_no_supporting_probate",
+        "weight": 15
+      }
+    ],
+    "title_complexity_score": 15,
+    "title_complexity_tier": "Light curative"
+  },
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned",
+      "vacant"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "code"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "demolition_order"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "DEMOLITION_ORDER"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_a4a09f4b274e0fa0"
+    ],
+    "lead_id": "lead_parcel_SYN-004",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_004",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 215000,
+      "last_sale_date": "1989-04-15",
+      "last_sale_price": 105000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown D",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00004",
+      "property_class": "Residential SFR",
+      "situs_address": "400 Synthetic Lane",
+      "situs_city": "Synthtown D",
+      "situs_state": "ZZ",
+      "year_built": 1958
+    },
+    "pattern_set": [
+      "code"
+    ],
+    "patterns": [
+      "code"
+    ],
+    "primary_event_date": "2026-04-01",
+    "primary_parcel_id": "SYN-004",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 62,
+    "score_reasons": [
+      {
+        "delta": 50,
+        "factor": "base_DEMOLITION_ORDER"
+      },
+      {
+        "delta": 12,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_87f044a96be29042",
+    "source_ids": [
+      "code_synthetic"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "messy_title",
+        "rationale": "Lien stack and/or title-action pattern; closing requires release/payoff curative work."
+      },
+      {
+        "confidence": "moderate",
+        "path": "sub_to",
+        "rationale": "Foreclosure on long-term-owned parcel; investigate loan terms for subject-to."
+      },
+      {
+        "confidence": "high",
+        "path": "wholesale",
+        "rationale": "Multi-signal distress + investor-friendly attribute set."
+      }
+    ],
+    "display_patterns": [
+      "lien",
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "construction_lien",
+        "sheriff_sale"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "CONSTRUCTION_LIEN",
+        "SHERIFF_SALE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_38136fc5bb3aff74",
+      "ev_bcd764ddf64df37d"
+    ],
+    "lead_id": "lead_parcel_SYN-005",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_005",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 265000,
+      "last_sale_date": "2001-11-30",
+      "last_sale_price": 165000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown E",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00005",
+      "property_class": "Residential SFR",
+      "situs_address": "500 Synthetic Lane",
+      "situs_city": "Synthtown E",
+      "situs_state": "ZZ",
+      "year_built": 1990
+    },
+    "pattern_set": [
+      "lien",
+      "foreclosure"
+    ],
+    "patterns": [
+      "lien",
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-05-12",
+    "primary_parcel_id": "SYN-005",
+    "recent_flag": true,
+    "review_flags": [],
+    "score": 88,
+    "score_reasons": [
+      {
+        "delta": 60,
+        "factor": "base_SHERIFF_SALE"
+      },
+      {
+        "delta": 12,
+        "factor": "stack_depth_2"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      },
+      {
+        "delta": 11,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_c5b659759f0cf782",
+    "source_ids": [
+      "clerk_synthetic",
+      "sheriff_synthetic"
+    ],
+    "stack_depth": 2,
+    "tier": "Hot",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "messy_title",
+        "rationale": "Lien stack and/or title-action pattern; closing requires release/payoff curative work."
+      },
+      {
+        "confidence": "high",
+        "path": "wholesale",
+        "rationale": "Multi-signal distress + investor-friendly attribute set."
+      }
+    ],
+    "display_patterns": [
+      "tax",
+      "lien",
+      "lien"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "federal_tax_lien",
+        "judgment_lien",
+        "mechanics_lien"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "FEDERAL_TAX_LIEN",
+        "JUDGMENT_LIEN",
+        "MECHANICS_LIEN"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_110e0f6acd3041c7",
+      "ev_739918be2fa62839",
+      "ev_95aada426d04b3ef"
+    ],
+    "lead_id": "lead_parcel_SYN-006",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_006",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 510000,
+      "last_sale_date": "1992-02-08",
+      "last_sale_price": 125000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown F",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00006",
+      "property_class": "Residential SFR",
+      "situs_address": "600 Synthetic Lane",
+      "situs_city": "Synthtown F",
+      "situs_state": "ZZ",
+      "year_built": 1962
+    },
+    "pattern_set": [
+      "tax",
+      "lien"
+    ],
+    "patterns": [
+      "tax",
+      "lien",
+      "lien"
+    ],
+    "primary_event_date": "2026-01-20",
+    "primary_parcel_id": "SYN-006",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 90,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_FEDERAL_TAX_LIEN"
+      },
+      {
+        "delta": 24,
+        "factor": "stack_depth_3"
+      },
+      {
+        "delta": 11,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_bcfaee0cae4ba027",
+    "source_ids": [
+      "clerk_synthetic"
+    ],
+    "stack_depth": 3,
+    "tier": "Hot",
+    "title_complexity_contributors": [
+      {
+        "factor": "multiple_concurrent_liens",
+        "weight": 15
+      }
+    ],
+    "title_complexity_score": 15,
+    "title_complexity_tier": "Light curative"
+  },
+  {
+    "attributes": [
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Multi-signal distress stack; standard wholesale flow."
+      }
+    ],
+    "display_patterns": [
+      "divorce",
+      "lien"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "marital_property_division",
+        "mechanics_lien"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "MARITAL_PROPERTY_DIVISION",
+        "MECHANICS_LIEN"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_7ac8d2116ced032b",
+      "ev_9abd2bc639523949"
+    ],
+    "lead_id": "lead_parcel_SYN-007",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_007",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 385000,
+      "last_sale_date": "2008-09-14",
+      "last_sale_price": 295000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown G",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00007",
+      "property_class": "Residential SFR",
+      "situs_address": "700 Synthetic Lane",
+      "situs_city": "Synthtown G",
+      "situs_state": "ZZ",
+      "year_built": 1985
+    },
+    "pattern_set": [
+      "divorce",
+      "lien"
+    ],
+    "patterns": [
+      "divorce",
+      "lien"
+    ],
+    "primary_event_date": "2026-04-30",
+    "primary_parcel_id": "SYN-007",
+    "recent_flag": true,
+    "review_flags": [],
+    "score": 65,
+    "score_reasons": [
+      {
+        "delta": 45,
+        "factor": "base_MARITAL_PROPERTY_DIVISION"
+      },
+      {
+        "delta": 12,
+        "factor": "stack_depth_2"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      },
+      {
+        "delta": 3,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_0abbfcc680502210",
+    "source_ids": [
+      "clerk_synthetic",
+      "court_synthetic"
+    ],
+    "stack_depth": 2,
+    "tier": "Strong",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Multi-signal distress stack; standard wholesale flow."
+      }
+    ],
+    "display_patterns": [
+      "eviction",
+      "eviction",
+      "eviction"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "eviction_filing"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "EVICTION_FILING"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_7f8f1855fbe7cd50",
+      "ev_b19a311cb19fe862",
+      "ev_b857fb2a1830b300"
+    ],
+    "lead_id": "lead_parcel_SYN-008",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "SYN_LANDLORD_LLC",
+    "owner_type": "ENTITY",
+    "parcel_display": {
+      "assessed_value": 290000,
+      "last_sale_date": "2014-07-20",
+      "last_sale_price": 225000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown H",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00008",
+      "property_class": "Residential 2-Family",
+      "situs_address": "800 Synthetic Lane",
+      "situs_city": "Synthtown H",
+      "situs_state": "ZZ",
+      "year_built": 1975
+    },
+    "pattern_set": [
+      "eviction"
+    ],
+    "patterns": [
+      "eviction",
+      "eviction",
+      "eviction"
+    ],
+    "primary_event_date": "2026-03-22",
+    "primary_parcel_id": "SYN-008",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 47,
+    "score_reasons": [
+      {
+        "delta": 20,
+        "factor": "base_EVICTION_FILING"
+      },
+      {
+        "delta": 24,
+        "factor": "stack_depth_3"
+      },
+      {
+        "delta": 3,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_472c2ec0346f8db8",
+    "source_ids": [
+      "court_synthetic"
+    ],
+    "stack_depth": 3,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "partial_interest",
+        "rationale": "Estate pattern paired with intra-family transfer or long-held parcel; multiple heirs likely."
+      },
+      {
+        "confidence": "high",
+        "path": "wholesale",
+        "rationale": "Multi-signal distress + investor-friendly attribute set."
+      }
+    ],
+    "display_patterns": [
+      "estate",
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "letters_testamentary",
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LETTERS_TESTAMENTARY",
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_3fbadcad083bc6c0",
+      "ev_8927407c98d3f03b"
+    ],
+    "lead_id": "lead_parcel_SYN-009",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_009",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 315000,
+      "last_sale_date": "1994-05-11",
+      "last_sale_price": 110000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown I",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00009",
+      "property_class": "Residential SFR",
+      "situs_address": "900 Synthetic Lane",
+      "situs_city": "Synthtown I",
+      "situs_state": "ZZ",
+      "year_built": 1970
+    },
+    "pattern_set": [
+      "estate",
+      "tax"
+    ],
+    "patterns": [
+      "estate",
+      "tax"
+    ],
+    "primary_event_date": "2026-04-01",
+    "primary_parcel_id": "SYN-009",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 78,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_LETTERS_TESTAMENTARY"
+      },
+      {
+        "delta": 12,
+        "factor": "stack_depth_2"
+      },
+      {
+        "delta": 11,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_68fc8b270f6ab4c3",
+    "source_ids": [
+      "court_synthetic",
+      "tax_synthetic"
+    ],
+    "stack_depth": 2,
+    "tier": "Strong",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "sub_to",
+        "rationale": "Foreclosure on long-term-owned parcel; investigate loan terms for subject-to."
+      },
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_6a01520a796a9d2a"
+    ],
+    "lead_id": "lead_parcel_SYN-010",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_010",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 255000,
+      "last_sale_date": "2005-03-19",
+      "last_sale_price": 195000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Inland Synth City",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00099",
+      "property_class": "Residential SFR",
+      "situs_address": "1000 Synthetic Lane",
+      "situs_city": "Synthtown J",
+      "situs_state": "ZZ",
+      "year_built": 1980
+    },
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-02-08",
+    "primary_parcel_id": "SYN-010",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 38,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      },
+      {
+        "delta": 3,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_867b01cdedc5baae",
+    "source_ids": [
+      "clerk_synthetic"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_5aafb1a0db91632a"
+    ],
+    "lead_id": "lead_parcel_SYN-011",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "FORMER_OWNER_011",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 275000,
+      "last_sale_date": "2025-09-15",
+      "last_sale_price": 312000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "",
+      "owner_mailing_state": "",
+      "owner_mailing_zip": "",
+      "property_class": "Residential SFR",
+      "situs_address": "1100 Synthetic Lane",
+      "situs_city": "Synthtown K",
+      "situs_state": "ZZ",
+      "year_built": 1985
+    },
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": "2025-09-20",
+    "primary_parcel_id": "SYN-011",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_27c9225f8447d106",
+    "source_ids": [
+      "sheriff_synthetic"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "free_and_clear",
+      "high_equity",
+      "long_term_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "partial_interest",
+        "rationale": "Estate pattern paired with intra-family transfer or long-held parcel; multiple heirs likely."
+      },
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "estate"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "executors_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "EXECUTORS_DEED"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [
+      "ev_befde6e733404f1f"
+    ],
+    "lead_id": "lead_parcel_SYN-012",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-06-25T21:05:19Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TEST_OWNER_012_ESTATE_OF",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": {
+      "assessed_value": 225000,
+      "last_sale_date": "1990-11-28",
+      "last_sale_price": 78000,
+      "owner_mailing_address": null,
+      "owner_mailing_city": "Synthtown L",
+      "owner_mailing_state": "ZZ",
+      "owner_mailing_zip": "00012",
+      "property_class": "Residential SFR",
+      "situs_address": "1200 Synthetic Lane",
+      "situs_city": "Synthtown L",
+      "situs_state": "ZZ",
+      "year_built": 1968
+    },
+    "pattern_set": [
+      "estate"
+    ],
+    "patterns": [
+      "estate"
+    ],
+    "primary_event_date": "2026-02-28",
+    "primary_parcel_id": "SYN-012",
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 46,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_EXECUTORS_DEED"
+      },
+      {
+        "delta": 11,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_18fdd44c524935f4",
+    "source_ids": [
+      "clerk_synthetic"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  }
+]

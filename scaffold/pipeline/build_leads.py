@@ -64,7 +64,10 @@ if str(REPO_ROOT) not in sys.path:
 
 from scaffold.pipeline import run_pipeline_staged  # noqa: E402
 from scaffold.pipeline.dashboard import assert_two_truths  # noqa: E402
-from scaffold.pipeline.doc_type_bridge import monolith_to_registry  # noqa: E402
+from scaffold.pipeline.doc_type_bridge import (  # noqa: E402
+    monolith_to_registry,
+    registry_to_lead_type,
+)
 from scaffold.pipeline.manifest import (  # noqa: E402
     build_heartbeat,
     build_run_manifest,
@@ -194,6 +197,10 @@ def _signal_to_raw_event(sig: dict, *, parcels_by_id: dict,
         return None
     canonical_doc_type = monolith_to_registry(normalized_upper)
     if canonical_doc_type is None:
+        return None
+    if registry_to_lead_type(canonical_doc_type) is None:
+        # No §16 lead type — enrichment/negative signal, not a distress lead.
+        # Covers transfer deeds, lien releases, vacated judgments, etc.
         return None
 
     parcel_id = sig.get("parcel_id") or sig.get("primary_parcel_id")
