@@ -39,6 +39,54 @@ Documented API search conducted per §01.23. All required search paths checked.
 
 ---
 
+## UNDOCUMENTED API discovered via live bypass probe (2026-06-25, Phase 2 pre-build)
+
+NOTE: The above documented-API search correctly found NO public API for Fidlar.
+A live browser bypass probe of inmarion.fidlar.com/INMarion/DirectSearch/ then
+revealed an UNDOCUMENTED internal endpoint backing the Angular SPA. Per the
+recon doctrine (a CAPTCHA/SPA on a search page is not "blocked" until the
+bypass probe fails), this was confirmed by executing a real search and
+intercepting the network call.
+
+    Architecture (live):   Angular SPA (NOT a server-rendered POST form as the
+                           Phase 0 fingerprint assumed) + Angular Material
+                           components + Google reCAPTCHA v3
+                           (site key 6LckDLwaAAAAAFdkFeW-dkX0IMirFhqiB_tXcRZE).
+
+    Backing API (found):
+        POST https://inmarion.fidlar.com/INMarion/Scrap.WebService.DirectSearch/breeze/Search
+        Content-Type: application/json
+        Request body (JSON, confirmed keys):
+            FirstName, LastBusinessName, StartDate, EndDate, DocumentName,
+            DocumentType, SubdivisionName, SubdivisionLot, SubdivisionBlock,
+            MunicipalityName, Tract* , InstrumentNumber, BookType, Book, Page
+        Stack: "Breeze" JS data layer (the /breeze/ path + Scrap.WebService).
+
+    Result fields returned (index metadata — sufficient for lead pipeline):
+        Document No (e.g. A202600053697), Document Type (MORTGAGE, DEED,
+        MORTGAGE RELEASE, ...), Recorded Date, Party1, Party2, Legals
+        (subdivision/lot). Routes: #/search -> #/searchresults.
+
+    AUTH GATE (critical):  A bare POST without the reCAPTCHA token returns
+                           HTTP 401 Unauthorized. In a real browser session
+                           (token attached) the same query returned ~200 rows
+                           for LastBusinessName=SMITH. => The adapter MUST mint
+                           a reCAPTCHA v3 token in a browser context; it cannot
+                           be a plain server-side requests.post.
+
+    QUERY CONSTRAINTS (stated on the live page + IC 36-1-8.5):
+        - NO wildcard search (anti-data-mining). Exact party name only.
+        - NO parcel-number search (restricted-address compliance).
+        - Documents available 5 days after recording.
+        => Daily sweep strategy must key on RECORDING DATE RANGE
+           (StartDate/EndDate), not name enumeration.
+
+    Image extraction:      Document images require per-copy fee / Laredo login.
+                           NOT needed — index metadata is the lead signal.
+
+
+---
+
 ## Documented APIs Found
 
 ### API 1 — Open Indy Data Portal / ArcGIS FeatureServer (Code Enforcement)
