@@ -1,0 +1,829 @@
+"""
+Phase 0 Step 4 — Build and write config/counties/marion_in.json
+via write_county_config (per locked rule §4.28).
+Run from repo root: python runs/marion_in/build_config.py
+"""
+import sys
+import os
+sys.path.insert(0, os.getcwd())
+
+from scaffold.ops.write_county_config import write_county_config
+
+# ──────────────────────────────────────────────
+#  Source of Record Matrix (inline — schema-embedded copy)
+# ──────────────────────────────────────────────
+
+RECORDER_CANDIDATE = {
+    "source_id": "recorder_fidlar",
+    "official_url": "https://inmarion.fidlar.com/INMarion/DirectSearch/",
+    "authority_type": "County Recorder",
+    "vendor_name": "Fidlar Technologies (Laredo)",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "access_status": "SEARCH_ONLY_PUBLIC",
+    "bulk_availability": "PER_RECORD_ONLY",
+    "verification_layers": {
+        "authority": "Vendor portal linked from indy.gov at /activity/search-real-estate-records-online",
+        "lead_type_relevance": "Records recorded instruments including lis pendens, liens, judgments, deeds",
+        "access": "Free index search; document images require per-copy fee (not needed for lead metadata)",
+        "extractability": "Server-rendered HTML Direct Search; MEDIUM difficulty for index",
+        "refresh_provenance": "Real-time recording; instruments indexed same business day"
+    },
+    "sample_record_path_confirmed": True,
+    "sample_document_view_possible": False,
+    "minimum_lead_fields_available": ["grantor", "grantee", "doc_type", "recording_date", "instrument_number"]
+}
+
+MYCASE_CANDIDATE = {
+    "source_id": "indiana_mycase_court",
+    "official_url": "https://public.courts.in.gov/mycase/",
+    "authority_type": "Court",
+    "vendor_name": "Tyler Technologies (Odyssey)",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "access_status": "OPEN_PUBLIC",
+    "bulk_availability": "BATCH_QUERY",
+    "verification_layers": {
+        "authority": "Indiana Office of Judicial Administration; public.courts.in.gov (.gov domain)",
+        "lead_type_relevance": "MF (foreclosure), EV (eviction), EM/ES/EU (probate), CP/CC (civil judgment)",
+        "access": "Fully public; no login; no fee",
+        "extractability": "React SPA (Odyssey); Playwright required",
+        "refresh_provenance": "Real-time case filing; docket updated same day"
+    },
+    "sample_record_path_confirmed": True,
+    "sample_document_view_possible": True,
+    "minimum_lead_fields_available": ["case_number", "case_type", "plaintiff", "defendant", "filing_date"]
+}
+
+GOVEASE_CANDIDATE = {
+    "source_id": "govease_sheriff_sales",
+    "official_url": "https://liveauctions.govease.com/in/inmarion/",
+    "authority_type": "Sheriff",
+    "vendor_name": "GovEase (SRI Tax Sale Services)",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "access_status": "OPEN_PUBLIC",
+    "bulk_availability": "FULL_COUNTY_BULK",
+    "verification_layers": {
+        "authority": "Vendor portal linked from indy.gov at /activity/sheriff-real-estate-sales",
+        "lead_type_relevance": "All active Marion County judicial foreclosure sheriff sale listings",
+        "access": "Fully public listing browse; registration required to bid only",
+        "extractability": "Server-rendered HTML; LOW difficulty",
+        "refresh_provenance": "Updated daily; third Friday of month except December"
+    },
+    "sample_record_path_confirmed": True,
+    "sample_document_view_possible": True,
+    "minimum_lead_fields_available": ["property_address", "case_number", "plaintiff", "defendant", "sale_date", "opening_bid"]
+}
+
+TREASURER_CANDIDATE = {
+    "source_id": "treasurer_tax_sale",
+    "official_url": "https://www.indy.gov/activity/tax-sale-reports",
+    "authority_type": "County Treasurer",
+    "vendor_name": "indy.gov CMS",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "access_status": "OPEN_PUBLIC",
+    "bulk_availability": "FULL_COUNTY_BULK",
+    "verification_layers": {
+        "authority": "Marion County Treasurer's Office; indy.gov official .gov domain",
+        "lead_type_relevance": "Annual tax delinquency list, tax sale eligible parcels, sold/unsold lists",
+        "access": "Downloadable annual lists; publicly accessible without login",
+        "extractability": "Static file download (PDF/CSV); LOW difficulty",
+        "refresh_provenance": "Annual publication cycle (mid-July before fall sale)"
+    },
+    "sample_record_path_confirmed": True,
+    "sample_document_view_possible": True,
+    "minimum_lead_fields_available": ["parcel_number", "owner_name", "property_address", "delinquent_amount"]
+}
+
+OPEN_INDY_CE_CANDIDATE = {
+    "source_id": "open_indy_code_enforcement",
+    "official_url": "https://data.indy.gov/datasets/5d08eba2e9034bc88986af25afe12f5e_1",
+    "authority_type": "Code Enforcement (Bulk)",
+    "vendor_name": "Esri ArcGIS Hub",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "access_status": "OPEN_PUBLIC",
+    "bulk_availability": "FULL_COUNTY_BULK",
+    "verification_layers": {
+        "authority": "data.indy.gov (.gov domain); official City of Indianapolis open data portal",
+        "lead_type_relevance": "Full bulk DCE violation and enforcement dataset; same records as Accela",
+        "access": "Fully public ArcGIS REST API; bulk CSV download; no authentication",
+        "extractability": "ArcGIS REST API; LOW difficulty; documented API; no auth required",
+        "refresh_provenance": "Updated daily (near-real-time from Accela feed)"
+    },
+    "sample_record_path_confirmed": True,
+    "sample_document_view_possible": True,
+    "minimum_lead_fields_available": ["case_number", "address", "violation_type", "status", "open_date"]
+}
+
+OPEN_INDY_PARCELS_CANDIDATE = {
+    "source_id": "open_indy_parcels",
+    "official_url": "https://data.indy.gov/datasets/parcels",
+    "authority_type": "Parcel Master (Bulk)",
+    "vendor_name": "Esri ArcGIS Hub",
+    "source_role": "ENRICHMENT_SOURCE",
+    "access_status": "OPEN_PUBLIC",
+    "bulk_availability": "FULL_COUNTY_BULK",
+    "verification_layers": {
+        "authority": "data.indy.gov (.gov domain); official City of Indianapolis open data portal",
+        "lead_type_relevance": "348k+ parcel records with owner name, address, assessed value; parcel ID lookup",
+        "access": "Fully public ArcGIS REST API; bulk CSV download; no authentication",
+        "extractability": "ArcGIS REST API; LOW difficulty; documented API",
+        "refresh_provenance": "Updated nightly from Marion County Assessor"
+    },
+    "sample_record_path_confirmed": True,
+    "sample_document_view_possible": True,
+    "minimum_lead_fields_available": ["parcel_id", "owner_name", "situs_address", "assessed_value"]
+}
+
+ACCELA_CANDIDATE = {
+    "source_id": "accela_code_enforcement",
+    "official_url": "https://aca-prod.accela.com/INDY/Cap/CapHome.aspx?module=Enforcement",
+    "authority_type": "Code Enforcement",
+    "vendor_name": "Accela (Civic Platform)",
+    "source_role": "SUPPORTING_EVENT_SOURCE",
+    "access_status": "OPEN_PUBLIC",
+    "bulk_availability": "PER_RECORD_ONLY",
+    "verification_layers": {
+        "authority": "City of Indianapolis / Marion County DCE; linked from indy.gov",
+        "lead_type_relevance": "Code violations, demolition orders, condemnation cases",
+        "access": "Fully public case search; no login required",
+        "extractability": "ASP.NET Web Forms with ViewState; MEDIUM difficulty",
+        "refresh_provenance": "Real-time case updates"
+    },
+    "sample_record_path_confirmed": True,
+    "sample_document_view_possible": True,
+    "minimum_lead_fields_available": ["case_number", "address", "case_type", "status", "open_date"]
+}
+
+PACER_CANDIDATE = {
+    "source_id": "pacer_federal_bankruptcy",
+    "official_url": "https://www.pacer.gov/",
+    "authority_type": "Federal Court",
+    "vendor_name": "PACER (U.S. Courts)",
+    "source_role": "BLOCKED_SOURCE",
+    "access_status": "PAID_SUBSCRIPTION_REQUIRED",
+    "bulk_availability": "UNKNOWN",
+    "verification_layers": {
+        "authority": "U.S. Bankruptcy Court, Southern District of Indiana; federal court system",
+        "lead_type_relevance": "Bankruptcy filings for Marion County debtors",
+        "access": "PACER account required; $0.10/page or quarterly minimum fee",
+        "extractability": "BLOCKED — requires paid account; no public alternative",
+        "refresh_provenance": "Real-time case filings if access obtained"
+    },
+    "sample_record_path_confirmed": False,
+    "sample_document_view_possible": False,
+    "minimum_lead_fields_available": []
+}
+
+source_of_record_matrix = {
+    "county_slug": "marion_in",
+    "county_name": "Marion County",
+    "state": "IN",
+    "framework_version": "v5.1.2-beta-r3",
+    "generated_at": "2026-06-25T19:30:00Z",
+    "county_build_status": "READY_TO_BUILD",
+    "lead_types": [
+        {"lead_type": "Foreclosure", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Superior Court"], "candidate_sources": [MYCASE_CANDIDATE], "selected_source_id": "indiana_mycase_court", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "MF case type. Indiana judicial foreclosure; lis pendens is the pre-filing signal."},
+        {"lead_type": "Trustee Sale", "state_applicability": "NOT_APPLICABLE_IN_STATE", "expected_authorities": [], "candidate_sources": [], "selected_source_id": "", "status": "NOT_APPLICABLE_IN_STATE", "coverage_notes": "Indiana is a judicial foreclosure state."},
+        {"lead_type": "Notice of Trustee Sale", "state_applicability": "NOT_APPLICABLE_IN_STATE", "expected_authorities": [], "candidate_sources": [], "selected_source_id": "", "status": "NOT_APPLICABLE_IN_STATE", "coverage_notes": "Not applicable in Indiana."},
+        {"lead_type": "Notice of Substitute Trustee Sale", "state_applicability": "NOT_APPLICABLE_IN_STATE", "expected_authorities": [], "candidate_sources": [], "selected_source_id": "", "status": "NOT_APPLICABLE_IN_STATE", "coverage_notes": "Not applicable in Indiana."},
+        {"lead_type": "Sheriff Sale", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Sheriff's Office"], "candidate_sources": [GOVEASE_CANDIDATE], "selected_source_id": "govease_sheriff_sales", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Judicial foreclosure sheriff sales. Third Friday of each month except December."},
+        {"lead_type": "Tax Lien Foreclosure", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Treasurer's Office"], "candidate_sources": [TREASURER_CANDIDATE], "selected_source_id": "treasurer_tax_sale", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Annual fall tax sale via GovEase; tax certificates issued; redemption period applies."},
+        {"lead_type": "Tax Sale", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Treasurer's Office"], "candidate_sources": [TREASURER_CANDIDATE], "selected_source_id": "treasurer_tax_sale", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Annual fall tax sale. Delinquent list published mid-July."},
+        {"lead_type": "Tax Sale Certificate", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder", "Marion County Treasurer's Office"], "candidate_sources": [RECORDER_CANDIDATE, TREASURER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Tax sale certificates recorded with county recorder after tax sale."},
+        {"lead_type": "Tax Delinquency", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Treasurer's Office"], "candidate_sources": [TREASURER_CANDIDATE], "selected_source_id": "treasurer_tax_sale", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Annual delinquency list (mid-July). Indiana DOR tax warrants in recorder are real-time signal."},
+        {"lead_type": "Lis Pendens", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Primary pre-foreclosure notice in Indiana. Filed with county recorder at time of foreclosure suit."},
+        {"lead_type": "Civil Judgment", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Superior Court", "Marion County Recorder"], "candidate_sources": [MYCASE_CANDIDATE, RECORDER_CANDIDATE], "selected_source_id": "indiana_mycase_court", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Civil judgments in CP/CC cases on MyCase. Abstract of Judgment subsequently recorded."},
+        {"lead_type": "Abstract of Judgment", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "AJ doc type. Creates lien against all real property owned in county."},
+        {"lead_type": "Mechanic Lien", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "ML doc type. Must file within 90 days of last furnishing under Indiana statute."},
+        {"lead_type": "Construction Lien", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Construction liens recorded with county recorder. Overlaps with mechanic liens."},
+        {"lead_type": "Federal Tax Lien", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "FTL doc type. IRS federal tax liens filed with county recorder. High financial distress signal."},
+        {"lead_type": "State Tax Lien", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Indiana DOR tax warrants recorded with county recorder. Called 'State Tax Warrant' in Indiana."},
+        {"lead_type": "Probate", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Superior Court (Probate Division)"], "candidate_sources": [MYCASE_CANDIDATE], "selected_source_id": "indiana_mycase_court", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "EM/ES/EU case types on MyCase. High lead value."},
+        {"lead_type": "Affidavit of Heirship", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "AH doc type. Indicates inherited property transfer outside formal probate."},
+        {"lead_type": "Executor Deed", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "ED doc type. Recorded after probate sale."},
+        {"lead_type": "Administrator Deed", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Recorder"], "candidate_sources": [RECORDER_CANDIDATE], "selected_source_id": "recorder_fidlar", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "AD doc type. Recorded after intestate estate administration."},
+        {"lead_type": "Code Lien", "state_applicability": "APPLICABLE", "expected_authorities": ["City of Indianapolis / Marion County Department of Code Enforcement"], "candidate_sources": [OPEN_INDY_CE_CANDIDATE, ACCELA_CANDIDATE], "selected_source_id": "open_indy_code_enforcement", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Open Indy Data Portal bulk dataset preferred for pipeline use."},
+        {"lead_type": "Demolition", "state_applicability": "APPLICABLE", "expected_authorities": ["City of Indianapolis / Marion County Department of Code Enforcement"], "candidate_sources": [OPEN_INDY_CE_CANDIDATE, ACCELA_CANDIDATE], "selected_source_id": "open_indy_code_enforcement", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Demolition orders issued by DCE for unsafe structures. High distress signal."},
+        {"lead_type": "Condemnation", "state_applicability": "APPLICABLE", "expected_authorities": ["City of Indianapolis / Marion County Department of Code Enforcement"], "candidate_sources": [OPEN_INDY_CE_CANDIDATE, ACCELA_CANDIDATE], "selected_source_id": "open_indy_code_enforcement", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "Condemnation orders for properties declared unfit for habitation."},
+        {"lead_type": "Eviction", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Superior Court"], "candidate_sources": [MYCASE_CANDIDATE], "selected_source_id": "indiana_mycase_court", "status": "LIVE_SOURCE_FOUND", "coverage_notes": "EV case type. One of the highest eviction filing rates in the US."},
+        {"lead_type": "Divorce", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Superior Court"], "candidate_sources": [MYCASE_CANDIDATE], "selected_source_id": "indiana_mycase_court", "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE", "coverage_notes": "DN case type. Property address rarely in case caption. Low priority."},
+        {"lead_type": "Bankruptcy", "state_applicability": "APPLICABLE", "expected_authorities": ["U.S. Bankruptcy Court, Southern District of Indiana"], "candidate_sources": [PACER_CANDIDATE], "selected_source_id": "pacer_federal_bankruptcy", "status": "SOURCE_FOUND_BLOCKED", "coverage_notes": "Federal court. PACER paid account required. Requires operator decision."},
+        {"lead_type": "Surplus", "state_applicability": "APPLICABLE", "expected_authorities": ["Marion County Sheriff's Office"], "candidate_sources": [GOVEASE_CANDIDATE], "selected_source_id": "govease_sheriff_sales", "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE", "coverage_notes": "Post-sale surplus tracking available on GovEase. Limited data on surplus amounts."},
+    ]
+}
+
+# ──────────────────────────────────────────────
+#  Full county config dict
+# ──────────────────────────────────────────────
+
+config = {
+    "county_id": "marion_in",
+    "county_name": "Marion County",
+    "state": "IN",
+    "subject_state_full": "Indiana",
+    "fips_code": "18097",
+    "timezone": "America/Indiana/Indianapolis",
+    "operator_market_priority": "primary",
+    "state_rule_family": "",
+
+    "geography": {
+        "municipalities": [
+            {"name": "Indianapolis", "code": "IND", "fips_place": "1836003"},
+            {"name": "Beech Grove", "code": "BEG", "fips_place": "1804312"},
+            {"name": "Lawrence", "code": "LWR", "fips_place": "1842246"},
+            {"name": "Southport", "code": "SOU", "fips_place": "1872156"},
+            {"name": "Speedway", "code": "SPD", "fips_place": "1872508"},
+            {"name": "Rocky Ripple", "code": "RRK", "fips_place": "1866072"},
+            {"name": "Warren Park", "code": "WRP"},
+            {"name": "Williams Creek", "code": "WCK"},
+            {"name": "Crows Nest", "code": "CRN"},
+            {"name": "Meridian Hills", "code": "MEH"},
+            {"name": "Spring Hill", "code": "SPH"},
+            {"name": "Wynnedale", "code": "WYN"},
+            {"name": "Homecroft", "code": "HCF"},
+            {"name": "Cumberland", "code": "CUM"}
+        ],
+        "accepted_municipalities": [
+            {"name": "INDIANAPOLIS", "kind": "incorporated"},
+            {"name": "BEECH GROVE", "kind": "incorporated"},
+            {"name": "LAWRENCE", "kind": "incorporated"},
+            {"name": "SOUTHPORT", "kind": "incorporated"},
+            {"name": "SPEEDWAY", "kind": "incorporated"},
+            {"name": "ROCKY RIPPLE", "kind": "incorporated"},
+            {"name": "WARREN PARK", "kind": "incorporated"},
+            {"name": "WILLIAMS CREEK", "kind": "incorporated"},
+            {"name": "CROWS NEST", "kind": "incorporated"},
+            {"name": "MERIDIAN HILLS", "kind": "incorporated"},
+            {"name": "SPRING HILL", "kind": "incorporated"},
+            {"name": "WYNNEDALE", "kind": "incorporated"},
+            {"name": "HOMECROFT", "kind": "incorporated"},
+            {"name": "CUMBERLAND", "kind": "neighboring_overlap"},
+            {"name": "INDY", "kind": "spelling_variant", "canonical_name": "Indianapolis"},
+            {"name": "INDPLS", "kind": "spelling_variant", "canonical_name": "Indianapolis"}
+        ],
+        "cross_county_policy": {
+            "unknown_city_action": "flag_for_review",
+            "neighboring_county_municipalities": ["Carmel", "Fishers", "Noblesville", "Greenwood", "Plainfield"]
+        },
+        "parcel_id_format": "##-##-##-###-###.###-##",
+        "parcel_id_normalization": "Strip hyphens for lookups; re-insert for display",
+        "address_format_notes": "Indianapolis addresses typically follow standard USPS format. Unigov consolidated area uses Indianapolis as the city name for all unincorporated areas.",
+        "sale_date_rule": {
+            "rule_name": "scheduled_by_sheriff",
+            "statute_reference": "Indiana Code 32-29-8-1 et seq. (Judicial foreclosure sheriff sale)"
+        }
+    },
+
+    "sources": {
+        "clerk_recordings": {
+            "category": "lead",
+            "subtype": "clerk_recordings",
+            "url": "https://inmarion.fidlar.com/INMarion/DirectSearch/",
+            "access_pattern": "static_html",
+            "auth_required": False,
+            "rate_limit_rpm": None,
+            "scraper_module": "scrapers.fidlar_recorder",
+            "translator": "publicsearch_clerk_recordings",
+            "translator_config": {
+                "field_label_aliases": {
+                    "Grantor": "grantor",
+                    "Grantee": "grantee",
+                    "Document Type": "doc_type",
+                    "Recording Date": "recording_date",
+                    "Instrument #": "instrument_number",
+                    "Book/Page": "book_page"
+                },
+                "doc_type_filter": ["LP", "ML", "AJ", "FTL", "STW", "AH", "ED", "AD", "SD", "TD", "QCD"]
+            },
+            "field_map": {
+                "grantor": "Grantor",
+                "grantee": "Grantee",
+                "doc_type": "Document Type",
+                "recording_date": "Recording Date",
+                "instrument_number": "Instrument #"
+            },
+            "doc_type_synonyms": {
+                "LP": "LIS_PENDENS",
+                "ML": "MECHANIC_LIEN",
+                "AJ": "ABSTRACT_OF_JUDGMENT",
+                "FTL": "FEDERAL_TAX_LIEN",
+                "STW": "STATE_TAX_LIEN",
+                "State Tax Warrant": "STATE_TAX_LIEN",
+                "AH": "AFFIDAVIT_OF_HEIRSHIP",
+                "ED": "EXECUTOR_DEED",
+                "AD": "ADMINISTRATOR_DEED",
+                "SD": "SHERIFF_DEED",
+                "TD": "TREASURER_DEED",
+                "QCD": "QUIT_CLAIM_DEED"
+            },
+            "parcel_id_prefix": "MARIN-REC-",
+            "refresh_cadence": "daily",
+            "ttl_days": 365,
+            "source_reliability_grade": "A",
+            "source_priority": "P0",
+            "build_priority": "mvp_required",
+            "enabled": True,
+            "allowed_to_export": True,
+            "official_status": "OFFICIAL_VENDOR_PORTAL",
+            "lead_value": "LEAD_GENERATING",
+            "source_role": "PRIMARY_LEAD_SOURCE",
+            "verification_confidence": "MEDIUM",
+            "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+            "public_access_status": "PUBLIC_SEARCH_ONLY",
+            "document_access_status": "DOCUMENTS_PAID_SUBSCRIPTION_REQUIRED",
+            "official_entity": "Marion County Recorder's Office",
+            "portal_type": "Land records index search (Fidlar Direct Search / Laredo)",
+            "portal_family": "Fidlar",
+            "fingerprint_confidence": "MEDIUM",
+            "fingerprint_summary": "Fidlar Direct Search confirmed via indy.gov link; .aspx server-rendered HTML",
+            "recommended_adapter": "requests_html_scraper",
+            "records_available": ["lis_pendens", "mechanic_liens", "tax_liens", "judgments", "deeds", "mortgages"],
+            "search_fields": ["grantor", "grantee", "document_type", "date_range", "instrument_number"],
+            "verified_from_url": "https://www.indy.gov/activity/search-real-estate-records-online",
+            "verification_method": "official_page_link",
+            "verification_note": "Official indy.gov page links directly to the Fidlar Direct Search portal as the county recorder search.",
+            "sample_record_path_confirmed": True,
+            "sample_search_possible": True,
+            "sample_document_view_possible": False,
+            "known_limitations": [
+                "Document images require per-copy fee (Laredo subscription). Index metadata is free.",
+                "Bulk export not available at Direct Search tier. Historical backfill requires date-range iteration.",
+                "Confirm exact document type dropdown labels during Phase 1 portal fingerprinting."
+            ],
+            "open_questions": ["Confirm whether Laredo subscription is available for bulk index access."],
+            "last_verified_at": "2026-06-25",
+            "stale_after_hours": 24,
+            "record_ttl_days": 365,
+            "stale_record_policy": "KEEP_UNTIL_RELEASED",
+            "estimated_runtime_minutes": 30,
+            "estimated_cost_category": "FREE",
+            "quarantine_status": "NOT_QUARANTINED"
+        },
+
+        "court_filings": {
+            "category": "lead",
+            "subtype": "court_civil",
+            "url": "https://public.courts.in.gov/mycase/",
+            "access_pattern": "spa_with_api",
+            "auth_required": False,
+            "rate_limit_rpm": None,
+            "scraper_module": "scrapers.tyler_odyssey_mycase",
+            "translator": "tyler_odyssey_court",
+            "translator_config": {
+                "county_filter": "Marion",
+                "case_types": ["MF", "EV", "EM", "ES", "EU", "CP", "CC", "DN"],
+                "court_system": "Indiana",
+                "portal_version": "Odyssey Public Access"
+            },
+            "field_map": {
+                "case_number": "caseNumber",
+                "case_type": "caseTypeCode",
+                "plaintiff": "plaintiffName",
+                "defendant": "defendantName",
+                "filing_date": "filedDate",
+                "case_status": "caseStatus"
+            },
+            "parcel_id_prefix": "MARIN-CT-",
+            "refresh_cadence": "daily",
+            "ttl_days": 730,
+            "source_reliability_grade": "A",
+            "source_priority": "P0",
+            "build_priority": "mvp_required",
+            "enabled": True,
+            "allowed_to_export": True,
+            "official_status": "OFFICIAL_STATE",
+            "lead_value": "LEAD_GENERATING",
+            "source_role": "PRIMARY_LEAD_SOURCE",
+            "verification_confidence": "HIGH",
+            "access_method": "OPEN_PUBLIC_PORTAL",
+            "public_access_status": "FULL_PUBLIC_ACCESS",
+            "document_access_status": "DOCUMENTS_PUBLIC",
+            "official_entity": "Indiana Office of Judicial Administration",
+            "portal_type": "Statewide court case search (Odyssey Public Access SPA)",
+            "portal_family": "Tyler",
+            "fingerprint_confidence": "HIGH",
+            "fingerprint_summary": "Tyler Odyssey Public Access (React SPA) confirmed at public.courts.in.gov",
+            "recommended_adapter": "playwright_spa",
+            "records_available": ["foreclosure_filings", "eviction_cases", "probate_cases", "civil_judgments", "divorce_cases"],
+            "search_fields": ["case_number", "party_name", "county", "case_type", "date_range"],
+            "verified_from_url": "https://public.courts.in.gov/mycase/",
+            "verification_method": "official_domain",
+            "verification_note": "Official Indiana court portal at public.courts.in.gov (.gov domain). Linked from in.gov/courts.",
+            "sample_record_path_confirmed": True,
+            "sample_search_possible": True,
+            "sample_document_view_possible": True,
+            "known_limitations": [
+                "React SPA requires Playwright. No bulk download confirmed.",
+                "Date-range filtered searches by case type required for systematic backfill."
+            ],
+            "last_verified_at": "2026-06-25",
+            "stale_after_hours": 24,
+            "record_ttl_days": 730,
+            "stale_record_policy": "KEEP_UNTIL_RELEASED",
+            "estimated_runtime_minutes": 45,
+            "estimated_cost_category": "FREE",
+            "quarantine_status": "NOT_QUARANTINED"
+        },
+
+        "sheriff_sales": {
+            "category": "lead",
+            "subtype": "sheriff_sales",
+            "url": "https://liveauctions.govease.com/in/inmarion/",
+            "access_pattern": "static_html",
+            "auth_required": False,
+            "rate_limit_rpm": None,
+            "scraper_module": "scrapers.govease_sheriff",
+            "translator": "foreclosure_notices",
+            "translator_config": {
+                "sale_frequency": "third_friday_of_month",
+                "sale_month_exception": "December",
+                "portal_type": "GovEase",
+                "listing_type": "judicial_foreclosure_sheriff_sale"
+            },
+            "field_map": {
+                "property_address": "address",
+                "case_number": "caseNumber",
+                "plaintiff": "plaintiff",
+                "defendant": "defendant",
+                "sale_date": "saleDate",
+                "opening_bid": "minimumBid"
+            },
+            "parcel_id_prefix": "MARIN-SS-",
+            "refresh_cadence": "weekly",
+            "ttl_days": 90,
+            "source_reliability_grade": "A",
+            "source_priority": "P0",
+            "build_priority": "mvp_required",
+            "enabled": True,
+            "allowed_to_export": True,
+            "official_status": "OFFICIAL_VENDOR_PORTAL",
+            "lead_value": "LEAD_GENERATING",
+            "source_role": "PRIMARY_LEAD_SOURCE",
+            "verification_confidence": "HIGH",
+            "access_method": "OPEN_PUBLIC_PORTAL",
+            "public_access_status": "FULL_PUBLIC_ACCESS",
+            "document_access_status": "DOCUMENTS_PUBLIC",
+            "official_entity": "Marion County Sheriff's Office",
+            "portal_type": "Judicial foreclosure sheriff sale listings (GovEase)",
+            "portal_family": "GovEase",
+            "fingerprint_confidence": "HIGH",
+            "fingerprint_summary": "GovEase (SRI Tax Sale Services) confirmed via indy.gov link",
+            "recommended_adapter": "requests_html_scraper",
+            "records_available": ["sheriff_sale_listings", "sale_schedule", "property_details"],
+            "search_fields": ["sale_date", "property_address", "case_number"],
+            "verified_from_url": "https://www.indy.gov/activity/sheriff-real-estate-sales",
+            "verification_method": "official_page_link",
+            "verification_note": "Official indy.gov Sheriff page links directly to the GovEase platform.",
+            "sample_record_path_confirmed": True,
+            "sample_search_possible": True,
+            "sample_document_view_possible": True,
+            "known_limitations": [
+                "Active listings only; historical sales not browsable. No December sales.",
+                "Post-sale surplus data limited in browsable listing."
+            ],
+            "last_verified_at": "2026-06-25",
+            "stale_after_hours": 168,
+            "record_ttl_days": 90,
+            "stale_record_policy": "EXPIRE_AFTER_TTL",
+            "estimated_runtime_minutes": 10,
+            "estimated_cost_category": "FREE",
+            "quarantine_status": "NOT_QUARANTINED"
+        },
+
+        "tax_delinquency": {
+            "category": "lead",
+            "subtype": "tax_delinquency",
+            "url": "https://www.indy.gov/activity/tax-sale-reports",
+            "access_pattern": "static_html",
+            "auth_required": False,
+            "rate_limit_rpm": None,
+            "scraper_module": "scrapers.indy_tax_delinquency",
+            "translator": "csv_static_list",
+            "translator_config": {
+                "publication_cycle": "annual",
+                "publication_month": "July",
+                "file_formats": ["PDF", "CSV"],
+                "auction_platform": "GovEase"
+            },
+            "field_map": {
+                "parcel_number": "parcelId",
+                "owner_name": "ownerName",
+                "property_address": "situsAddress",
+                "delinquent_amount": "delinquentAmount",
+                "tax_years": "delinquentYears"
+            },
+            "parcel_id_prefix": "MARIN-TX-",
+            "refresh_cadence": "quarterly",
+            "ttl_days": 400,
+            "source_reliability_grade": "B",
+            "source_priority": "P1",
+            "build_priority": "high_value",
+            "enabled": True,
+            "allowed_to_export": True,
+            "official_status": "OFFICIAL_COUNTY",
+            "lead_value": "LEAD_GENERATING",
+            "source_role": "PRIMARY_LEAD_SOURCE",
+            "verification_confidence": "HIGH",
+            "access_method": "DOWNLOADABLE_FILE",
+            "public_access_status": "FULL_PUBLIC_ACCESS",
+            "document_access_status": "DOCUMENTS_PUBLIC",
+            "official_entity": "Marion County Treasurer's Office",
+            "portal_type": "Annual tax delinquency list download (indy.gov CMS)",
+            "portal_family": "custom_county",
+            "fingerprint_confidence": "MEDIUM",
+            "fingerprint_summary": "indy.gov .gov domain; downloadable annual delinquency list page confirmed",
+            "recommended_adapter": "file_download_scraper",
+            "records_available": ["annual_tax_delinquency_list", "tax_sale_eligible_parcels", "sold_property_list"],
+            "search_fields": ["parcel_number", "owner_name", "property_address"],
+            "verified_from_url": "https://www.indy.gov/activity/tax-sale-reports",
+            "verification_method": "official_domain",
+            "verification_note": "Marion County Treasurer tax sale reports page on official indy.gov .gov domain.",
+            "sample_record_path_confirmed": True,
+            "sample_search_possible": True,
+            "sample_document_view_possible": True,
+            "known_limitations": [
+                "Annual publication cycle (mid-July). Not a real-time delinquency signal.",
+                "Indiana DOR tax warrants in recorder are the real-time financial distress signal.",
+                "Confirm exact download URL and file format (PDF vs CSV) in Phase 1."
+            ],
+            "open_questions": ["Confirm exact download URL and file format for current year delinquency list."],
+            "last_verified_at": "2026-06-25",
+            "stale_after_hours": 8760,
+            "record_ttl_days": 400,
+            "stale_record_policy": "EXPIRE_AFTER_TTL",
+            "estimated_runtime_minutes": 5,
+            "estimated_cost_category": "FREE",
+            "quarantine_status": "NOT_QUARANTINED"
+        },
+
+        "code_enforcement": {
+            "category": "lead",
+            "subtype": "code_enforcement",
+            "url": "https://data.indy.gov/datasets/5d08eba2e9034bc88986af25afe12f5e_1",
+            "access_pattern": "open_api",
+            "auth_required": False,
+            "rate_limit_rpm": None,
+            "scraper_module": "scrapers.open_indy_arcgis",
+            "translator": "foreclosure_notices",
+            "translator_config": {
+                "api_type": "ArcGIS_REST",
+                "layer_id": "5d08eba2e9034bc88986af25afe12f5e_1",
+                "layer_doc_type_map": {
+                    "CODE_VIOLATION": "CODE_LIEN",
+                    "DEMOLITION": "DEMOLITION",
+                    "CONDEMNATION": "CONDEMNATION"
+                },
+                "fallback_source": "accela_code_enforcement"
+            },
+            "field_map": {
+                "case_number": "CaseId",
+                "address": "Address",
+                "violation_type": "ViolationType",
+                "status": "Status",
+                "open_date": "OpenDate"
+            },
+            "parcel_id_prefix": "MARIN-CE-",
+            "refresh_cadence": "daily",
+            "ttl_days": 365,
+            "source_reliability_grade": "A",
+            "source_priority": "P1",
+            "build_priority": "high_value",
+            "enabled": True,
+            "allowed_to_export": True,
+            "official_status": "OFFICIAL_CITY",
+            "lead_value": "LEAD_GENERATING",
+            "source_role": "PRIMARY_LEAD_SOURCE",
+            "verification_confidence": "HIGH",
+            "access_method": "API_ENDPOINT",
+            "public_access_status": "FULL_PUBLIC_ACCESS",
+            "document_access_status": "DOCUMENTS_PUBLIC",
+            "official_entity": "City of Indianapolis / Marion County Department of Code Enforcement",
+            "portal_type": "Open data ArcGIS bulk code enforcement dataset (data.indy.gov)",
+            "portal_family": "ArcGIS",
+            "fingerprint_confidence": "HIGH",
+            "fingerprint_summary": "ArcGIS Hub confirmed at data.indy.gov; documented REST API; no auth required",
+            "recommended_adapter": "arcgis_rest_api",
+            "records_available": ["code_violations", "demolition_orders", "condemnation_cases"],
+            "search_fields": ["address", "case_type", "status", "open_date"],
+            "verified_from_url": "https://data.indy.gov/datasets/5d08eba2e9034bc88986af25afe12f5e_1",
+            "verification_method": "city_portal",
+            "verification_note": "Official City of Indianapolis open data portal at data.indy.gov (.gov domain). ArcGIS REST API documented and publicly accessible.",
+            "sample_record_path_confirmed": True,
+            "sample_search_possible": True,
+            "sample_document_view_possible": True,
+            "known_limitations": [
+                "Preferred over Accela for pipeline use (same data, no ViewState complexity).",
+                "Accela (aca-prod.accela.com/INDY) is available as fallback for per-record queries."
+            ],
+            "last_verified_at": "2026-06-25",
+            "stale_after_hours": 24,
+            "record_ttl_days": 365,
+            "stale_record_policy": "KEEP_UNTIL_RELEASED",
+            "estimated_runtime_minutes": 15,
+            "estimated_cost_category": "FREE",
+            "quarantine_status": "NOT_QUARANTINED"
+        },
+
+        "parcel_master": {
+            "category": "enrichment",
+            "subtype": "parcel_master",
+            "url": "https://data.indy.gov/datasets/parcels",
+            "access_pattern": "open_api",
+            "auth_required": False,
+            "rate_limit_rpm": None,
+            "scraper_module": "scrapers.open_indy_parcels",
+            "translator": "parcel_master",
+            "translator_config": {
+                "api_type": "ArcGIS_REST",
+                "record_count": 348272,
+                "update_cadence": "nightly",
+                "bulk_csv_available": True
+            },
+            "field_map": {
+                "parcel_id": "PARCEL_ID",
+                "owner_name": "OWNER",
+                "situs_address": "SITUS_ADDRESS",
+                "assessed_value": "AV_TOTAL",
+                "city": "CITY",
+                "zip": "ZIP"
+            },
+            "parcel_id_prefix": "MARIN-PAR-",
+            "refresh_cadence": "daily",
+            "ttl_days": 14,
+            "source_reliability_grade": "A",
+            "source_priority": "P1",
+            "build_priority": "enrichment",
+            "enabled": True,
+            "allowed_to_export": False,
+            "official_status": "OFFICIAL_CITY",
+            "lead_value": "ENRICHMENT",
+            "source_role": "ENRICHMENT_SOURCE",
+            "verification_confidence": "HIGH",
+            "access_method": "API_ENDPOINT",
+            "public_access_status": "FULL_PUBLIC_ACCESS",
+            "document_access_status": "DOCUMENTS_PUBLIC",
+            "official_entity": "City of Indianapolis / Marion County Assessor",
+            "portal_type": "Open data ArcGIS bulk parcel dataset (data.indy.gov)",
+            "portal_family": "ArcGIS",
+            "fingerprint_confidence": "HIGH",
+            "fingerprint_summary": "ArcGIS Hub at data.indy.gov; documented REST API; 348k+ parcel records",
+            "recommended_adapter": "arcgis_rest_api",
+            "records_available": ["parcels", "owner_info", "assessed_values", "parcel_geometry"],
+            "search_fields": ["parcel_id", "owner_name", "address"],
+            "verified_from_url": "https://data.indy.gov/datasets/parcels",
+            "verification_method": "city_portal",
+            "verification_note": "Official City of Indianapolis open data portal at data.indy.gov. Nightly updated parcel dataset.",
+            "sample_record_path_confirmed": True,
+            "sample_search_possible": True,
+            "sample_document_view_possible": True,
+            "known_limitations": [
+                "Enrichment source only; cannot generate leads independently."
+            ],
+            "last_verified_at": "2026-06-25",
+            "stale_after_hours": 24,
+            "record_ttl_days": 14,
+            "stale_record_policy": "EXPIRE_AFTER_TTL",
+            "estimated_runtime_minutes": 20,
+            "estimated_cost_category": "FREE",
+            "quarantine_status": "NOT_QUARANTINED"
+        }
+    },
+
+    "scoring_overrides": {
+        "match_confidence_floor": 70.0,
+        "review_queue_ratio_alert_threshold": 0.15,
+        "high_equity_assessed_to_sale_ratio": 1.5,
+        "long_term_owned_years": 10,
+        "senior_owner_proxy_years": 65,
+        "favorable_loan_era_start": "2020-01-01",
+        "favorable_loan_era_end": "2022-06-30"
+    },
+
+    "storage": {
+        "mode": "STATIC_JSON_MODE",
+        "supabase_enabled": False,
+        "retain_raw_records_days": 90,
+        "retain_source_runs_days": 30
+    },
+
+    "dashboard": {
+        "title": "Marion County, IN — Lead Intelligence",
+        "subtitle": "Indianapolis / Marion County Consolidated Government",
+        "primary_color": "#002664",
+        "accent_color": "#C8102E",
+        "default_view": "foreclosure",
+        "build_label": "FULL_BUILD",
+        "build_label_reason": "All 6 primary lead sources accessible; 20/27 lead types live",
+        "precanned_views": [
+            {"id": "foreclosure", "label": "Foreclosure Pipeline", "filter": "source:court_filings,sheriff_sales"},
+            {"id": "recorder", "label": "Recorder Instruments", "filter": "source:clerk_recordings"},
+            {"id": "eviction", "label": "High-Volume Evictions", "filter": "source:court_filings,case_type:EV"},
+            {"id": "probate", "label": "Probate / Estate", "filter": "source:court_filings,case_type:EM,ES,EU"},
+            {"id": "code_enforcement", "label": "Code Enforcement", "filter": "source:code_enforcement"},
+            {"id": "tax_distress", "label": "Tax Distress", "filter": "source:tax_delinquency,clerk_recordings,doc_type:STW"}
+        ],
+        "view_modes": ["OPERATOR_VIEW", "CLIENT_VIEW"]
+    },
+
+    "deployment": {
+        "github_org": "xcerebroai",
+        "github_repo": "marion-in-intel",
+        "scheduler_runtime_class": "SCHEDULER_NOT_CONFIGURED",
+        "production_verification_status": "NOT_RUN"
+    },
+
+    "build_verdict": "READY_TO_BUILD",
+    "build_verdict_reason": "All 6 primary lead sources are accessible (OPEN_PUBLIC or SEARCH_ONLY_PUBLIC). 20 of 27 lead types have LIVE_SOURCE_FOUND status. No county-level technical blockers. One federal source (PACER/Bankruptcy) requires operator decision but does not block the county build. Phase 0.5 SKIPPED — NO BLOCKERS.",
+    "build_verdict_at": "2026-06-25T19:30:00Z",
+    "auto_resolve_status": "NOT_ATTEMPTED",
+    "final_resolution_status": "RESOLVED",
+    "operator_override_audit": [],
+
+    "source_of_record_matrix": source_of_record_matrix,
+
+    "source_coverage_map": {
+        "live_sources": [
+            "clerk_recordings (recorder_fidlar)",
+            "court_filings (indiana_mycase_court)",
+            "sheriff_sales (govease_sheriff_sales)",
+            "tax_delinquency (treasurer_tax_sale)",
+            "code_enforcement (open_indy_code_enforcement)",
+            "parcel_master (open_indy_parcels)"
+        ],
+        "blocked_sources": [
+            "Bankruptcy — PACER federal court (PAID_SUBSCRIPTION_REQUIRED)"
+        ],
+        "limited_coverage_sources": [
+            "Divorce — MyCase DN (low lead value; no property address in caption)",
+            "Surplus — GovEase post-sale (limited surplus amount data)"
+        ],
+        "not_found_lead_types": [],
+        "operator_review_required": [
+            "PACER/Bankruptcy — operator must decide whether to subscribe ($0.10/page)"
+        ]
+    },
+
+    "api_discovery": {
+        "searched": [
+            "Marion County Recorder (Fidlar) — no public API found",
+            "Indiana MyCase (Tyler Odyssey) — no public REST API found",
+            "GovEase — no public API found",
+            "Marion County Treasurer (indy.gov) — no public API found",
+            "Accela — no public API found (ViewState ASP.NET)",
+            "Open Indy Data Portal (data.indy.gov) — ArcGIS REST API found",
+            "Marion County GIS Open Data Portal — ArcGIS REST API found",
+            "Indiana Gateway / DLGF — no documented public API found"
+        ],
+        "found": [
+            {
+                "api_url": "https://services.arcgis.com/XSbbBDjSN8gRQUAl/arcgis/rest/services/IndyCode_Violations/FeatureServer/0/query",
+                "api_type": "ArcGIS",
+                "documentation_url": "https://data.indy.gov/datasets/5d08eba2e9034bc88986af25afe12f5e_1",
+                "auth_required": False,
+                "rate_limited": False,
+                "source_role": "PRIMARY_EVENT_SOURCE",
+                "notes": "Open Indy Data Portal — Code Enforcement bulk dataset. Documented ArcGIS Feature Service REST API."
+            },
+            {
+                "api_url": "https://services.arcgis.com/XSbbBDjSN8gRQUAl/arcgis/rest/services/Parcels/FeatureServer/0/query",
+                "api_type": "ArcGIS",
+                "documentation_url": "https://data.indy.gov/datasets/parcels",
+                "auth_required": False,
+                "rate_limited": False,
+                "source_role": "ENRICHMENT_SOURCE",
+                "notes": "Open Indy Data Portal — 348k+ parcel records. Nightly update. Bulk CSV also available."
+            },
+            {
+                "api_url": "https://gis-marioncounty.opendata.arcgis.com/api/feed/dcat-ap/2.0.0.json",
+                "api_type": "ArcGIS",
+                "documentation_url": "https://gis-marioncounty.opendata.arcgis.com/",
+                "auth_required": False,
+                "rate_limited": False,
+                "source_role": "ENRICHMENT_SOURCE",
+                "notes": "Marion County GIS Open Data Portal — spatial layers including parcel polygons, zoning."
+            }
+        ],
+        "search_notes": "No public REST API found for Fidlar, MyCase, GovEase, Marion County Treasurer, or Accela. Three documented ArcGIS APIs found (Open Indy Code Enforcement, Open Indy Parcels, Marion County GIS Open Data)."
+    },
+
+    "enrichment_index_strategy": {
+        "bulk_index_available": True,
+        "bulk_index_source": "open_indy_parcels — 348,272+ parcel records via ArcGIS REST API; nightly update; bulk CSV download also available",
+        "per_record_query_required": False,
+        "per_record_query_cost_estimate": "Available via Marion County Assessor IndyGIS (maps.indy.gov/AssessorPropertyCards/) at no cost per-record",
+        "recommended_strategy": "Use Open Indy Data Portal parcel bulk dataset as the primary enrichment index. Load nightly. Per-record Assessor lookups as fallback for records not found in bulk dataset.",
+        "deferred_to_version": None
+    }
+}
+
+# ──────────────────────────────────────────────
+#  Write via locked write_county_config()
+# ──────────────────────────────────────────────
+
+result = write_county_config(
+    config_dict=config,
+    target_path="config/counties/marion_in.json",
+    schema_path="config/counties/_schema.json",
+    overwrite=False,
+)
+print(result.summary())
+sys.exit(0 if result.is_ok() else 1)

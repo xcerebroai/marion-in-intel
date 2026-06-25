@@ -1,0 +1,18 @@
+# Operator Verified Sources — Marion County, Indiana
+# Phase 0 v5.3.0 Amendment (§01.25) — Recon artifact
+# Generated: 2026-06-25
+# Purpose: Captures operator-surfaced sources that recon discovered independently.
+#          No operator-provided sources were added to this file during Phase 0.
+#          File is present per protocol requirement; to be populated if operator
+#          manually surfaces a source recon missed.
+
+operator_verified_sources: []
+
+# Template for future entries:
+# - lead_type: <e.g. "Foreclosure">
+#   discovered_by: operator
+#   official_url: <URL>
+#   official_origin_evidence: <how operator confirmed it is official>
+#   reason_added: <why recon missed it>
+#   review_status: pending  # accepted | rejected | pending
+#   notes: <additional context>
