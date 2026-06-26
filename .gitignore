@@ -50,7 +50,3 @@ secrets/
 .coverage
 htmlcov/
 .tox/
-
-# Hermes Phase 0 launch artifacts (not part of the build)
-.phase0_result.json
-.phase0_err.log
