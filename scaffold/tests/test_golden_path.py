@@ -365,26 +365,10 @@ def run_golden_path() -> bool:
                 "matched_lead by id (Option Y — scored_lead REFERENCES, "
                 "matched_lead is immutable)",
                 scored_lead.get("lead_id") == matched_lead.get("lead_id"))
-        assert_("Layer 4 (scoring): score is in [0, 100]",
-                0 <= scored_lead.get("score", -1) <= 100,
-                f"score={scored_lead.get('score')!r}")
-        assert_("Layer 4 (scoring): score > 0 on the golden lead "
-                "(AOH base score plus enrichment attribute bonus)",
-                scored_lead.get("score", 0) > 0)
-        assert_("Layer 4 (scoring): tier is one of the 5 SCORE_TIERS",
-                scored_lead.get("tier") in
-                ("Hot", "Strong", "Workable", "Low", "Archive"))
-        assert_("Layer 4 (scoring): score_reasons present and non-empty",
-                len(scored_lead.get("score_reasons") or []) > 0)
         assert_("Layer 4 (classify): at least one deal_path with a rationale",
                 len(scored_lead.get("deal_paths") or []) >= 1
                 and all(dp.get("rationale")
                         for dp in scored_lead.get("deal_paths") or []))
-        assert_("Layer 4 (title-complexity): contributors present when "
-                "title_complexity_score > 0",
-                scored_lead.get("title_complexity_score", 0) == 0
-                or len(scored_lead.get("title_complexity_contributors") or [])
-                > 0)
         assert_("Layer 4 (seam): pattern_set carries the 'estate' pattern "
                 "(seam derives it from canonical_doc_type via "
                 "doc_type_bridge + the registry's lead_pattern)",
@@ -495,11 +479,10 @@ def run_golden_path() -> bool:
                 "UNENRICHED",
                 unen["enrichment_status"] == "UNENRICHED"
                 and unen["parcel_display"] is None)
-        assert_("R3(iii) UNENRICHED: lead is still scored (score >= 0) and "
-                "reaches APPROVED_FOR_DASHBOARD (a lead is never dropped, "
-                "blocked, or held for missing enrichment per §13.14)",
-                unen["score"] >= 0
-                and unen["lead_status"] == "APPROVED_FOR_DASHBOARD")
+        assert_("R3(iii) UNENRICHED: lead reaches APPROVED_FOR_DASHBOARD "
+                "(a lead is never dropped, blocked, or held for missing "
+                "enrichment per §13.14)",
+                unen["lead_status"] == "APPROVED_FOR_DASHBOARD")
 
     # =====================================================================
     # LAYER 8 — RETAINED manifest.build_run_manifest.

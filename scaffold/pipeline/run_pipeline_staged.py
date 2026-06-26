@@ -41,6 +41,7 @@ from typing import Callable, Optional, Sequence
 from scaffold.pipeline import aggregator
 from scaffold.pipeline import debtor_party_engine
 from scaffold.pipeline import evidence_ledger as evidence_ledger_mod
+from scaffold.pipeline import lead_registry
 from scaffold.pipeline import leads_base_writer
 from scaffold.pipeline import scoring_seam
 from scaffold.pipeline import semantic_verify
@@ -149,7 +150,7 @@ def run_staged_pipeline(
         semantic_report, approve_needs_review=approve_needs_review
     )
 
-    # --- SEAM + retained scoring / classify / title / review --------------
+    # --- SEAM + retain classify / review ----------------------------------
     scored_leads = scoring_seam.score_matched_leads(
         matched_leads,
         as_of=as_of,
@@ -157,6 +158,8 @@ def run_staged_pipeline(
         scoring_overrides=scoring_overrides,
         lis_pendens_mode=lis_pendens_mode,
     )
+    # Stamp each lead with is_new / first_seen_date via the registry.
+    lead_registry.stamp_leads(scored_leads, workdir=workdir, as_of=as_of)
     scored_leads_path = workdir / "scored_leads.json"
     scored_leads_path.write_text(
         json.dumps(scored_leads, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
@@ -202,8 +205,6 @@ def project_scored_lead(scored_lead: dict) -> dict:
             ) if v
         ),
         "display_owner": scored_lead.get("owner_name") or "Unknown",
-        "display_score": scored_lead.get("score", 0),
-        "display_tier": scored_lead.get("tier") or "",
         "display_patterns": list(scored_lead.get("display_patterns") or []),
         "stack_contrib_patterns": list(scored_lead.get("patterns") or []),
         "display_pattern_set": list(scored_lead.get("pattern_set") or []),
@@ -212,9 +213,6 @@ def project_scored_lead(scored_lead: dict) -> dict:
             dp.get("path") for dp in scored_lead.get("deal_paths", [])
         ],
         "display_deal_path_details": list(scored_lead.get("deal_paths") or []),
-        "display_title_complexity_tier": scored_lead.get(
-            "title_complexity_tier", ""
-        ),
         "display_lead_status": scored_lead.get("lead_status", "STACKED_LEAD"),
         "display_assessed_value": parcel.get("assessed_value"),
         "display_last_sale_price": parcel.get("last_sale_price"),
@@ -222,12 +220,13 @@ def project_scored_lead(scored_lead: dict) -> dict:
         "display_year_built": parcel.get("year_built"),
         "display_match_confidence": scored_lead.get("match_confidence") or 0,
         "stack_depth": scored_lead.get("stack_depth", 0),
-        "score_reasons": list(scored_lead.get("score_reasons") or []),
         "evidence_ids": list(scored_lead.get("evidence_ids") or []),
         "primary_source_urls": sorted(set(scored_lead.get("source_urls") or [])),
         "primary_event_date": scored_lead.get("primary_event_date"),
         "review_flags": list(scored_lead.get("review_flags") or []),
         "enrichment_status": scored_lead.get("enrichment_status"),
+        "is_new": scored_lead.get("is_new", False),
+        "first_seen_date": scored_lead.get("first_seen_date", ""),
     }
 
 
@@ -265,10 +264,6 @@ def build_dashboard_payload(
     for s in scored_leads:
         stack_depth_distribution[str(s.get("stack_depth", 0))] += 1
 
-    score_tier_distribution: Counter = Counter()
-    for s in scored_leads:
-        score_tier_distribution[s.get("tier", "Archive")] += 1
-
     deal_path_distribution: Counter = Counter()
     for s in scored_leads:
         for dp in s.get("deal_paths") or []:
@@ -284,6 +279,7 @@ def build_dashboard_payload(
         "state": state,
         "semantic_verdict": semantic_verdict,
         "lead_total": len(scored_leads),
+        "new_lead_count": sum(1 for s in scored_leads if s.get("is_new")),
         "enrichment_breakdown": {
             "ENRICHED": sum(
                 1 for s in scored_leads
@@ -297,7 +293,6 @@ def build_dashboard_payload(
         "pattern_counts": dict(sorted(pattern_counts.items())),
         "attribute_counts": dict(sorted(attribute_counts.items())),
         "stack_depth_distribution": dict(sorted(stack_depth_distribution.items())),
-        "score_tier_distribution": dict(sorted(score_tier_distribution.items())),
         "deal_path_distribution": dict(sorted(deal_path_distribution.items())),
         "records": rows,
     }

@@ -786,8 +786,8 @@ def main() -> int:
     payload = result["payload"]
     print(f"Wrote {payload_path}")
     print(f"  lead_total:               {payload['lead_total']}")
+    print(f"  new_lead_count:           {payload.get('new_lead_count', 0)}")
     print(f"  §20 verdict:              {result['semantic_verdict']}")
-    print(f"  score_tier_distribution:  {payload['score_tier_distribution']}")
     print(f"  deal_path_distribution:   {payload['deal_path_distribution']}")
     print(f"  pattern_counts:           {payload['pattern_counts']}")
     print(f"  attribute_counts:         {payload['attribute_counts']}")

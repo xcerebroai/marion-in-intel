@@ -365,33 +365,27 @@ body {
 
 /* score badge */
 .score-badge {
+  display: none; /* removed — keeping class to avoid JS errors */
+}
+
+/* NEW badge */
+.new-badge {
   display: inline-flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #d2f4ea;
+  color: #1a7f64;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  border: 1px solid #a8e6d0;
+  white-space: nowrap;
+}
+.new-badge-empty {
+  display: inline-block;
   width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  font-weight: 700;
-  border: 2px solid transparent;
-  line-height: 1;
 }
-.score-badge .score-num {
-  font-size: 15px;
-  font-variant-numeric: tabular-nums;
-}
-.score-badge .score-tier {
-  font-size: 8px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  opacity: 0.8;
-}
-.score-badge[data-tier="Hot"]     { background: var(--hot-bg);     border-color: var(--hot-border);     color: var(--hot); }
-.score-badge[data-tier="Strong"]  { background: var(--strong-bg);  border-color: var(--strong-border);  color: var(--strong); }
-.score-badge[data-tier="Workable"]{ background: var(--workable-bg);border-color: var(--workable-border);color: var(--workable); }
-.score-badge[data-tier="Low"]     { background: var(--low-bg);     border-color: var(--low-border);     color: var(--low); }
-.score-badge[data-tier="Archive"] { background: var(--archive-bg); border-color: #c8cdd3;               color: var(--archive); }
 
 /* address cell */
 .cell-address { font-weight: 500; color: #1f2328; }

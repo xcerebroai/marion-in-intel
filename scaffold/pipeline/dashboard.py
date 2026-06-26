@@ -48,17 +48,13 @@ def project_lead(lead: dict, parcel: dict) -> dict:
             ]
         ),
         "display_owner": parcel.get("owner_name") or "Unknown",
-        "display_score": lead["score"],
-        "display_tier": lead.get("tier") or "",
-        # display_patterns drives the dashboard pattern chips. Falls back to
-        # the stack-contributing patterns when no collapse occurred.
+        # display_patterns drives the dashboard pattern chips.
         "display_patterns": lead.get("display_patterns") or lead.get("patterns", []),
         "stack_contrib_patterns": lead.get("patterns", []),
         "display_pattern_set": lead.get("pattern_set", []),
         "display_attributes": lead.get("attributes", []),
         "display_deal_paths": [dp["path"] for dp in lead.get("deal_paths", [])],
         "display_deal_path_details": lead.get("deal_paths", []),
-        "display_title_complexity_tier": lead.get("title_complexity_tier", ""),
         "display_lead_status": lead.get("lead_status", "STACKED_LEAD"),
         "display_assessed_value": parcel.get("assessed_value"),
         "display_last_sale_price": parcel.get("last_sale_price"),
@@ -66,13 +62,14 @@ def project_lead(lead: dict, parcel: dict) -> dict:
         "display_year_built": parcel.get("year_built"),
         "display_match_confidence": lead.get("match_confidence", 0),
         "stack_depth": lead.get("stack_depth", 0),
-        "score_reasons": lead.get("score_reasons", []),
         "evidence_ids": lead.get("evidence_ids", []),
         "primary_source_urls": sorted(
             {url for url in lead.get("source_urls", []) if url}
         ),
         "primary_event_date": lead.get("primary_event_date"),
         "expected_sale_date": lead.get("expected_sale_date"),
+        "is_new": lead.get("is_new", False),
+        "first_seen_date": lead.get("first_seen_date", ""),
         "parcel_master_status": lead.get("parcel_master_status", ""),
         "parcel_master_status_note": lead.get("parcel_master_status_note", ""),
         "parcel_master_match_method": lead.get("parcel_master_match_method", ""),
@@ -112,10 +109,6 @@ def build_payload(
     for lead in leads:
         stack_depth_distribution[str(lead.get("stack_depth", 0))] += 1
 
-    score_tier_distribution = Counter()
-    for lead in leads:
-        score_tier_distribution[lead.get("tier", "Archive")] += 1
-
     deal_path_distribution = Counter()
     for lead in leads:
         for dp in lead.get("deal_paths", []):
@@ -129,12 +122,12 @@ def build_payload(
         "state": state,
         "deployment": deployment or {},
         "lead_total": len(leads),
+        "new_lead_count": sum(1 for lead in leads if lead.get("is_new")),
         "total_signals_active": sum(len(lead.get("_active_signals", [])) for lead in leads),
         "total_signals_suppressed": suppressed_count,
         "pattern_counts": dict(sorted(pattern_counts.items())),
         "attribute_counts": dict(sorted(attribute_counts.items())),
         "stack_depth_distribution": dict(sorted(stack_depth_distribution.items())),
-        "score_tier_distribution": dict(sorted(score_tier_distribution.items())),
         "deal_path_distribution": dict(sorted(deal_path_distribution.items())),
         "quality_metrics": quality_metrics,
         "records": rows,
@@ -149,7 +142,6 @@ def assert_two_truths(payload: dict) -> None:
     rederived_patterns = Counter()
     rederived_attrs = Counter()
     rederived_deals = Counter()
-    rederived_tiers = Counter()
     rederived_depths = Counter()
     for row in payload["records"]:
         for p in row["display_patterns"]:
@@ -158,7 +150,6 @@ def assert_two_truths(payload: dict) -> None:
             rederived_attrs[a] += 1
         for dp in row["display_deal_paths"]:
             rederived_deals[dp] += 1
-        rederived_tiers[row["display_tier"]] += 1
         rederived_depths[str(row["stack_depth"])] += 1
 
     if dict(sorted(rederived_patterns.items())) != payload["pattern_counts"]:
@@ -172,10 +163,6 @@ def assert_two_truths(payload: dict) -> None:
     if dict(sorted(rederived_deals.items())) != payload["deal_path_distribution"]:
         raise AssertionError(
             "Two-Truths failure: deal_path_distribution header != rederived from records[]"
-        )
-    if dict(sorted(rederived_tiers.items())) != payload["score_tier_distribution"]:
-        raise AssertionError(
-            "Two-Truths failure: score_tier_distribution header != rederived from records[]"
         )
     if dict(sorted(rederived_depths.items())) != payload["stack_depth_distribution"]:
         raise AssertionError(

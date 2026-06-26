@@ -1,47 +1,30 @@
 """
-scoring_seam — v5.4.0 Session 9 (Cutover Part 1, Option Y).
+scoring_seam — pipeline seam (post-scoring-removal refactor).
 
 The seam between the staged engine's `matched_leads.json` and the retained
-scoring / classification / title-complexity / review / dashboard stages
-(score.py, classify.py, build_leads._title_complexity, review.py,
-dashboard.py).
-
-Contract: `docs/v5.4.0_session6_seam_design.md` §1-§4.
-Output contract: `scored_lead_record.schema.json` + the `ScoredLeadRecord`
-dataclass in `contracts/records.py`.
+classification / review / dashboard stages (classify.py, review.py,
+dashboard.py). Scoring has been removed — clients build their own ranking
+logic on top of the signal data.
 
 What the seam does — in order, per matched_lead:
 
-  1. Build a stack-shaped input for the retained `score.compute_score` /
-     `classify.classify_deal_paths` / `_title_complexity` from
+  1. Build a stack-shaped input for `classify.classify_deal_paths` from
      `matched_lead.signals[]`. The matched_lead carries §18 aggregated
      SignalGroups (lowercased registry `canonical_doc_type`, plus a `count`
-     and dated range); scoring expects raw normalized-signal dicts with
-     UPPERCASE `normalized_doc_type` and a `pattern` field. The seam:
-       - lowercased canonical_doc_type → UPPERCASE registry key via
-         doc_type_bridge.monolith_to_registry's inverse (just .upper(); the
-         registry namespace is the same set);
-       - lookup of `lead_pattern` from canonical_doc_types.json's
-         CANONICAL[upper];
-       - lookup of `document_priority` from CANONICAL;
-       - one stack entry per signal group `count` occurrence — so duplicate
-         same-pattern instruments earn the §18.E stack-depth bonus the
-         monolith would have computed (G3).
+     and dated range). The seam:
+       - lowercased canonical_doc_type → UPPERCASE registry key;
+       - lookup of `lead_pattern` from canonical_doc_types.json's CANONICAL;
+       - one stack entry per signal group `count` occurrence.
   2. Optionally attach parcel-master enrichment (R3(iii)). When the caller
      supplies an `enrichment_provider(parcel_id)` that returns a parcel-master
-     dict, attributes are derived via the retained `normalize.derive_attributes`
-     and the parcel-display snapshot is stamped on the scored_lead. When no
-     enrichment is provided (the synthetic / staged-only path), attributes is
-     empty, `parcel_display` is None, and `enrichment_status = "UNENRICHED"`.
-     Scoring runs either way; a UNENRICHED lead is still scored, still review-
-     evaluated, still reaches the dashboard.
-  3. Call `score.compute_score`, `classify.classify_deal_paths`, and
-     `_title_complexity`.
-  4. Run `review.evaluate_review_queue` against the synthesized lead-shaped
-     dict so the post-scoring review_flags / lead_status transition is
-     consistent with the monolith's behavior.
-  5. Emit a `scored_lead_record` dict (schema-validated; the seam fails loud
-     on a non-conforming record).
+     dict, attributes are derived via `normalize.derive_attributes` and the
+     parcel-display snapshot is stamped on the processed lead. When no
+     enrichment is provided, attributes is empty, `parcel_display` is None,
+     and `enrichment_status = "UNENRICHED"`. A lead is never dropped for
+     missing enrichment.
+  3. Call `classify.classify_deal_paths`.
+  4. Run `review.evaluate_review_queue` for review_flags / lead_status.
+  5. Emit a `processed_lead_record` dict (schema-validated).
 
 This module is universal framework code: no county / state / vendor literal
 appears here. The county-agnostic regression scanner enforces that.
@@ -66,7 +49,6 @@ from scaffold.pipeline.doc_type_bridge import (
 )
 from scaffold.pipeline.normalize import CANONICAL, derive_attributes
 from scaffold.pipeline.review import evaluate_review_queue
-from scaffold.pipeline.score import compute_score
 from scaffold.pipeline.state_profile import resolve_lis_pendens_pattern
 
 
@@ -142,63 +124,8 @@ def pattern_for_canonical_doc_type(
 
 
 # ---------------------------------------------------------------------------
-# Title complexity — extracted verbatim from build_leads._title_complexity so
-# the seam carries it without importing build_leads (which still wires the
-# legacy monolith path). Same rule, same thresholds, same tier labels.
-# ---------------------------------------------------------------------------
-
-def title_complexity(stack: dict) -> dict:
-    """Title-complexity score per build_leads._title_complexity (extracted into
-    the seam in Session 9). Returns {score, tier, contributors}."""
-    score = 0
-    contribs: list = []
-    active = stack["active_signals"]
-    has_lis_pendens = any(
-        (s.get("normalized_doc_type") or "") == "LIS_PENDENS" for s in active
-    )
-    has_partition = any(
-        (s.get("normalized_doc_type") or "") == "PARTITION_ACTION" for s in active
-    )
-    has_aoh = any(
-        (s.get("normalized_doc_type") or "") == "AFFIDAVIT_OF_HEIRSHIP" for s in active
-    )
-    lien_count = sum(1 for s in active if (s.get("pattern") or "") == "lien")
-    has_quitclaim = any(
-        (s.get("normalized_doc_type") or "") == "QUITCLAIM_DEED" for s in active
-    )
-
-    if has_aoh:
-        score += 15
-        contribs.append({"factor": "affidavit_of_heirship_no_supporting_probate", "weight": 15})
-    if has_quitclaim:
-        score += 10
-        contribs.append({"factor": "intra_family_quitclaim", "weight": 10})
-    if lien_count >= 2:
-        score += 15
-        contribs.append({"factor": "multiple_concurrent_liens", "weight": 15})
-    if has_lis_pendens:
-        score += 5
-        contribs.append({"factor": "active_lis_pendens", "weight": 5})
-    if has_partition:
-        score += 20
-        contribs.append({"factor": "partition_action_pending", "weight": 20})
-
-    if score >= 60:
-        tier = "Heavy curative"
-    elif score >= 30:
-        tier = "Moderate curative"
-    elif score >= 10:
-        tier = "Light curative"
-    else:
-        tier = "None"
-    return {"score": score, "tier": tier, "contributors": contribs}
-
-
-# ---------------------------------------------------------------------------
 # matched_lead → stack adapter (G3 — aggregated groups vs raw signals).
 # ---------------------------------------------------------------------------
-
-_RECENCY_WINDOW_DAYS = 30
 
 
 def _parse_iso_date(s: Optional[str]) -> Optional[date]:
@@ -214,8 +141,7 @@ def adapt_matched_lead_to_stack(
     matched_lead: dict, *, as_of: date, lis_pendens_mode: Optional[str] = None
 ) -> dict:
     """Convert a matched_lead into a stack-shaped dict the retained
-    score.compute_score / classify.classify_deal_paths / title_complexity
-    helpers consume.
+    classify.classify_deal_paths helper consumes.
 
     Each `matched_lead.signals[]` entry is one §18 aggregated SignalGroup
     (canonical_doc_type lowercased, plus a `count` and dated range). The
@@ -232,8 +158,6 @@ def adapt_matched_lead_to_stack(
     signals = matched_lead.get("signals") or []
     active_signals: list[dict] = []
     pattern_seq: list[str] = []
-    recent_cutoff = as_of - timedelta(days=_RECENCY_WINDOW_DAYS)
-    recent_flag = False
 
     for group in signals:
         canonical = group.get("canonical_doc_type") or ""
@@ -243,15 +167,11 @@ def adapt_matched_lead_to_stack(
         )
         canonical_entry = CANONICAL.get(normalized or "", {})
         document_priority = canonical_entry.get("document_priority", 0)
-        latest = _parse_iso_date(group.get("latest_recorded_date"))
-        earliest = _parse_iso_date(group.get("earliest_recorded_date"))
         event_date = (group.get("latest_recorded_date")
                       or group.get("earliest_recorded_date"))
         count = int(group.get("count") or 1)
         if count < 1:
             count = 1
-        # §18.E legitimate-stacking — one stack entry per occurrence so
-        # `stack_depth` reflects duplicate-instrument severity (G3).
         for _ in range(count):
             sig = {
                 "signal_id": (
@@ -268,8 +188,6 @@ def adapt_matched_lead_to_stack(
                 "document_priority": document_priority,
                 "lifecycle_status": "ACTIVE",
                 "counts_in_stack": True,
-                # signal_type / source_url are dashboard-relevant; preserve
-                # them so dashboard.project_lead can still render chips.
                 "signal_type": group.get("signal_type"),
                 "evidence_ids": list(group.get("evidence_ids") or []),
                 "_aggregation_count": count,
@@ -278,13 +196,7 @@ def adapt_matched_lead_to_stack(
             active_signals.append(sig)
             if pattern:
                 pattern_seq.append(pattern)
-        if latest and latest >= recent_cutoff:
-            recent_flag = True
-        elif earliest and earliest >= recent_cutoff:
-            recent_flag = True
 
-    # Distinct patterns preserve order of first appearance — same rule as the
-    # monolith's stack.stack_signals.
     seen = set()
     pattern_set: list[str] = []
     for p in pattern_seq:
@@ -300,7 +212,6 @@ def adapt_matched_lead_to_stack(
         "stack_contrib_patterns": list(pattern_seq),
         "pattern_set": pattern_set,
         "stack_depth": len(pattern_seq),
-        "recent_flag": recent_flag,
         "amounts": [],
         "eviction_collapsed": False,
     }
@@ -373,17 +284,15 @@ def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
-def _scored_lead_id(matched_lead: dict, score: int,
-                    enrichment_status: str) -> str:
-    """Deterministic id from matched_lead.lead_id + score + enrichment_status.
-    Re-running the seam on the same inputs produces the same scored_lead_id."""
+def _processed_lead_id(matched_lead: dict, enrichment_status: str) -> str:
+    """Deterministic id from matched_lead.lead_id + enrichment_status."""
     digest = hashlib.sha1(
-        f"{matched_lead.get('lead_id')}|{score}|{enrichment_status}".encode("utf-8")
+        f"{matched_lead.get('lead_id')}|{enrichment_status}".encode("utf-8")
     ).hexdigest()
-    return f"scored_{digest[:16]}"
+    return f"processed_{digest[:16]}"
 
 
-def score_matched_lead(
+def process_matched_lead(
     matched_lead: dict,
     *,
     as_of: Optional[date] = None,
@@ -392,17 +301,17 @@ def score_matched_lead(
     multi_property_ids: Optional[set] = None,
     lis_pendens_mode: Optional[str] = None,
 ) -> dict:
-    """Seam — score one matched_lead and emit a scored_lead record.
+    """Seam — process one matched_lead and emit a processed_lead record.
+
+    Scoring has been removed. The seam attaches enrichment, derives
+    attributes, classifies deal paths, and evaluates review queue.
 
     The contract (R3(iii) enrichment-optional):
       - When `enrichment_provider` is None, OR the provider returns None for
-        this matched_lead's parcel_id, the scored_lead is UNENRICHED:
-        `attributes = []`, `parcel_display = None`, scoring runs on distress
-        signals alone. The lead is NOT dropped.
+        this matched_lead's parcel_id, the lead is UNENRICHED:
+        `attributes = []`, `parcel_display = None`. The lead is NOT dropped.
       - When the provider returns a parcel dict, attributes are derived via
-        `normalize.derive_attributes` (the retained framework rule) and
-        `parcel_display` is populated from the parcel-master fields the
-        dashboard needs.
+        `normalize.derive_attributes` and `parcel_display` is populated.
 
     The output is schema-validated; a non-conforming record raises ValueError.
     """
@@ -411,12 +320,11 @@ def score_matched_lead(
         matched_lead, as_of=as_of, lis_pendens_mode=lis_pendens_mode
     )
 
-    # Enrichment (R3 iii) — optional.
     parcel: Optional[dict] = None
     if enrichment_provider is not None:
         try:
             parcel = enrichment_provider(matched_lead.get("primary_parcel_id"))
-        except Exception:  # noqa: BLE001 — enrichment never blocks scoring
+        except Exception:  # noqa: BLE001
             parcel = None
 
     if parcel:
@@ -434,23 +342,13 @@ def score_matched_lead(
         enrichment_status = "UNENRICHED"
         parcel_display = None
 
-    score_blob = compute_score(stack, attributes)
     deal_paths = classify_deal_paths(stack, attributes)
-    title = title_complexity(stack)
 
-    # Hybrid-state lis pendens: a LIS_PENDENS signal whose state profile
-    # resolved to None (e.g. MD) has no pattern.  Detect this and seed a
-    # review flag so ALL such leads reach REVIEW_REQUIRED without the
-    # commercial/review entity split.
     _has_unresolved_lp = any(
         s.get("normalized_doc_type") == "LIS_PENDENS" and s.get("pattern") is None
         for s in stack["active_signals"]
     )
 
-    # Run the retained review-queue evaluator over a lead-shaped dict so the
-    # review-flag / lead_status transition matches the monolith's behavior.
-    # The transient dict mirrors the monolith's `build_lead_from_stack`
-    # output the review-evaluator was designed against.
     primary_event = max(
         (s.get("event_date") for s in stack["active_signals"] if s.get("event_date")),
         default=None,
@@ -462,42 +360,29 @@ def score_matched_lead(
         "lead_id": matched_lead.get("lead_id"),
         "primary_parcel_id": matched_lead.get("primary_parcel_id"),
         "patterns": stack["patterns"],
-        "match_confidence": 100,  # synthetic/no-matcher default
-        "title_complexity_score": title["score"],
+        "match_confidence": 100,
+        "title_complexity_score": 0,
         "doc_type_normalization": {
             "doc_type_review_required": False,
         },
-        # Honor the matched_lead's REVIEW_REQUIRED routing reason, if any.
         "review_flags": _seed_flags,
-        # Carried so the review-queue evaluator can enforce lis_pendens
-        # routing (entity split) on non-judicial lis pendens.
         "parcel_display": parcel_display,
         "owner_name": matched_lead.get("owner_name", ""),
         "owner_type": matched_lead.get("owner_type", "UNKNOWN"),
     }
     transient = evaluate_review_queue(transient, now=_now_iso())
 
-    score_value = int(score_blob["score"])
     record = {
-        "scored_lead_id": _scored_lead_id(
-            matched_lead, score_value, enrichment_status
-        ),
+        "scored_lead_id": _processed_lead_id(matched_lead, enrichment_status),
         "lead_id": matched_lead.get("lead_id"),
         "primary_parcel_id": matched_lead.get("primary_parcel_id"),
         "owner_name": matched_lead.get("owner_name"),
         "owner_type": matched_lead.get("owner_type"),
-        "score": score_value,
-        "tier": score_blob["tier"],
-        "score_reasons": list(score_blob.get("score_reasons", [])),
         "deal_paths": list(deal_paths),
-        "title_complexity_score": title["score"],
-        "title_complexity_tier": title["tier"],
-        "title_complexity_contributors": title["contributors"],
         "pattern_set": list(stack["pattern_set"]),
         "patterns": list(stack["patterns"]),
         "display_patterns": list(stack["patterns"]),
         "stack_depth": stack["stack_depth"],
-        "recent_flag": bool(stack["recent_flag"]),
         "attributes": list(attributes),
         "review_flags": list(transient.get("review_flags", [])),
         "lead_status": transient.get("lead_status"),
@@ -589,7 +474,7 @@ def gate_on_semantic_verdict(
     return verdict
 
 
-def score_matched_leads(
+def process_matched_leads(
     matched_leads: list,
     *,
     as_of: Optional[date] = None,
@@ -598,11 +483,11 @@ def score_matched_leads(
     multi_property_ids: Optional[set] = None,
     lis_pendens_mode: Optional[str] = None,
 ) -> list:
-    """Batch helper — call score_matched_lead over every matched_lead in
-    deterministic order (sorted by lead_id), returning the scored_lead list."""
+    """Batch helper — call process_matched_lead over every matched_lead in
+    deterministic order (sorted by lead_id), returning the processed lead list."""
     ordered = sorted(matched_leads, key=lambda m: m.get("lead_id") or "")
     return [
-        score_matched_lead(
+        process_matched_lead(
             m,
             as_of=as_of,
             enrichment_provider=enrichment_provider,
@@ -612,3 +497,8 @@ def score_matched_leads(
         )
         for m in ordered
     ]
+
+
+# Keep backwards-compatible alias so existing call sites don't break immediately.
+score_matched_leads = process_matched_leads
+score_matched_lead = process_matched_lead

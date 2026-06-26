@@ -58,14 +58,13 @@
   const state = {
     payload: null,
     filters: {
-      tier: new Set(),
       pattern: new Set(),
       attribute: new Set(),
       deal_path: new Set(),
       stack_depth: new Set(),
     },
-    sort: { key: "display_score", dir: -1 },
-    mode: "client", // "client" or "operator"
+    sort: { key: "primary_event_date", dir: -1 },
+    mode: "client",
     precannedView: null,
   };
 
@@ -174,8 +173,6 @@
 
   function applyFilters(rows) {
     let out = rows;
-    if (state.filters.tier.size)
-      out = out.filter((r) => state.filters.tier.has(r.display_tier));
     if (state.filters.pattern.size)
       out = out.filter((r) =>
         r.display_patterns.some((p) => state.filters.pattern.has(p))
@@ -216,11 +213,15 @@
 
   function renderTiles(filteredRows) {
     const total = filteredRows.length;
-    const byTier = { Hot: 0, Strong: 0, Workable: 0, Low: 0, Archive: 0 };
-    for (const r of filteredRows) byTier[r.display_tier] = (byTier[r.display_tier] || 0) + 1;
+    const newToday = filteredRows.filter((r) => r.is_new).length;
+    const sourceIds = new Set(
+      filteredRows.flatMap((r) => r.display_patterns || [])
+    );
+    const payloadNew = state.payload.new_lead_count || 0;
     const tiles = [
       { label: "Total Leads", value: total, tier: "", sub: "filtered" },
-      ...Object.entries(byTier).map(([tier, value]) => ({ label: tier, value, tier, sub: "tier" })),
+      { label: "New Today", value: payloadNew, tier: "new", sub: "since last run" },
+      { label: "Enriched", value: filteredRows.filter((r) => r.enrichment_status === "ENRICHED").length, tier: "", sub: "with parcel data" },
     ];
     document.getElementById("stat-tiles").innerHTML = tiles
       .map(
@@ -242,15 +243,7 @@
   }
 
   function renderChips() {
-    const records = state.payload.records;
-
     const axes = [
-      {
-        elId: "chips-tier",
-        axis: "tier",
-        keys: Object.keys(state.payload.score_tier_distribution || {}),
-        countFn: (k) => state.payload.score_tier_distribution[k] || 0,
-      },
       {
         elId: "chips-pattern",
         axis: "pattern",
@@ -328,11 +321,10 @@
         const isReview = r.display_lead_status === "REVIEW_REQUIRED";
         const rowCls = isReview ? "row-review" : "";
 
-        // Score badge
-        const scoreBadge = `<div class="score-badge" data-tier="${escapeAttr(r.display_tier)}">
-          <span class="score-num">${r.display_score}</span>
-          <span class="score-tier">${escapeHtml(r.display_tier)}</span>
-        </div>`;
+        // NEW badge
+        const newBadge = r.is_new
+          ? `<span class="new-badge">NEW</span>`
+          : `<span class="new-badge-empty"></span>`;
 
         // Address cell
         const heirBadge = r.display_patterns.includes("foreclosure") && r.display_patterns.includes("estate")
@@ -382,7 +374,7 @@
         const eventDate = r.expected_sale_date || r.primary_event_date || "";
 
         return `<tr class="${rowCls}" data-lead-id="${escapeAttr(r.lead_id)}" data-testid="lead-row">
-          <td>${scoreBadge}</td>
+          <td>${newBadge}</td>
           <td>${addrLine}${parcelLine}${badgeRow}</td>
           <td><div class="cell-owner" title="${escapeAttr(r.display_owner || "")}">${escapeHtml(r.display_owner || "")}</div></td>
           <td>${signalsCell}</td>

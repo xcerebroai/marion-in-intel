@@ -1,9 +1,9 @@
 {
-  "run_id": "run_b9b60678508a4443892a2eb88c498bbe",
+  "run_id": "run_ecacc34128cf4e1786ae0980cb24391d",
   "county": "Marion County",
   "state": "IN",
-  "started_at": "2026-06-26T21:18:26Z",
-  "finished_at": "2026-06-26T21:18:26Z",
+  "started_at": "2026-06-26T21:55:02Z",
+  "finished_at": "2026-06-26T21:55:03Z",
   "sources_attempted": 3,
   "records_collected": 254,
   "records_normalized": 144,
