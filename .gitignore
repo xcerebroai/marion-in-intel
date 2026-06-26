@@ -42,8 +42,8 @@ runs/*/.cache/
 /.phase*_result.json
 /.phase*_err.log
 
-# Lead registry — local run-to-run persistence, never committed
-data/seen_leads.json
+# Lead registry — committed so "New Today" persists across GitHub Actions
+# runs (the daily workflow reads it, updates it, and commits it back).
 
 # Pipeline intermediate files — per-source leads_base files and run-specific
 # manifests contain real party names and are never committed.

@@ -67,7 +67,7 @@ jobs:
             --approve-needs-review
 
       # ── Step 5: Commit dashboard data back to repo ─────────────────────────
-      - name: Commit dashboard.json to repo
+      - name: Commit dashboard data and registry back to repo
         run: |
           # Copy pipeline output into the dashboard's own data/ dir so
           # GitHub Pages (served from /dashboard) can fetch it as ./data/dashboard.json
@@ -76,6 +76,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add dashboard/data/dashboard.json
+          git add data/seen_leads.json
           git diff --cached --quiet && echo "No changes to commit" || \
             git commit -m "chore: daily dashboard refresh $(date -u +%Y-%m-%d)"
           git push
