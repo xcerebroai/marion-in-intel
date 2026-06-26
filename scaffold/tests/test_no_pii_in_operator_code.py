@@ -82,6 +82,27 @@ EXCLUDED_DIR_COMPONENTS = {
     "raw", "logs", "tmp", ".cache", "evidence",
 }
 
+# Pipeline intermediate files written to data/ — gitignored, contain real
+# owner names from live pulls. Excluded from PII scan because they never
+# reach git history (covered by .gitignore), but the test runs on the
+# working tree so we must exclude them explicitly.
+_EXCLUDED_DATA_SUFFIXES = (
+    "_leads_base.json",
+    "_leads_base.jsonl",
+    "_synthetic.json",
+    "_synthetic.jsonl",
+)
+
+# Pipeline outputs written to data/ root — gitignored, contain real owner
+# names from live pulls. Listed by filename since they don't share a suffix.
+_EXCLUDED_DATA_FILENAMES = {
+    "matched_leads.json",
+    "scored_leads.json",
+    "evidence_ledger.json",
+    "dashboard.json",
+    "source_heartbeat.json",
+}
+
 # ---------------------------------------------------------------------------
 # Synthetic-marker allowlist. A name/address field value matching ANY of these
 # (case-insensitive) is treated as fake and NOT flagged. Calibrated against the
@@ -182,6 +203,13 @@ def is_in_scope(rel_path: str) -> bool:
     if not rel_path.startswith(IN_SCOPE_PREFIXES):
         return False
     if not any(rel_path.endswith(s) for s in SCANNED_SUFFIXES):
+        return False
+    # Exclude gitignored pipeline intermediates that live in data/ but contain
+    # real owner names from live pulls (leads_base files, synthetic run files).
+    if any(rel_path.endswith(sfx) for sfx in _EXCLUDED_DATA_SUFFIXES):
+        return False
+    filename = rel_path.rsplit("/", 1)[-1]
+    if filename in _EXCLUDED_DATA_FILENAMES:
         return False
     return True
 

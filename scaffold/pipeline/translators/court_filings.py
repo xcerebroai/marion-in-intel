@@ -187,8 +187,10 @@ def translate_tyler_odyssey_court(
             "doc_number":             case_number,
             "primary_parcel_id":      parcel_id,
             "filing_date":            filing_date or None,
-            "grantor":                defendant or None,   # borrower / debtor
-            "grantee":                plaintiff or None,   # lender / creditor
+            "defendant":              defendant or None,   # borrower / debtor (DF role for §17 debtor engine)
+            "plaintiff":              plaintiff or None,   # lender / creditor (PL role)
+            "grantor":                defendant or None,   # legacy alias — keep for downstream compat
+            "grantee":                plaintiff or None,   # legacy alias
             "case_number":            case_number,         # explicit; used for cross-source dedup
             "case_type_code":         case_type_code,
             "case_status":            case_status or None,

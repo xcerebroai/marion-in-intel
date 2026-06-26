@@ -340,7 +340,7 @@
       "public_access_status": "CAPTCHA_PROTECTED",
       "document_access_status": "DOCUMENTS_PAID_SUBSCRIPTION_REQUIRED",
       "official_entity": "Marion County Recorder's Office",
-      "portal_type": "Land records index — Fidlar Breeze Angular SPA + reCAPTCHA v3",
+      "portal_type": "Land records index \u2014 Fidlar Breeze Angular SPA + reCAPTCHA v3",
       "portal_family": "Fidlar",
       "fingerprint_confidence": "HIGH",
       "fingerprint_summary": "Live bypass probe confirmed Angular SPA + Breeze POST API + reCAPTCHA v3 (2026-06-25). Date-range sweep confirmed. 401 without token. 200 with Playwright-minted token.",
@@ -378,7 +378,7 @@
         "Document images require per-copy fee (Laredo subscription). Index metadata is free.",
         "NO wildcard search. NO parcel-number search. Date-range sweep is the only bulk-pull path.",
         "Documents available 5 days after recording per IC 36-1-8.5.",
-        "reCAPTCHA v3 token required for every POST — must use Playwright."
+        "reCAPTCHA v3 token required for every POST \u2014 must use Playwright."
       ],
       "open_questions": [],
       "last_verified_at": "2026-06-25",
@@ -715,14 +715,7 @@
         "update_cadence": "nightly",
         "bulk_csv_available": true
       },
-      "field_map": {
-        "parcel_id": "PARCEL_ID",
-        "owner_name": "OWNER",
-        "situs_address": "SITUS_ADDRESS",
-        "assessed_value": "AV_TOTAL",
-        "city": "CITY",
-        "zip": "ZIP"
-      },
+      "field_map": {},
       "parcel_id_prefix": "MARIN-PAR-",
       "refresh_cadence": "daily",
       "ttl_days": 14,
@@ -789,7 +782,7 @@
     "retain_source_runs_days": 30
   },
   "dashboard": {
-    "title": "Marion County, IN — Lead Intelligence",
+    "title": "Marion County, IN \u2014 Lead Intelligence",
     "subtitle": "Indianapolis / Marion County Consolidated Government",
     "primary_color": "#002664",
     "accent_color": "#C8102E",
@@ -840,7 +833,7 @@
     "production_verification_status": "NOT_RUN"
   },
   "build_verdict": "READY_TO_BUILD",
-  "build_verdict_reason": "All 6 primary lead sources are accessible (OPEN_PUBLIC or SEARCH_ONLY_PUBLIC). 20 of 27 lead types have LIVE_SOURCE_FOUND status. No county-level technical blockers. One federal source (PACER/Bankruptcy) requires operator decision but does not block the county build. Phase 0.5 SKIPPED — NO BLOCKERS.",
+  "build_verdict_reason": "All 6 primary lead sources are accessible (OPEN_PUBLIC or SEARCH_ONLY_PUBLIC). 20 of 27 lead types have LIVE_SOURCE_FOUND status. No county-level technical blockers. One federal source (PACER/Bankruptcy) requires operator decision but does not block the county build. Phase 0.5 SKIPPED \u2014 NO BLOCKERS.",
   "build_verdict_at": "2026-06-25T19:30:00Z",
   "auto_resolve_status": "NOT_ATTEMPTED",
   "final_resolution_status": "RESOLVED",
@@ -1837,7 +1830,7 @@
               "authority": "U.S. Bankruptcy Court, Southern District of Indiana; federal court system",
               "lead_type_relevance": "Bankruptcy filings for Marion County debtors",
               "access": "PACER account required; $0.10/page or quarterly minimum fee",
-              "extractability": "BLOCKED — requires paid account; no public alternative",
+              "extractability": "BLOCKED \u2014 requires paid account; no public alternative",
               "refresh_provenance": "Real-time case filings if access obtained"
             },
             "sample_record_path_confirmed": false,
@@ -1899,27 +1892,27 @@
       "parcel_master (open_indy_parcels)"
     ],
     "blocked_sources": [
-      "Bankruptcy — PACER federal court (PAID_SUBSCRIPTION_REQUIRED)"
+      "Bankruptcy \u2014 PACER federal court (PAID_SUBSCRIPTION_REQUIRED)"
     ],
     "limited_coverage_sources": [
-      "Divorce — MyCase DN (low lead value; no property address in caption)",
-      "Surplus — GovEase post-sale (limited surplus amount data)"
+      "Divorce \u2014 MyCase DN (low lead value; no property address in caption)",
+      "Surplus \u2014 GovEase post-sale (limited surplus amount data)"
     ],
     "not_found_lead_types": [],
     "operator_review_required": [
-      "PACER/Bankruptcy — operator must decide whether to subscribe ($0.10/page)"
+      "PACER/Bankruptcy \u2014 operator must decide whether to subscribe ($0.10/page)"
     ]
   },
   "api_discovery": {
     "searched": [
-      "Marion County Recorder (Fidlar) — no public API found",
-      "Indiana MyCase (Tyler Odyssey) — no public REST API found",
-      "GovEase — no public API found",
-      "Marion County Treasurer (indy.gov) — no public API found",
-      "Accela — no public API found (ViewState ASP.NET)",
-      "Open Indy Data Portal (data.indy.gov) — ArcGIS REST API found",
-      "Marion County GIS Open Data Portal — ArcGIS REST API found",
-      "Indiana Gateway / DLGF — no documented public API found"
+      "Marion County Recorder (Fidlar) \u2014 no public API found",
+      "Indiana MyCase (Tyler Odyssey) \u2014 no public REST API found",
+      "GovEase \u2014 no public API found",
+      "Marion County Treasurer (indy.gov) \u2014 no public API found",
+      "Accela \u2014 no public API found (ViewState ASP.NET)",
+      "Open Indy Data Portal (data.indy.gov) \u2014 ArcGIS REST API found",
+      "Marion County GIS Open Data Portal \u2014 ArcGIS REST API found",
+      "Indiana Gateway / DLGF \u2014 no documented public API found"
     ],
     "found": [
       {
@@ -1929,7 +1922,7 @@
         "auth_required": false,
         "rate_limited": false,
         "source_role": "PRIMARY_EVENT_SOURCE",
-        "notes": "Open Indy Data Portal — Code Enforcement bulk dataset. Documented ArcGIS Feature Service REST API."
+        "notes": "Open Indy Data Portal \u2014 Code Enforcement bulk dataset. Documented ArcGIS Feature Service REST API."
       },
       {
         "api_url": "https://services.arcgis.com/XSbbBDjSN8gRQUAl/arcgis/rest/services/Parcels/FeatureServer/0/query",
@@ -1938,7 +1931,7 @@
         "auth_required": false,
         "rate_limited": false,
         "source_role": "ENRICHMENT_SOURCE",
-        "notes": "Open Indy Data Portal — 348k+ parcel records. Nightly update. Bulk CSV also available."
+        "notes": "Open Indy Data Portal \u2014 348k+ parcel records. Nightly update. Bulk CSV also available."
       },
       {
         "api_url": "https://gis-marioncounty.opendata.arcgis.com/api/feed/dcat-ap/2.0.0.json",
@@ -1947,14 +1940,14 @@
         "auth_required": false,
         "rate_limited": false,
         "source_role": "ENRICHMENT_SOURCE",
-        "notes": "Marion County GIS Open Data Portal — spatial layers including parcel polygons, zoning."
+        "notes": "Marion County GIS Open Data Portal \u2014 spatial layers including parcel polygons, zoning."
       }
     ],
     "search_notes": "No public REST API found for Fidlar, MyCase, GovEase, Marion County Treasurer, or Accela. Three documented ArcGIS APIs found (Open Indy Code Enforcement, Open Indy Parcels, Marion County GIS Open Data)."
   },
   "enrichment_index_strategy": {
     "bulk_index_available": true,
-    "bulk_index_source": "open_indy_parcels — 348,272+ parcel records via ArcGIS REST API; nightly update; bulk CSV download also available",
+    "bulk_index_source": "open_indy_parcels \u2014 348,272+ parcel records via ArcGIS REST API; nightly update; bulk CSV download also available",
     "per_record_query_required": false,
     "per_record_query_cost_estimate": "Available via Marion County Assessor IndyGIS (maps.indy.gov/AssessorPropertyCards/) at no cost per-record",
     "recommended_strategy": "Use Open Indy Data Portal parcel bulk dataset as the primary enrichment index. Load nightly. Per-record Assessor lookups as fallback for records not found in bulk dataset.",

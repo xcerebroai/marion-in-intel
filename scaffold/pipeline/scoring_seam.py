@@ -335,7 +335,7 @@ def _parcel_display_from(parcel: dict) -> Optional[dict]:
         "last_sale_price": parcel.get("last_sale_price"),
         "last_sale_date": parcel.get("last_sale_date"),
         "year_built": parcel.get("year_built"),
-        "property_class": parcel.get("property_class"),
+        "property_class": parcel.get("property_class") or parcel.get("property_use"),
     }
 
 

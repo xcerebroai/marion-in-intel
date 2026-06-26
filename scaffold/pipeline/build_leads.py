@@ -655,6 +655,14 @@ def main() -> int:
                 enriched_signals, bcad_records,
             )
             placeholders_by_id = {p["parcel_id"]: p for p in all_parcels}
+            # Direct parcel_id index into enrichment records — used as a
+            # fallback when address-based matching returns no candidate (e.g.
+            # when source records carry no situs address, only party names).
+            enrichment_by_id = {
+                p.get("parcel_id"): p
+                for p in bcad_records
+                if p.get("parcel_id")
+            }
             new_parcels_by_id: dict = {}
             for enr, sig in zip(enriched_signals, all_signals):
                 m = match_meta.get(enr["signal_id"], {})
@@ -665,7 +673,14 @@ def main() -> int:
                     new_parcels_by_id[primary_pid] = matched[primary_pid]
                 else:
                     placeholder_pid = sig.get("parcel_id")
-                    if placeholder_pid in placeholders_by_id:
+                    # Prefer direct enrichment record over empty placeholder
+                    # when the owner-name adapter keyed its record to this
+                    # exact placeholder parcel_id.
+                    if placeholder_pid in enrichment_by_id:
+                        new_parcels_by_id[placeholder_pid] = (
+                            enrichment_by_id[placeholder_pid]
+                        )
+                    elif placeholder_pid in placeholders_by_id:
                         new_parcels_by_id[placeholder_pid] = (
                             placeholders_by_id[placeholder_pid]
                         )
