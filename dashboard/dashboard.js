@@ -23,7 +23,12 @@
   // Data loading
   // -------------------------------------------------------------------
 
-  const DATA_PATHS_PROD = ["./data/leads.json", "../data/leads.json"];
+  const DATA_PATHS_PROD = [
+    "./data/dashboard.json",
+    "../data/dashboard.json",
+    "./data/leads.json",
+    "../data/leads.json",
+  ];
   const DATA_PATHS_SYNTH = [
     "./data/leads_synthetic.json",
     "../data/leads_synthetic.json",
@@ -520,7 +525,7 @@
   }
 
   // Expose for Playwright / headless verification.
-  window.__bexarDashboard = {
+  window.__xcerebroDashboard = {
     getState: () => state,
     applyFilters,
     exportCsv,
