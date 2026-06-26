@@ -77,11 +77,82 @@ def _load_jsonl(path: Path) -> list[dict]:
     return records
 
 
+import re as _re
+
+# Patterns that identify institutional/corporate grantors — these are lenders,
+# servicers, banks. Querying them as property owners against the assessor
+# FULLOWNERNAME layer returns zero or garbage results. Skip entirely.
+_INSTITUTIONAL_RE = _re.compile(
+    r"\b(BANK|MORTGAGE|LENDING|FINANCIAL|FUNDING|SERVICING|TRUST\b|LLC|L\.L\.C|"
+    r"INC\b|CORP\b|CREDIT UNION|FEDERAL|NATIONAL ASSOCIATION|N\.A\b|FSB\b|"
+    r"ASSOCIATION|AUTHORITY|DEPARTMENT|DISTRICT|COUNTY|CITY OF|STATE OF|"
+    r"HOLDINGS|INVESTMENT|PROPERTIES|REALTY|CAPITAL|PARTNERS|GROUP)\b",
+    _re.IGNORECASE,
+)
+
+# Suffixes to strip before querying — noise that prevents exact matches.
+_NOISE_RE = _re.compile(
+    r"\s*,?\s*\b(ET AL|INDIVIDUALLY AND.*|AS TRUSTEE.*|AS PR.*|AS MANAGING.*|"
+    r"AS NOMINEE.*|DBA\b.*|AKA\b.*|A/K/A.*|D/B/A.*|PERSONAL REPRESENTATIVE.*|"
+    r"RVOC LIVING TRUST.*)\b.*$",
+    _re.IGNORECASE,
+)
+
+_NAME_SUFFIXES_RE = _re.compile(
+    r"\s*,?\s*\b(JR|SR|II|III|IV|ESQ|PHD|MD)\b\.?\s*$",
+    _re.IGNORECASE,
+)
+
+
+def _clean_name(name: str) -> str:
+    """Strip noise suffixes and excess whitespace from a raw party name."""
+    name = _NOISE_RE.sub("", name).strip().strip(",").strip()
+    name = _NAME_SUFFIXES_RE.sub("", name).strip()
+    return name
+
+
+def _is_institutional(name: str) -> bool:
+    """True if the name looks like a bank, lender, LLC, government body, etc."""
+    return bool(_INSTITUTIONAL_RE.search(name))
+
+
 def _first_defendant(defendant: str) -> str:
-    """Extract first named party before the first comma or ' AND ' (case-insensitive)."""
-    import re
-    parts = re.split(r",|\bAND\b", defendant, maxsplit=1, flags=re.IGNORECASE)
-    return parts[0].strip() if parts else defendant.strip()
+    """Extract first individual party from a multi-party defendant string.
+
+    Court MF defendant strings like:
+      'STACEY L STALCUP, INDIVIDUALLY AND PR ..., U.S. BANK ...'
+    We want 'STACEY L STALCUP' — the first name before the first comma.
+    """
+    parts = _re.split(r",|\bAND\b", defendant, maxsplit=1, flags=_re.IGNORECASE)
+    return _clean_name(parts[0]) if parts else _clean_name(defendant)
+
+
+def _last_name(full_name: str) -> str:
+    """Extract the last token from a 'FIRST [MI] LAST' style name.
+
+    Court names are FIRST LAST order; assessor stores LAST FIRST.
+    We use just the last name for a broader LIKE query when full-name fails.
+    Returns empty string when name is too short to be useful (< 4 chars).
+    """
+    tokens = full_name.strip().split()
+    if not tokens:
+        return ""
+    candidate = tokens[-1]
+    return candidate if len(candidate) >= 4 else ""
+
+
+def _recorder_owner(party1: str) -> str:
+    """Return the owner query string for a recorder party1, or '' to skip.
+
+    Recorder Party1 is the grantor — for mortgage releases / deeds, this is
+    usually the lender (bank, credit union) NOT the property owner. For lien
+    types (hospital liens, HOA liens) Party1 may be the lienholder.
+    Return empty string for institutional names; return cleaned name otherwise.
+    """
+    cleaned = _clean_name(party1)
+    if _is_institutional(cleaned):
+        return ""
+    return cleaned
 
 
 # ---------------------------------------------------------------------------
@@ -199,28 +270,32 @@ def run(dry_run: bool = False) -> None:
         doc_number = (payload.get("doc_number") or "").strip()
         party1     = (payload.get("party1")     or "").strip()
         if doc_number and party1:
-            items.append((_make_parcel_id(REC_PREFIX, doc_number), party1))
+            owner_q = _recorder_owner(party1)
+            if owner_q:
+                items.append((_make_parcel_id(REC_PREFIX, doc_number), owner_q, "recorder"))
 
     for raw in court_recs:
         payload     = raw.get("raw_payload", {}) or {}
         case_number = (payload.get("case_number") or "").strip()
         defendant   = (payload.get("defendant")   or "").strip()
         if case_number and defendant:
-            items.append((_make_parcel_id(CT_PREFIX, case_number), _first_defendant(defendant)))
+            first = _first_defendant(defendant)
+            if first and not _is_institutional(first):
+                items.append((_make_parcel_id(CT_PREFIX, case_number), first, "court"))
 
     # Deduplicate by parcel_id — each placeholder parcel_id is queried once.
     seen_ids: set[str] = set()
-    deduped: list[tuple[str, str]] = []
-    for pid, oname in items:
+    deduped: list[tuple[str, str, str]] = []
+    for pid, oname, source in items:
         if pid not in seen_ids:
             seen_ids.add(pid)
-            deduped.append((pid, oname))
+            deduped.append((pid, oname, source))
     items = deduped
 
     total = len(items)
     print(
         f"Signals loaded: {len(recorder_recs)} recorder + {len(court_recs)} court "
-        f"= {total} unique parcel-ids to enrich"
+        f"= {total} unique parcel-ids to enrich (after filtering institutionals)"
     )
 
     out_records: list[dict] = []
@@ -228,17 +303,26 @@ def run(dry_run: bool = False) -> None:
     skipped  = 0
     sample_shown = False
 
-    for idx, (parcel_id, owner_name) in enumerate(items):
+    for idx, (parcel_id, owner_name, source) in enumerate(items):
         if idx > 0:
             time.sleep(0.5)
 
         features = _arcgis_query(owner_name)
 
+        if not features and source == "court":
+            # Court names are FIRST LAST; assessor stores LAST FIRST.
+            # Fall back to last-name-only search (broader but still useful for
+            # uncommon surnames — skip if too many results).
+            last = _last_name(owner_name)
+            if last:
+                time.sleep(0.5)
+                features = _arcgis_query(last)
+
         if not features:
             skipped += 1
-        elif len(features) >= 100:
-            # Too many hits — name is too generic or matches a corporate portfolio;
-            # skip rather than emit a random parcel.
+        elif len(features) >= 20:
+            # Too many hits — name is too generic or matches a large portfolio.
+            # 20 is stricter than before (was 100) to avoid wrong-parcel matches.
             skipped += 1
         else:
             attrs = features[0]  # first result; assessor returns in parcel_id order
