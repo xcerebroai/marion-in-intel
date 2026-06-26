@@ -553,23 +553,30 @@
       "access_pattern": "static_html",
       "auth_required": false,
       "rate_limit_rpm": null,
-      "scraper_module": "scrapers.indy_tax_delinquency",
+      "scraper_module": "scrapers.tax_delinquency",
       "translator": "csv_static_list",
       "translator_config": {
         "publication_cycle": "annual",
         "publication_month": "July",
         "file_formats": [
-          "PDF",
-          "CSV"
+          "PDF"
         ],
-        "auction_platform": "GovEase"
+        "auction_platform": "GovEase",
+        "output_kind": "signal",
+        "doc_type_field": "doc_type",
+        "address_field": "address",
+        "doc_number_field": "instrument_number",
+        "filing_date_field": "recorded_date",
+        "doc_type_synonyms": {
+          "TAX_FORECLOSURE_NOTICE": "TAX_FORECLOSURE_NOTICE"
+        }
       },
       "field_map": {
-        "parcel_number": "parcelId",
-        "owner_name": "ownerName",
-        "property_address": "situsAddress",
-        "delinquent_amount": "delinquentAmount",
-        "tax_years": "delinquentYears"
+        "parcel_number": "instrument_number",
+        "owner_name": "grantor",
+        "property_address": "address",
+        "delinquent_amount": "delinquent_amount",
+        "tax_years": "tax_years"
       },
       "parcel_id_prefix": "MARIN-TX-",
       "refresh_cadence": "quarterly",
@@ -631,26 +638,18 @@
       "access_pattern": "open_api",
       "auth_required": false,
       "rate_limit_rpm": null,
-      "scraper_module": "scrapers.open_indy_arcgis",
-      "translator": "foreclosure_notices",
+      "scraper_module": "scrapers.code_enforcement",
+      "translator": "owner_notice_records",
       "translator_config": {
         "api_type": "ArcGIS_REST",
-        "layer_id": "5d08eba2e9034bc88986af25afe12f5e_1",
-        "layer_doc_type_map": {
-          "CODE_VIOLATION": "CODE_LIEN",
-          "DEMOLITION": "DEMOLITION",
-          "CONDEMNATION": "CONDEMNATION"
-        },
+        "rest_endpoint": "https://gis.indy.gov/server/rest/services/OpenData/OpenData_NonSpatial/MapServer/1/query",
+        "canonical": "CODE_VIOLATION_NOTICE",
+        "subtype_label": "Code Violation Notice",
+        "case_status_filter": ["Open", "Overdue", "In Violation"],
         "fallback_source": "accela_code_enforcement"
       },
-      "field_map": {
-        "case_number": "CaseId",
-        "address": "Address",
-        "violation_type": "ViolationType",
-        "status": "Status",
-        "open_date": "OpenDate"
-      },
-      "parcel_id_prefix": "MARIN-CE-",
+      "field_map": {},
+      "parcel_id_prefix": "MARIN-DCE-",
       "refresh_cadence": "daily",
       "ttl_days": 365,
       "source_reliability_grade": "A",
@@ -697,6 +696,82 @@
       "record_ttl_days": 365,
       "stale_record_policy": "KEEP_UNTIL_RELEASED",
       "estimated_runtime_minutes": 15,
+      "estimated_cost_category": "FREE",
+      "quarantine_status": "NOT_QUARANTINED"
+    },
+    "probate_estates": {
+      "category": "lead",
+      "subtype": "probate_estates",
+      "url": "https://www.indy.gov/activity/property-search",
+      "access_pattern": "open_api",
+      "auth_required": false,
+      "rate_limit_rpm": null,
+      "scraper_module": "scrapers.probate_estates",
+      "translator": "owner_notice_records",
+      "translator_config": {
+        "api_type": "ArcGIS_REST",
+        "rest_endpoint": "https://gis.indy.gov/server/rest/services/MapIndy/MapIndyProperty/MapServer/10/query",
+        "canonical": "AFFIDAVIT_OF_HEIRSHIP",
+        "subtype_label": "Estate / probate owner-name match",
+        "owner_name_patterns": [
+          "%ESTATE OF%",
+          "% EST OF %",
+          "% EST %",
+          "%HEIRS OF%",
+          "%HEIR OF%",
+          "%DECEASED%",
+          "%TESTAMENTARY%",
+          "%DEVISEES%"
+        ]
+      },
+      "field_map": {},
+      "parcel_id_prefix": "MARIN-PRO-",
+      "refresh_cadence": "weekly",
+      "ttl_days": 365,
+      "source_reliability_grade": "B",
+      "source_priority": "P1",
+      "build_priority": "high_value",
+      "enabled": true,
+      "allowed_to_export": true,
+      "official_status": "OFFICIAL_CITY",
+      "lead_value": "LEAD_GENERATING",
+      "source_role": "PRIMARY_LEAD_SOURCE",
+      "verification_confidence": "MEDIUM",
+      "access_method": "API_ENDPOINT",
+      "public_access_status": "FULL_PUBLIC_ACCESS",
+      "document_access_status": "DOCUMENTS_PUBLIC",
+      "official_entity": "City of Indianapolis / Marion County Assessor",
+      "portal_type": "Open data ArcGIS assessor parcel layer owner-name sweep (gis.indy.gov)",
+      "portal_family": "ArcGIS",
+      "fingerprint_confidence": "HIGH",
+      "fingerprint_summary": "Assessor MapIndyProperty layer 10 FULLOWNERNAME field swept for estate/decedent/heirship owner-name patterns; corporate false positives excluded client-side.",
+      "recommended_adapter": "arcgis_rest_api",
+      "records_available": [
+        "estate_owner_parcels",
+        "heirship_owner_parcels",
+        "testamentary_trust_parcels"
+      ],
+      "search_fields": [
+        "owner_name",
+        "address",
+        "assessed_value"
+      ],
+      "verified_from_url": "https://gis.indy.gov/server/rest/services/MapIndy/MapIndyProperty/MapServer/10/query",
+      "verification_method": "city_portal",
+      "verification_note": "Marion County Assessor ArcGIS layer (same enrichment endpoint used by parcel_master). Owner-name pattern sweep finds probate leads directly without a recorder filing.",
+      "sample_record_path_confirmed": true,
+      "sample_search_possible": true,
+      "sample_document_view_possible": false,
+      "known_limitations": [
+        "Owner-name heuristic: testamentary/living-trust owners are included by the %TESTAMENTARY% / % EST % patterns; corporate names (LLC, INC, PROPERTIES, ...) are excluded on word boundaries to avoid dropping personal names that merely contain those letters.",
+        "No recorded instrument or filing date is associated; recording_date is null.",
+        "Assessor layer reflects current title; not a real-time probate-court signal."
+      ],
+      "last_verified_at": "2026-06-26",
+      "stale_after_hours": 168,
+      "record_ttl_days": 365,
+      "stale_record_policy": "KEEP_UNTIL_RELEASED",
+      "estimated_runtime_minutes": 5,
       "estimated_cost_category": "FREE",
       "quarantine_status": "NOT_QUARANTINED"
     },

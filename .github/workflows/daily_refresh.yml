@@ -32,7 +32,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install --upgrade pip
-          pip install playwright requests
+          pip install playwright requests pdfplumber
           pip install jsonschema referencing rpds-py
 
       - name: Install Playwright browsers (Chromium only)
@@ -51,6 +51,12 @@ jobs:
         continue-on-error: false
         run: |
           python scrapers/court_filings.py --days-back 4 --case-types MF
+
+      # -- Step 2b: Tax delinquency (annual SRI/Treasurer tax-sale list) --
+      - name: Pull tax delinquency list
+        continue-on-error: true
+        run: |
+          python scrapers/tax_delinquency.py
 
       # ── Step 3: Enrichment (OpenIndy parcels join) ─────────────────────────
       - name: Run parcel enrichment join
