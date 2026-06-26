@@ -38,6 +38,12 @@ runs/*/logs/
 runs/*/tmp/
 runs/*/.cache/
 
+# Pipeline intermediate files — per-source leads_base files and run-specific
+# manifests contain real party names and are never committed.
+data/*_leads_base.json
+data/*_leads_base.jsonl
+data/runs/run_*.manifest.json
+
 # Secrets — never commit
 .env
 .env.*

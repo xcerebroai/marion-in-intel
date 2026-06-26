@@ -296,6 +296,70 @@ def _build_enrichment_provider(parcels: list):
 # staged artifacts (matched_leads, scored_leads, semantic_verdict).
 # ---------------------------------------------------------------------------
 
+
+
+# ---------------------------------------------------------------------------
+# Cross-source dedup — court filing MF case ↔ recorder LP reference_number.
+# When a lender files an MF court case AND records a Lis Pendens at the
+# recorder on the same date, both sources capture the same foreclosure event.
+# The recorder LP's reference_number field often carries the court case number.
+# This pass unifies their placeholder parcel_ids so the aggregator stacks them
+# into one lead with two signals instead of two separate leads.
+# No-op when the pull windows don't overlap or LP records are absent.
+# ---------------------------------------------------------------------------
+
+def _cross_source_dedup_lp_mf(
+    all_signals: list,
+    raw_records_by_source: dict,
+) -> int:
+    """Unify parcel_ids for court-filing LP signals that share a case_number
+    with a recorder LP signal's reference_number.
+
+    Mutates all_signals in-place. Returns count of merges performed.
+    """
+    court_case_to_parcel: dict = {}
+    for sig in all_signals:
+        if sig.get("source_id") == "court_filings":
+            cn = (sig.get("case_number") or sig.get("doc_number") or "").strip()
+            pid = sig.get("parcel_id") or sig.get("primary_parcel_id")
+            if cn and pid:
+                court_case_to_parcel[cn] = pid
+
+    if not court_case_to_parcel:
+        return 0
+
+    recorder_source_ids = {
+        s.get("source_id")
+        for s in all_signals
+        if s.get("doc_type", "").upper() == "LIS_PENDENS"
+           and s.get("source_id") != "court_filings"
+    }
+
+    doc_to_ref: dict = {}
+    for src_id in recorder_source_ids:
+        for raw in raw_records_by_source.get(src_id, []):
+            payload = raw.get("raw_payload", {}) or {}
+            doc_num = (payload.get("doc_number") or "").strip()
+            ref_num = (payload.get("reference_number") or "").strip()
+            if doc_num and ref_num:
+                doc_to_ref[doc_num] = ref_num
+
+    merges = 0
+    for sig in all_signals:
+        if (
+            sig.get("source_id") in recorder_source_ids
+            and sig.get("doc_type", "").upper() == "LIS_PENDENS"
+        ):
+            doc_num = (sig.get("doc_number") or "").strip()
+            ref_num = doc_to_ref.get(doc_num, "")
+            if ref_num and ref_num in court_case_to_parcel:
+                court_pid = court_case_to_parcel[ref_num]
+                sig["parcel_id"] = court_pid
+                sig["primary_parcel_id"] = court_pid
+                merges += 1
+
+    return merges
+
 def run_pipeline(
     *,
     mode: str,
@@ -528,6 +592,7 @@ def main() -> int:
         all_parcels: list = []
         bcad_records: list = []
         translated_sources: list = []
+        _raw_records_by_source: dict = {}   # for cross-source dedup
 
         for source_id, source_cfg in county_config.get("sources", {}).items():
             if not source_cfg.get("enabled", True):
@@ -545,6 +610,7 @@ def main() -> int:
             signals, parcels, _per_signal_meta = translate_fn(
                 raw_records, county_config, source_cfg_with_id,
             )
+            _raw_records_by_source[source_id] = raw_records
             adapted = [_adapt_translator_signal(s, source_id) for s in signals]
             all_signals.extend(adapted)
             is_enrichment = (
@@ -564,6 +630,14 @@ def main() -> int:
                 "records": len(raw_records), "signals": len(signals),
                 "parcels": len(parcels),
             })
+
+        # Cross-source dedup: unify court filing LP <-> recorder LP by case reference.
+        _merge_count = _cross_source_dedup_lp_mf(all_signals, _raw_records_by_source)
+        if _merge_count:
+            print(
+                f'[dedup] merged {_merge_count} recorder LP signal(s) onto court filing parcel_ids',
+                file=sys.stderr,
+            )
 
         # Parcel-master matcher — replace placeholder parcels with real ones.
         if bcad_records and all_signals:
