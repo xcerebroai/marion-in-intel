@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-25T22:40:15Z",
+  "build_label": "FULL_BUILD",
+  "mode": "production",
+  "county": "Marion County",
+  "state": "IN",
+  "semantic_verdict": "DEPLOY_OK",
+  "lead_total": 0,
+  "enrichment_breakdown": {
+    "ENRICHED": 0,
+    "UNENRICHED": 0
+  },
+  "pattern_counts": {},
+  "attribute_counts": {},
+  "stack_depth_distribution": {},
+  "score_tier_distribution": {},
+  "deal_path_distribution": {},
+  "records": [],
+  "build_label_reason": "",
+  "deployment": {
+    "github_org": "xcerebroai",
+    "github_repo": "marion-in-intel",
+    "scheduler_runtime_class": "SCHEDULER_NOT_CONFIGURED",
+    "production_verification_status": "NOT_RUN"
+  },
+  "dropped_signals_unmapped_doc_type": 200
+}
