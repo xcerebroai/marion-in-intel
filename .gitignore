@@ -38,6 +38,10 @@ runs/*/logs/
 runs/*/tmp/
 runs/*/.cache/
 
+# Phase-build result/log artifacts at repo root
+/.phase*_result.json
+/.phase*_err.log
+
 # Pipeline intermediate files — per-source leads_base files and run-specific
 # manifests contain real party names and are never committed.
 data/*_leads_base.json

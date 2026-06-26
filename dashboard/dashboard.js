@@ -123,11 +123,17 @@
     const countyName = state.payload.county || "";
     document.getElementById("brand-title").textContent =
       countyName
-        ? `${countyName} County Distress Intelligence`
+        ? `${countyName} Distress Intelligence`
         : "Distress Intelligence";
     document.title = countyName
-      ? `${countyName} County Distress Intelligence`
+      ? `${countyName} — Distress Intel`
       : "Distress Intelligence";
+
+    const generatedAt = state.payload.generated_at || "";
+    const datePart = generatedAt.slice(0, 10);
+    document.getElementById("generated-at").textContent =
+      datePart ? `Refreshed ${datePart}` : "—";
+
     const deployment = state.payload.deployment || {};
     const repoOrg = deployment.github_org;
     const repoName = deployment.github_repo;
@@ -138,14 +144,11 @@
     }
     document.getElementById("build-label").textContent =
       state.payload.build_label || "FULL_BUILD";
-    document.getElementById("generated-at").textContent =
-      "Generated " + state.payload.generated_at;
     document.getElementById("view-mode-pill").textContent =
-      state.mode === "operator" ? "OPERATOR_VIEW" : "CLIENT_VIEW";
+      state.mode === "operator" ? "⚙ Operator View" : "⚙ Operator View";
     document.body.setAttribute("data-mode", state.mode);
 
-    // Status banner — surfaces build_label_reason for source-limited
-    // / partial / pending builds. Hidden for clean FULL_BUILD runs.
+    // Status banner
     const banner = document.getElementById("status-banner");
     const reason = state.payload.build_label_reason;
     const limitedLabels = new Set([
@@ -216,15 +219,18 @@
     const byTier = { Hot: 0, Strong: 0, Workable: 0, Low: 0, Archive: 0 };
     for (const r of filteredRows) byTier[r.display_tier] = (byTier[r.display_tier] || 0) + 1;
     const tiles = [
-      { label: "Total filtered", value: total, tier: "" },
-      ...Object.entries(byTier).map(([tier, value]) => ({ label: tier, value, tier })),
+      { label: "Total Leads", value: total, tier: "", sub: "filtered" },
+      ...Object.entries(byTier).map(([tier, value]) => ({ label: tier, value, tier, sub: "tier" })),
     ];
     document.getElementById("stat-tiles").innerHTML = tiles
       .map(
         (t) => `
         <div class="tile" data-tier="${t.tier}">
-          <span class="tile-label">${t.label}</span>
           <span class="tile-value" data-testid="tile-${t.tier || "total"}">${t.value}</span>
+          <div class="tile-meta">
+            <span class="tile-label">${t.label}</span>
+            <span class="tile-sub">${t.sub}</span>
+          </div>
         </div>`
       )
       .join("");
@@ -319,45 +325,74 @@
 
     tbody.innerHTML = rows
       .map((r) => {
-        const reviewCls =
-          r.display_lead_status === "REVIEW_REQUIRED" ? "review-required" : "";
-        const pendingBadge =
-          r.parcel_master_status === "placeholder_pending_enrichment"
-            ? `<span class="cell-tag pending-badge" title="${escapeAttr(r.parcel_master_status_note || "")}">pending parcel match</span>`
-            : "";
-        // Heir-candidate badge: foreclosure pattern + estate pattern
-        // (from owner-name-pattern or court probate) on the same lead.
-        // Operator's high-value combo per REVIEW_GATE_4 follow-up.
-        const heirBadge =
-          r.display_patterns.includes("foreclosure") &&
-          r.display_patterns.includes("estate")
-            ? `<span class="cell-tag heir-badge" title="Foreclosure + estate signal — heir-hunting opportunity">★ heir candidate</span>`
-            : "";
-        const trustBadge =
-          r.display_patterns.includes("foreclosure") &&
-          (r.display_pattern_set || []).includes("transfer")
-            ? `<span class="cell-tag trust-badge" title="Foreclosure + transfer signal (likely living-trust owner)">trust owner</span>`
-            : "";
-        const flagsCell = (r.review_flags || []).length
-          ? `<div class="cell-tags">${r.review_flags
-              .map((f) => `<span class="cell-tag flag-tag">${escapeHtml(f)}</span>`)
-              .join("")}</div>`
+        const isReview = r.display_lead_status === "REVIEW_REQUIRED";
+        const rowCls = isReview ? "row-review" : "";
+
+        // Score badge
+        const scoreBadge = `<div class="score-badge" data-tier="${escapeAttr(r.display_tier)}">
+          <span class="score-num">${r.display_score}</span>
+          <span class="score-tier">${escapeHtml(r.display_tier)}</span>
+        </div>`;
+
+        // Address cell
+        const heirBadge = r.display_patterns.includes("foreclosure") && r.display_patterns.includes("estate")
+          ? `<span class="tag tag-heir">★ heir candidate</span>` : "";
+        const trustBadge = r.display_patterns.includes("foreclosure") && (r.display_pattern_set || []).includes("transfer")
+          ? `<span class="tag tag-trust">trust owner</span>` : "";
+        const pendingBadge = r.parcel_master_status === "placeholder_pending_enrichment"
+          ? `<span class="tag tag-pending">pending parcel</span>` : "";
+        const addrLine = r.display_address
+          ? `<div class="cell-address">${escapeHtml(r.display_address)}</div>` : "";
+        const parcelLine = r.primary_parcel_id
+          ? `<div class="cell-address-sub">${escapeHtml(r.primary_parcel_id)}</div>` : "";
+        const badgeRow = (heirBadge || trustBadge || pendingBadge)
+          ? `<div class="tag-row" style="margin-top:4px">${heirBadge}${trustBadge}${pendingBadge}</div>` : "";
+
+        // Patterns + attributes combined
+        const patternTags = (r.display_patterns || [])
+          .map((p) => `<span class="tag tag-pattern">${escapeHtml(p)}</span>`).join("");
+        const attrTags = (r.display_attributes || [])
+          .map((a) => `<span class="tag tag-attr">${escapeHtml(a)}</span>`).join("");
+        const signalsCell = `<div class="tag-row">${patternTags}${attrTags}</div>`;
+
+        // Deal paths
+        const dealTags = (r.display_deal_paths || [])
+          .map((d) => `<span class="tag tag-deal">${escapeHtml(d)}</span>`).join("");
+
+        // Stack badge
+        const depth = r.stack_depth || 0;
+        const stackBadge = `<span class="stack-badge" data-depth="${depth}">×${depth}</span>`;
+
+        // Money
+        const assessed = fmtMoney(r.display_assessed_value);
+        const lastSale = fmtMoney(r.display_last_sale_price);
+
+        // Source links
+        const srcLinks = (r.primary_source_urls || []).length
+          ? (r.primary_source_urls || []).slice(0, 2)
+              .map((u, i) => `<a class="source-link" href="${escapeAttr(u)}" target="_blank" rel="noopener">🔗 ${i + 1}</a>`)
+              .join(" ")
           : "—";
-        return `<tr class="${reviewCls}" data-lead-id="${escapeAttr(r.lead_id)}" data-testid="lead-row">
-          <td>${r.display_score}</td>
-          <td><span class="tier-badge" data-tier="${escapeAttr(r.display_tier)}">${escapeHtml(r.display_tier)}</span></td>
-          <td>${escapeHtml(r.primary_parcel_id || "")}${pendingBadge ? " " + pendingBadge : ""}</td>
-          <td>${escapeHtml(r.display_address || "")}${heirBadge ? " " + heirBadge : ""}${trustBadge ? " " + trustBadge : ""}</td>
-          <td>${escapeHtml(r.display_owner || "")}</td>
-          <td><div class="cell-tags">${(r.display_patterns || []).map((p) => `<span class="cell-tag">${escapeHtml(p)}</span>`).join("")}</div></td>
-          <td><div class="cell-tags">${(r.display_attributes || []).map((a) => `<span class="cell-tag">${escapeHtml(a)}</span>`).join("")}</div></td>
-          <td><div class="cell-tags">${(r.display_deal_paths || []).map((d) => `<span class="cell-tag">${escapeHtml(d)}</span>`).join("")}</div></td>
-          <td>${r.stack_depth}</td>
-          <td>${fmtMoney(r.display_assessed_value)}</td>
-          <td>${fmtMoney(r.display_last_sale_price)}</td>
-          <td>${escapeHtml(r.expected_sale_date || r.primary_event_date || "")}</td>
-          <td>${flagsCell}</td>
-          <td>${(r.primary_source_urls || []).map((u) => `<a href="${escapeAttr(u)}" target="_blank" rel="noopener">link</a>`).join(" ") || "—"}</td>
+
+        // Review flags (operator only)
+        const flagsHtml = (r.review_flags || []).length
+          ? `<div class="tag-row">${r.review_flags.map((f) => `<span class="tag tag-flag">${escapeHtml(f)}</span>`).join("")}</div>`
+          : "—";
+
+        const eventDate = r.expected_sale_date || r.primary_event_date || "";
+
+        return `<tr class="${rowCls}" data-lead-id="${escapeAttr(r.lead_id)}" data-testid="lead-row">
+          <td>${scoreBadge}</td>
+          <td>${addrLine}${parcelLine}${badgeRow}</td>
+          <td><div class="cell-owner" title="${escapeAttr(r.display_owner || "")}">${escapeHtml(r.display_owner || "")}</div></td>
+          <td>${signalsCell}</td>
+          <td><div class="tag-row">${dealTags}</div></td>
+          <td>${stackBadge}</td>
+          <td class="money">${assessed}</td>
+          <td class="money">${escapeHtml(eventDate)}</td>
+          <td class="operator-only money">${lastSale}</td>
+          <td class="operator-only">${flagsHtml}</td>
+          <td>${srcLinks}</td>
         </tr>`;
       })
       .join("");
@@ -366,8 +401,11 @@
   function renderFooter(rows) {
     const total = state.payload.records.length;
     const showing = rows.length;
+    const county = state.payload.county || "";
+    const st = state.payload.state || "";
+    const gen = (state.payload.generated_at || "").slice(0, 10);
     document.getElementById("footer-counts").textContent =
-      `${showing} of ${total} leads (${state.payload.mode} mode, ${state.payload.county}/${state.payload.state})`;
+      `${showing} of ${total} leads · ${county}${st ? ", " + st : ""} · Refreshed ${gen || "—"}`;
   }
 
   // -------------------------------------------------------------------
@@ -489,8 +527,8 @@
       state.mode = state.mode === "client" ? "operator" : "client";
       e.currentTarget.textContent =
         state.mode === "client"
-          ? "Switch to Operator View"
-          : "Switch to Client View";
+          ? "⚙ Operator View"
+          : "← Client View";
       render();
     });
     document.getElementById("csv-export").addEventListener("click", exportCsv);

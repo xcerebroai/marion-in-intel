@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:02:50Z",
+  "generated_at": "2026-06-26T21:18:26Z",
   "build_label": "FULL_BUILD",
   "mode": "production",
   "county": "Marion County",
@@ -105,6 +105,9 @@
       "evidence_ids": [
         "ev_b4a85bfab4d3e895"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6Ild5VkNhVVJHdEd1bThIZmc5RWpaS0lyT0FETmY3STJPenhnb0FxQmZZdFExIn19"
+      ],
       "primary_event_date": "2026-06-25",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -164,6 +167,9 @@
       "evidence_ids": [
         "ev_d36d3675bcb5298b"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjhMSHhSQ2NjM2hseHFkSWV4QkQ2RnE0dTNoNGFhNU5ZUlplUW9QcFpqelUxIn19"
+      ],
       "primary_event_date": "2026-06-18",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -222,6 +228,9 @@
       ],
       "evidence_ids": [
         "ev_ce2f99d188b8c1bb"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6InZ6NXlfLVk3cURlN3pWX0pMaXRnU1BTcFlDdzZISDluakk0UHMwWVA0LWcxIn19"
       ],
       "primary_event_date": "2026-06-24",
       "review_flags": [],
@@ -295,6 +304,9 @@
       "evidence_ids": [
         "ev_e8bec0b3967106e6"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IlNpS1R3cUs4QnVZSlpkWHRwRjIyNUpSUkxSbnlKeW5ueUs4OUdDMDR0dGcxIn19"
+      ],
       "primary_event_date": "2026-06-17",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -347,6 +359,9 @@
       ],
       "evidence_ids": [
         "ev_7babc4e65ebb65f4"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6ImVhNjJlYVlNeGllWk5GX3FabGt1UlJsZjM1VHZpRTNaN0RSb0V5RmJNbUUxIn19"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [],
@@ -401,6 +416,9 @@
       "evidence_ids": [
         "ev_f2efc9e99bff3d03"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6InB3Qms0aGRYaTFGbks2TGtUdVBmSFZlaExCYnU2dFNabXA0TkJUTlc3Nk0xIn19"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -454,6 +472,9 @@
       "evidence_ids": [
         "ev_a74de365fcb62aff"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IlRtb09ERGNiUzR1TE1CdHNGelZ5X1A0SzBNVWR2T3hwRmdVb0Z3OTN4bzgxIn19"
+      ],
       "primary_event_date": "2026-06-25",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -506,6 +527,9 @@
       ],
       "evidence_ids": [
         "ev_98a126592d51c306"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjhyZFpnc1pCNzhHM201SFdGUTR6bzdRVEl6TXhXYWxDZVNEQmN4R0FiQm8xIn19"
       ],
       "primary_event_date": "2026-06-22",
       "review_flags": [],
@@ -579,6 +603,9 @@
       "evidence_ids": [
         "ev_454d85008b0dc554"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjZobUtfUXlPWUo0R2tuZE9GN3JNbVJLQnUwSU5oSTdkTTFtMEFxTWlzWG8xIn19"
+      ],
       "primary_event_date": "2026-06-24",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -638,6 +665,9 @@
       "evidence_ids": [
         "ev_ff646f0575594846"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6InRiMGV0RVV4M3d5NldDZ1pGX1dITnM1eHVraFFJc19wOGFEanJSOUFKN2MxIn19"
+      ],
       "primary_event_date": "2026-06-19",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -691,6 +721,9 @@
       "evidence_ids": [
         "ev_43f924ee05414c5f"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IklQRlhkV3FZTWVvVTdHSUx6RkQ0VHBHWjFGTkJQQWhVTWxXN1ZERHFLTXMxIn19"
+      ],
       "primary_event_date": "2026-06-15",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -743,6 +776,9 @@
       ],
       "evidence_ids": [
         "ev_6b42b2e29773add0"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkhwUjdyR3lpbEk3Y3lObDdCWDgxWU1VcGtYTlo5NWtfV3p3a1M0RGZ1Um8xIn19"
       ],
       "primary_event_date": "2026-06-19",
       "review_flags": [],
@@ -802,6 +838,9 @@
       ],
       "evidence_ids": [
         "ev_c9512afd86b1528c"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6InlyQlMzMVJwWUx1V1VkUGtOY0dlUkNCZTZlTU14QzA5V3RQa1hyZXhkSGMxIn19"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [],
@@ -875,6 +914,9 @@
       "evidence_ids": [
         "ev_ef4fa3f195299349"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6ImdYb0R6LWI3M2lpSlJUemJKT25BbkVoQ3ZzTG9SVWlrRlVuR29Pc1FCeFUxIn19"
+      ],
       "primary_event_date": "2026-06-24",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -946,6 +988,9 @@
       ],
       "evidence_ids": [
         "ev_aa5c99ef94d703eb"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkFaeEpkWlRfU01yZkI1c0VVSWFIRVYzQl9zMld2NC1FTkVoWHMwMmVJelUxIn19"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [],
@@ -1019,6 +1064,9 @@
       "evidence_ids": [
         "ev_0b464c35f3be7f6f"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6Img5dTdrUGRSeW01SGJOeHBleFFpdjBmMjllYUY5S2Y1eE9XMjBtbnhCTWcxIn19"
+      ],
       "primary_event_date": "2026-06-18",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1071,6 +1119,9 @@
       ],
       "evidence_ids": [
         "ev_5f9d902bc69d9baf"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IlJsV2pPN2IxLXc0ZE5Ubndmd2lKWFBFbmtjaEFUdnBURTUzZkZ3b19oQW8xIn19"
       ],
       "primary_event_date": "2026-06-23",
       "review_flags": [],
@@ -1125,6 +1176,9 @@
       "evidence_ids": [
         "ev_71f265aec033af4f"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjZqWTlvYmlfOTNhVS1USmxtQ3RHaXloZlFJZk1HSG5hRlNPaVJvVnVVeTgxIn19"
+      ],
       "primary_event_date": "2026-06-25",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1177,6 +1231,9 @@
       ],
       "evidence_ids": [
         "ev_b0f9014932b00171"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6InhOSjg5R19TdUZhaVFBYUtRUUM5VlE4OEZUWWM1QTE0R1RaYkUxOEZwZDgxIn19"
       ],
       "primary_event_date": "2026-06-18",
       "review_flags": [],
@@ -1237,6 +1294,9 @@
       "evidence_ids": [
         "ev_e3539ec7feca5569"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjdMQ0tLbHVNNUI0ckdkY1VuMG8wUER5dG9nQ2RlSllhdE9XODR6MlVyZWcxIn19"
+      ],
       "primary_event_date": "2026-06-23",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1290,6 +1350,9 @@
       "evidence_ids": [
         "ev_8e224502b61f5737"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkdadW1rSVhYN0J1Z1lpU252ZmpjSmtMSWp3UTVEM3g2ZnZxeTFHV0NfQm8xIn19"
+      ],
       "primary_event_date": "2026-06-25",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1342,6 +1405,9 @@
       ],
       "evidence_ids": [
         "ev_b8c57c6daa29b6ef"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjdWZHRFT1NxbGthQ0p5eU9vVVNjWDNmM3NKZ1hWOHlnaWlWekNTcEp4NTQxIn19"
       ],
       "primary_event_date": "2026-06-18",
       "review_flags": [],
@@ -1415,6 +1481,9 @@
       "evidence_ids": [
         "ev_5e6366d44cb7c3af"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6ImtZUG5BbEVLYVR6ZW5CVTMwVnR5dFMyWjhIOGFuSmxOWWRkRUFuUFB3TjQxIn19"
+      ],
       "primary_event_date": "2026-06-17",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1474,6 +1543,9 @@
       "evidence_ids": [
         "ev_03f2450c08cc93b7"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjVDOFpTOHlCZFoxek52SzdPMFRGOEhHTHRpNEVTSGNFaHo0ZGpNWHlKOEExIn19"
+      ],
       "primary_event_date": "2026-06-23",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1532,6 +1604,9 @@
       ],
       "evidence_ids": [
         "ev_f61a5fc73d9ee03f"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkpvWVN2cGhMZnA4S1Z1Z1lPb3ByTEFZaU55TDBHR3VfcGRsWXdyVFRwaU0xIn19"
       ],
       "primary_event_date": "2026-06-19",
       "review_flags": [],
@@ -1605,6 +1680,9 @@
       "evidence_ids": [
         "ev_3a60e8386d21ddc4"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6Ik9wT3JvSnJMd0JYS1J3TElBMGlVanVIYTMtWUt3QmN5T3d1WmNUNS1FWm8xIn19"
+      ],
       "primary_event_date": "2026-06-17",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1658,6 +1736,9 @@
       "evidence_ids": [
         "ev_7f9d2ce0037f725e"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkFBOTNhUGJUc09VczlDNEdJc0JURUlaZkd6TF9SQXZrLTR6U2prdzJiRFExIn19"
+      ],
       "primary_event_date": "2026-06-25",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1710,6 +1791,9 @@
       ],
       "evidence_ids": [
         "ev_de93713930861b3f"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkR4X2w3cGhDRXJRR1U1dThHRWhRM0xjZEdBNHloLVVrMUVFelVTZGNvSncxIn19"
       ],
       "primary_event_date": "2026-06-24",
       "review_flags": [],
@@ -1770,6 +1854,9 @@
       "evidence_ids": [
         "ev_f8dba7789533c006"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkNUempxQ2NTck1fWXc2UnVkZ21sZUVZYUU1S0JLUzF1cHRXS3N2eno3T3MxIn19"
+      ],
       "primary_event_date": "2026-06-15",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1829,6 +1916,9 @@
       "evidence_ids": [
         "ev_8ebd54932917912b"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IkpDemYwSnFyUVMxaUY1Sm1hbHJBVkJlRGxEb0F6T2twZ1ppQ2xoZ3RhT2cxIn19"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -1881,6 +1971,9 @@
       ],
       "evidence_ids": [
         "ev_89361634be732d57"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjduY0cxYVVZQXlvNzFCWU1QVE1UY3hHSWZ0cXFRY3JpblVtQ3U3dkZwMncxIn19"
       ],
       "primary_event_date": "2026-06-19",
       "review_flags": [],
@@ -1940,6 +2033,9 @@
       ],
       "evidence_ids": [
         "ev_14ad2ae6974f5515"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IlBtNHFuSy1mRUl1am1STl9xZEJxTGFqNWFUcm9XV1Y4UjRmSFlGQm15V0UxIn19"
       ],
       "primary_event_date": "2026-06-18",
       "review_flags": [],
@@ -2013,6 +2109,9 @@
       "evidence_ids": [
         "ev_8880e9677ac6ccf9"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6ImltN3RrS2VCM0ZYOU15TmFhZlZZb19kRHdTOFQwOWkzMkVnaUpScndZbE0xIn19"
+      ],
       "primary_event_date": "2026-06-22",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -2066,6 +2165,9 @@
       "evidence_ids": [
         "ev_2fb1d5e535028091"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6Imd6NS1WSGhrQ0s5SVNPLXhOMHhnZUhzYXJENmpnOHptcGJSQUY2Y1J0LUkxIn19"
+      ],
       "primary_event_date": "2026-06-19",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -2118,6 +2220,9 @@
       ],
       "evidence_ids": [
         "ev_4d1d9b674504885b"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6InhNRXZxRGN4WVp3ZTItTExLQ1RVaGUxTU55QWpTc3hMQng0UnhSZGUzQ1kxIn19"
       ],
       "primary_event_date": "2026-06-17",
       "review_flags": [],
@@ -2178,6 +2283,9 @@
       "evidence_ids": [
         "ev_062c610e2f6f8977"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjJjRktFMUs5RExkbFFXcjlpaDh5Ukp2bTBoYm5OcXZQVHF4RTAydDJzUEUxIn19"
+      ],
       "primary_event_date": "2026-06-15",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -2231,6 +2339,9 @@
       "evidence_ids": [
         "ev_3f53fecfa0e2cea6"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051211"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [],
       "enrichment_status": "ENRICHED"
@@ -2283,6 +2394,9 @@
       ],
       "evidence_ids": [
         "ev_8da0433aa156731d"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjJFeGU1VllEcktYaVAzeWw2NEtQTl8zLXRqQ1c5Y3MzYmk0M3RHQUQ4RlExIn19"
       ],
       "primary_event_date": "2026-06-13",
       "review_flags": [
@@ -2340,6 +2454,9 @@
       "evidence_ids": [
         "ev_a9790bd2bb8b270c"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IlhZSE1XX2hFQmdDdGhHb3ZJNUZ6VFBNbTN2TmljS1YxU1ZGVDdnMF9pQUUxIn19"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2395,6 +2512,9 @@
       ],
       "evidence_ids": [
         "ev_d04a1aa659530084"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IklqS3BGNGZ3eVRkTnZKSW9CVm5EYXJLS1prUHdGbWlxT3UwS1h3a0hwc1kxIn19"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -2452,6 +2572,9 @@
       "evidence_ids": [
         "ev_0baf044e9b3dbc15"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6ImV5NXAzRmRVb2E5MERQMTl6em1zY1JycllKNlhIbVFxdWN6aFY3VW5oZVkxIn19"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2507,6 +2630,9 @@
       ],
       "evidence_ids": [
         "ev_0a70a8123b8ad035"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IlpUMGdZQkV6b1BoN1MxenZSbzJNRXJfb05BZ0lkanhLNmNRd01DcDlGWUUxIn19"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -2564,6 +2690,9 @@
       "evidence_ids": [
         "ev_65d6299be677c9e7"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6Im9oaXo4YVZYU0EwbGRzQjFFaVZDRkhLRGtqeHNPOUEyMEU0dFNrNHdzWDAxIn19"
+      ],
       "primary_event_date": "2026-06-18",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2619,6 +2748,9 @@
       ],
       "evidence_ids": [
         "ev_87f93a8ca2497d68"
+      ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6IjFwWExFUG1ZOXlnV002NEpfSkRocFA4U2MwR0NZWmNDRkxKMEVQWkk3SG8xIn19"
       ],
       "primary_event_date": "2026-06-19",
       "review_flags": [
@@ -2676,6 +2808,9 @@
       "evidence_ids": [
         "ev_0bb570dc908acd06"
       ],
+      "primary_source_urls": [
+        "https://public.courts.in.gov/mycase/#/vw/CaseSummary/eyJ2Ijp7IkNhc2VUb2tlbiI6ImN6S05XM21pVnJ1WXg4aWNpMG1JWFJEYkdTU1FUNU8walNNTnV0YWlTZ0kxIn19"
+      ],
       "primary_event_date": "2026-06-19",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2728,6 +2863,9 @@
       "evidence_ids": [
         "ev_280ef94f0e34fcfe"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051093"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2765,6 +2903,9 @@
       ],
       "evidence_ids": [
         "ev_d0a539a795cc5123"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051094"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -2805,6 +2946,9 @@
       "evidence_ids": [
         "ev_191a64d7f2051c63"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051095"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2843,6 +2987,9 @@
       ],
       "evidence_ids": [
         "ev_7579d013d97c26e8"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051100"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -2897,6 +3044,9 @@
       "evidence_ids": [
         "ev_51b86f974f363ea4"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051102"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2949,6 +3099,9 @@
       "evidence_ids": [
         "ev_24d507e993e4f1b0"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051108"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -2986,6 +3139,9 @@
       ],
       "evidence_ids": [
         "ev_8ad4565649b35bce"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051109"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3026,6 +3182,9 @@
       "evidence_ids": [
         "ev_7f7b9317a3e46628"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051110"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3064,6 +3223,9 @@
       ],
       "evidence_ids": [
         "ev_d9d82abd5d3ed7c3"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051111"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3104,6 +3266,9 @@
       "evidence_ids": [
         "ev_9b7b354952956020"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051120"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3142,6 +3307,9 @@
       ],
       "evidence_ids": [
         "ev_283643f80ceef929"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051122"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3182,6 +3350,9 @@
       "evidence_ids": [
         "ev_89670154828599ca"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051123"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3220,6 +3391,9 @@
       ],
       "evidence_ids": [
         "ev_ebf0f244f591ad3c"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051131"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3274,6 +3448,9 @@
       "evidence_ids": [
         "ev_b4b780bd37a051a4"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051134"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3311,6 +3488,9 @@
       ],
       "evidence_ids": [
         "ev_59c53646caa7f324"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051135"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3350,6 +3530,9 @@
       ],
       "evidence_ids": [
         "ev_b6590d6663ea2bd0"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051137"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3404,6 +3587,9 @@
       "evidence_ids": [
         "ev_ca64ee16ca7dfb40"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051139"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3456,6 +3642,9 @@
       "evidence_ids": [
         "ev_2a3b6890ec407c22"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051140"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3493,6 +3682,9 @@
       ],
       "evidence_ids": [
         "ev_456e7e6208f442b5"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051141"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3547,6 +3739,9 @@
       "evidence_ids": [
         "ev_a4830c0770e3aec4"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051142"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3599,6 +3794,9 @@
       "evidence_ids": [
         "ev_5ea4b7e76478e3d5"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051146"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3636,6 +3834,9 @@
       ],
       "evidence_ids": [
         "ev_2509bfa5f5ec45cd"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051147"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3690,6 +3891,9 @@
       "evidence_ids": [
         "ev_acad3a8f46d9553d"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051148"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3742,6 +3946,9 @@
       "evidence_ids": [
         "ev_3c58d767f9ae0e7e"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051150"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3779,6 +3986,9 @@
       ],
       "evidence_ids": [
         "ev_1cf0a2239aa1ad5d"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051151"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3819,6 +4029,9 @@
       "evidence_ids": [
         "ev_67259a21447c4421"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051153"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3857,6 +4070,9 @@
       ],
       "evidence_ids": [
         "ev_22603c8acc1d333b"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051160"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -3897,6 +4113,9 @@
       "evidence_ids": [
         "ev_05f769b906b5aaf4"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051162"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3936,6 +4155,9 @@
       "evidence_ids": [
         "ev_59c514c7dbab6ebb"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051167"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -3974,6 +4196,9 @@
       ],
       "evidence_ids": [
         "ev_6d1c93c5df0bde54"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051169"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4028,6 +4253,9 @@
       "evidence_ids": [
         "ev_63f1f282bd73a8b3"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051174"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4079,6 +4307,9 @@
       ],
       "evidence_ids": [
         "ev_d9bcd5a2786f089e"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051176"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4132,6 +4363,9 @@
       "evidence_ids": [
         "ev_c5769c2a1c768c68"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051177"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4184,6 +4418,9 @@
       "evidence_ids": [
         "ev_bed4b4a19f47e2a2"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051179"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4221,6 +4458,9 @@
       ],
       "evidence_ids": [
         "ev_c8212c0cd9a67618"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051180"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4275,6 +4515,9 @@
       "evidence_ids": [
         "ev_df1a6955243e8061"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051181"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4326,6 +4569,9 @@
       ],
       "evidence_ids": [
         "ev_c528c599ad7146d5"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051182"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4379,6 +4625,9 @@
       "evidence_ids": [
         "ev_64fb80f6ed333a26"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051183"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4430,6 +4679,9 @@
       ],
       "evidence_ids": [
         "ev_fc8c0c84734fd47f"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051184"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4483,6 +4735,9 @@
       "evidence_ids": [
         "ev_ce481d33adffb2e1"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051187"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4534,6 +4789,9 @@
       ],
       "evidence_ids": [
         "ev_93c821fe543ecec4"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051190"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4587,6 +4845,9 @@
       "evidence_ids": [
         "ev_97655de1028fb766"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051191"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4638,6 +4899,9 @@
       ],
       "evidence_ids": [
         "ev_bffc96f43275fd81"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051192"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4691,6 +4955,9 @@
       "evidence_ids": [
         "ev_8978525b7dd9d73a"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051196"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4728,6 +4995,9 @@
       ],
       "evidence_ids": [
         "ev_f7811cdb28afba31"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051197"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4768,6 +5038,9 @@
       "evidence_ids": [
         "ev_f2c85a0f47e88f78"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051199"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4806,6 +5079,9 @@
       ],
       "evidence_ids": [
         "ev_bec8d53f970fb620"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051200"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4860,6 +5136,9 @@
       "evidence_ids": [
         "ev_15647ae137c5a829"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051201"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4912,6 +5191,9 @@
       "evidence_ids": [
         "ev_f9928e6fd6cc6993"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051203"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -4949,6 +5231,9 @@
       ],
       "evidence_ids": [
         "ev_6a3256ba0e12e4f7"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051204"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -4989,6 +5274,9 @@
       "evidence_ids": [
         "ev_81a99ae91ed78403"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051207"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5027,6 +5315,9 @@
       ],
       "evidence_ids": [
         "ev_259a0d21adb43ed0"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051210"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5067,6 +5358,9 @@
       "evidence_ids": [
         "ev_37caabf1fc8a4c43"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051216"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5105,6 +5399,9 @@
       ],
       "evidence_ids": [
         "ev_a88133f6d8723149"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051222"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5159,6 +5456,9 @@
       "evidence_ids": [
         "ev_6e0ed062b66c2416"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051225"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5196,6 +5496,9 @@
       ],
       "evidence_ids": [
         "ev_20c6eafa9f44cd9b"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051228"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5236,6 +5539,9 @@
       "evidence_ids": [
         "ev_c4e2b5aaf7f37f99"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051231"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5274,6 +5580,9 @@
       ],
       "evidence_ids": [
         "ev_09e33f1f64f80469"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051234"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5314,6 +5623,9 @@
       "evidence_ids": [
         "ev_79f95e1d519a2d31"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051236"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5352,6 +5664,9 @@
       ],
       "evidence_ids": [
         "ev_d4bc6840bb7aa9e8"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051240"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5392,6 +5707,9 @@
       "evidence_ids": [
         "ev_3186d7bff42c18b3"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051242"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5430,6 +5748,9 @@
       ],
       "evidence_ids": [
         "ev_1513f2392fce79e9"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051243"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5470,6 +5791,9 @@
       "evidence_ids": [
         "ev_26b6ee2c415d6e0a"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051244"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5508,6 +5832,9 @@
       ],
       "evidence_ids": [
         "ev_57ffb52e67242bef"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051245"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5548,6 +5875,9 @@
       "evidence_ids": [
         "ev_72b4ec66bda395cc"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051246"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5586,6 +5916,9 @@
       ],
       "evidence_ids": [
         "ev_715bca0ef4ebf2f0"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051247"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5626,6 +5959,9 @@
       "evidence_ids": [
         "ev_6baff949c2792b31"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051248"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5664,6 +6000,9 @@
       ],
       "evidence_ids": [
         "ev_af41bc168a37bd6a"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051249"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5704,6 +6043,9 @@
       "evidence_ids": [
         "ev_e7a393fe544e95c5"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051250"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5742,6 +6084,9 @@
       ],
       "evidence_ids": [
         "ev_20353ea1cbdf0ef6"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051251"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5782,6 +6127,9 @@
       "evidence_ids": [
         "ev_817ce458387ca7da"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051252"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5820,6 +6168,9 @@
       ],
       "evidence_ids": [
         "ev_a1fc8f60812261e0"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051256"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5874,6 +6225,9 @@
       "evidence_ids": [
         "ev_2378ad4d5c3d8cc4"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051257"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -5925,6 +6279,9 @@
       ],
       "evidence_ids": [
         "ev_56313a13067f8567"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051262"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -5978,6 +6335,9 @@
       "evidence_ids": [
         "ev_5d83c07e251f4128"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051263"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6030,6 +6390,9 @@
       "evidence_ids": [
         "ev_a3941aeb8d186118"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051264"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6067,6 +6430,9 @@
       ],
       "evidence_ids": [
         "ev_d00b273b87e2b564"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051266"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6106,6 +6472,9 @@
       ],
       "evidence_ids": [
         "ev_9cfd001075c577ed"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051267"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6160,6 +6529,9 @@
       "evidence_ids": [
         "ev_75c7ecc93dc45e21"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051268"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6197,6 +6569,9 @@
       ],
       "evidence_ids": [
         "ev_902454ea692245c8"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051269"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6236,6 +6611,9 @@
       ],
       "evidence_ids": [
         "ev_7de3cde880846f01"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051270"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6290,6 +6668,9 @@
       "evidence_ids": [
         "ev_a411189ca526913c"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051271"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6327,6 +6708,9 @@
       ],
       "evidence_ids": [
         "ev_0b259d3b43fd1468"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051272"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6366,6 +6750,9 @@
       ],
       "evidence_ids": [
         "ev_ff69584497c8d6ce"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051273"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6420,6 +6807,9 @@
       "evidence_ids": [
         "ev_1c2d5b8e25a186be"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051274"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6471,6 +6861,9 @@
       ],
       "evidence_ids": [
         "ev_3dc7a29a9b330541"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051276"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6524,6 +6917,9 @@
       "evidence_ids": [
         "ev_039bfc701a9c033e"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051278"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6575,6 +6971,9 @@
       ],
       "evidence_ids": [
         "ev_c253010abfc5ff0e"
+      ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051291"
       ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
@@ -6628,6 +7027,9 @@
       "evidence_ids": [
         "ev_aec8eea97a2aba5e"
       ],
+      "primary_source_urls": [
+        "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051292"
+      ],
       "primary_event_date": "2026-06-16",
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6680,6 +7082,9 @@
       "evidence_ids": [
         "ev_a8882c6a5e9cd8b5"
       ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-CT-35DB081B644A#trust"
+      ],
       "primary_event_date": null,
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6731,6 +7136,9 @@
       ],
       "evidence_ids": [
         "ev_47a609a6a15fff3d"
+      ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-CT-62D3BCA622A7#estate"
       ],
       "primary_event_date": null,
       "review_flags": [
@@ -6798,6 +7206,10 @@
         "ev_802d265c4c7c168d",
         "ev_da3fe7726db96c39"
       ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-CT-94CB85B6B400#estate",
+        "about:owner-name/parcel_master/MARIN-CT-94CB85B6B400#trust"
+      ],
       "primary_event_date": null,
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6849,6 +7261,9 @@
       ],
       "evidence_ids": [
         "ev_8433b127cdfa50a6"
+      ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-REC-117B8EE9932B#trust"
       ],
       "primary_event_date": null,
       "review_flags": [
@@ -6902,6 +7317,9 @@
       "evidence_ids": [
         "ev_bb64da4e6c5b389a"
       ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-REC-59F9211EF47A#trust"
+      ],
       "primary_event_date": null,
       "review_flags": [
         "parcel_resolution_review_required",
@@ -6953,6 +7371,9 @@
       ],
       "evidence_ids": [
         "ev_77d58448497e0fe1"
+      ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-REC-5D620E5A20F9#trust"
       ],
       "primary_event_date": null,
       "review_flags": [
@@ -7006,6 +7427,9 @@
       "evidence_ids": [
         "ev_4a8eca872ae4701c"
       ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-REC-A16B6618114D#trust"
+      ],
       "primary_event_date": null,
       "review_flags": [
         "parcel_resolution_review_required",
@@ -7058,6 +7482,9 @@
       "evidence_ids": [
         "ev_b267b8e506b2e3bd"
       ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-REC-AA6B87645B6B#trust"
+      ],
       "primary_event_date": null,
       "review_flags": [
         "parcel_resolution_review_required",
@@ -7109,6 +7536,9 @@
       ],
       "evidence_ids": [
         "ev_7c12f3883579c008"
+      ],
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-REC-C83B06195974#trust"
       ],
       "primary_event_date": null,
       "review_flags": [

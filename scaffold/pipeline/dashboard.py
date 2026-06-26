@@ -69,11 +69,7 @@ def project_lead(lead: dict, parcel: dict) -> dict:
         "score_reasons": lead.get("score_reasons", []),
         "evidence_ids": lead.get("evidence_ids", []),
         "primary_source_urls": sorted(
-            {
-                s.get("source_url", "")
-                for s in lead.get("_active_signals", [])
-                if s.get("source_url")
-            }
+            {url for url in lead.get("source_urls", []) if url}
         ),
         "primary_event_date": lead.get("primary_event_date"),
         "expected_sale_date": lead.get("expected_sale_date"),

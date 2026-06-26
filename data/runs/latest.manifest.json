@@ -1,18 +1,20 @@
 {
-  "run_id": "run_a3d44fd91a8642e3bc06ff8a857a0247",
-  "county": "Bexar",
-  "state": "TX",
-  "started_at": "2026-05-15T20:00:49Z",
-  "finished_at": "2026-05-15T20:00:49Z",
-  "sources_attempted": 1,
-  "records_collected": 288,
-  "records_normalized": 288,
-  "leads_created": 287,
-  "review_required": 62,
+  "run_id": "run_b9b60678508a4443892a2eb88c498bbe",
+  "county": "Marion County",
+  "state": "IN",
+  "started_at": "2026-06-26T21:18:26Z",
+  "finished_at": "2026-06-26T21:18:26Z",
+  "sources_attempted": 3,
+  "records_collected": 254,
+  "records_normalized": 144,
+  "leads_created": 143,
+  "review_required": 106,
   "errors": [],
   "output_files": [
-    "data/leads.json",
-    "data/source_heartbeat.json",
-    "data/evidence.jsonl"
+    "data\\dashboard.json",
+    "data\\source_heartbeat.json",
+    "data\\matched_leads.json",
+    "data\\scored_leads.json",
+    "data\\evidence_ledger.json"
   ]
 }

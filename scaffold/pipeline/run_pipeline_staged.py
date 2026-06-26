@@ -224,6 +224,7 @@ def project_scored_lead(scored_lead: dict) -> dict:
         "stack_depth": scored_lead.get("stack_depth", 0),
         "score_reasons": list(scored_lead.get("score_reasons") or []),
         "evidence_ids": list(scored_lead.get("evidence_ids") or []),
+        "primary_source_urls": sorted(set(scored_lead.get("source_urls") or [])),
         "primary_event_date": scored_lead.get("primary_event_date"),
         "review_flags": list(scored_lead.get("review_flags") or []),
         "enrichment_status": scored_lead.get("enrichment_status"),
