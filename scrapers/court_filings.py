@@ -401,17 +401,27 @@ async def _search_window_async(
         "error":                None,
     }
 
+    stats["session_resets"] = 0
+
     async with async_playwright() as pw:
         browser, page = await _boot_spa(pw)
         try:
             for prefix in prefixes:
-                await _sweep_prefix(page, prefix, start_str, end_str, active_flag,
-                                    type_prefixes, by_case, stats)
-                stats["prefixes_swept"] += 1
-                await asyncio.sleep(_RATE_LIMIT_SECONDS)
-        except _CaptchaRequired as exc:
-            stats["error"] = str(exc)
-            stats["captcha_required"] = True
+                try:
+                    await _sweep_prefix(page, prefix, start_str, end_str, active_flag,
+                                        type_prefixes, by_case, stats)
+                    stats["prefixes_swept"] += 1
+                    await asyncio.sleep(_RATE_LIMIT_SECONDS)
+                except _CaptchaRequired as exc:
+                    stats["session_resets"] += 1
+                    if stats["session_resets"] > 5:
+                        stats["error"] = str(exc)
+                        stats["captcha_required"] = True
+                        break
+                    await browser.close()
+                    await asyncio.sleep(3)
+                    browser, page = await _boot_spa(pw)
+                    # skip the prefix that triggered CAPTCHA; continue with next
         except Exception as exc:
             stats["error"] = str(exc)
         finally:

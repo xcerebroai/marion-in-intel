@@ -1,0 +1,65 @@
+name: Marion County IN — Daily Lead Intelligence Refresh
+
+on:
+  schedule:
+    # 07:00 UTC = ~02:00 Indianapolis time (ET, UTC-5)
+    - cron: '0 7 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    name: Pull → Enrich → Pipeline
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}
+
+    steps:
+      # ── Checkout ──────────────────────────────────────────────────────────
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # ── Python setup ──────────────────────────────────────────────────────
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # ── Install dependencies ───────────────────────────────────────────────
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install playwright requests
+          pip install jsonschema referencing rpds-py
+
+      - name: Install Playwright browsers (Chromium only)
+        run: |
+          playwright install chromium
+          playwright install-deps chromium
+
+      # ── Step 1: Recorder (Fidlar Breeze) ──────────────────────────────────
+      - name: Pull recorder recordings (--days-back 1)
+        continue-on-error: false
+        run: |
+          python scrapers/recorder_recordings.py --days-back 1
+
+      # ── Step 2: Court filings (MyCase) ────────────────────────────────────
+      - name: Pull court filings (--days-back 4, MF cases)
+        continue-on-error: false
+        run: |
+          python scrapers/court_filings.py --days-back 4 --case-types MF
+
+      # ── Step 3: Enrichment (OpenIndy parcels join) ─────────────────────────
+      - name: Run parcel enrichment join
+        continue-on-error: false
+        run: |
+          python scrapers/open_indy_parcels.py
+
+      # ── Step 4: Pipeline (score leads + build dashboard) ──────────────────
+      - name: Build scored leads and dashboard
+        continue-on-error: false
+        run: |
+          python scaffold/pipeline/build_leads.py \
+            --county-config config/counties/marion_in.json \
+            --approve-needs-review
