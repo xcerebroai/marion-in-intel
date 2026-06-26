@@ -764,6 +764,39 @@
       "estimated_runtime_minutes": 20,
       "estimated_cost_category": "FREE",
       "quarantine_status": "NOT_QUARANTINED"
+    },
+    "bankruptcy_filings": {
+      "category": "lead",
+      "subtype": "bankruptcy_filings",
+      "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&court=insb",
+      "access_pattern": "json_api",
+      "auth_required": false,
+      "rate_limit_rpm": 40,
+      "scraper_module": "scrapers.bankruptcy_filings",
+      "translator": "foreclosure_notices",
+      "parcel_id_prefix": "MARIN-BK-",
+      "refresh_cadence": "daily",
+      "ttl_days": 365,
+      "source_reliability_grade": "B",
+      "source_priority": "P1",
+      "build_priority": "high_value",
+      "enabled": true,
+      "allowed_to_export": true,
+      "official_status": "OFFICIAL_FEDERAL",
+      "lead_value": "LEAD_GENERATING",
+      "source_role": "PRIMARY_LEAD_SOURCE",
+      "verification_confidence": "MEDIUM",
+      "access_method": "OPEN_API",
+      "public_access_status": "FULL_PUBLIC_ACCESS",
+      "coverage_note": "Indiana Southern District \u2014 all counties, not Marion-only. Partial RECAP coverage.",
+      "doc_type_synonyms": {
+        "BANKRUPTCY_PETITION": "BANKRUPTCY_PETITION"
+      },
+      "field_map": {
+        "grantor": "grantor",
+        "instrument_number": "instrument_number",
+        "recorded_date": "recorded_date"
+      }
     }
   },
   "scoring_overrides": {

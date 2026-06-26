@@ -1,6 +1,28 @@
 [
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0147062cb6732671",
+    "field": "owner_name",
+    "record_id": "raw_0147062cb6732671",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73507265/dennis-wayne-futrell-and-cynthia-lynn-futrell/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0374dd221137cbda",
+    "field": "owner_name",
+    "record_id": "raw_0374dd221137cbda",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73536471/jason-william-lively-and-jackie-lyn-lively/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_039bfc701a9c033e",
     "field": "owner_name",
     "record_id": "raw_039bfc701a9c033e",
@@ -11,7 +33,7 @@
     "value": "WALLACE JACK R"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_03f2450c08cc93b7",
     "field": "owner_name",
     "record_id": "raw_03f2450c08cc93b7",
@@ -22,7 +44,18 @@
     "value": "Binalkumar Patel, Maheshkumar Patel, Wildcat Run Homeowners' Association, Inc.et al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_051a2e8aab0c2738",
+    "field": "owner_name",
+    "record_id": "raw_051a2e8aab0c2738",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521509/justine-reynolds/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_05f769b906b5aaf4",
     "field": "owner_name",
     "record_id": "raw_05f769b906b5aaf4",
@@ -33,7 +66,18 @@
     "value": "ONEIL BARBARA"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_061417a0f76442fb",
+    "field": "owner_name",
+    "record_id": "raw_061417a0f76442fb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515330/shurice-turae-spivey/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_062c610e2f6f8977",
     "field": "owner_name",
     "record_id": "raw_062c610e2f6f8977",
@@ -44,7 +88,51 @@
     "value": "Devon Walden, Infinite Routes LLC, Cavalry SPV I, LLCet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_06bc3d7d76de49c2",
+    "field": "owner_name",
+    "record_id": "raw_06bc3d7d76de49c2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509196/peter-thomas-sole-jr-and-cristina-noel-sole/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_076669b29f902f66",
+    "field": "owner_name",
+    "record_id": "raw_076669b29f902f66",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73527846/lori-jean-kempf/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_088a13f46fb113c4",
+    "field": "owner_name",
+    "record_id": "raw_088a13f46fb113c4",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512549/daniel-aaron-kirk-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_09a19c2887b2446c",
+    "field": "owner_name",
+    "record_id": "raw_09a19c2887b2446c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73534821/rita-kay-walker/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_09e33f1f64f80469",
     "field": "owner_name",
     "record_id": "raw_09e33f1f64f80469",
@@ -55,7 +143,29 @@
     "value": "LOANDEPOT.COM"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0a08c5b7263a5463",
+    "field": "owner_name",
+    "record_id": "raw_0a08c5b7263a5463",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526067/matthew-joseph-cooley/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0a1c86adc89308ed",
+    "field": "owner_name",
+    "record_id": "raw_0a1c86adc89308ed",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526397/melissa-r-meriwether/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_0a70a8123b8ad035",
     "field": "owner_name",
     "record_id": "raw_0a70a8123b8ad035",
@@ -66,7 +176,18 @@
     "value": "BRENDA M. JOHNSON-STEPHENS, STATE OF INDIANA DEPARTMENT OF REVENUE, CROWN ASSET ..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0a968f0638a3267e",
+    "field": "owner_name",
+    "record_id": "raw_0a968f0638a3267e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513730/douglas-edwin-runion/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_0b259d3b43fd1468",
     "field": "owner_name",
     "record_id": "raw_0b259d3b43fd1468",
@@ -77,7 +198,7 @@
     "value": "JACKSON COUNTY BANK"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_0b464c35f3be7f6f",
     "field": "owner_name",
     "record_id": "raw_0b464c35f3be7f6f",
@@ -88,7 +209,7 @@
     "value": "Aeshia Finkton, Darryl Finkton, CIRCLE CITY WEEKLY RENTALS LLCet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_0baf044e9b3dbc15",
     "field": "owner_name",
     "record_id": "raw_0baf044e9b3dbc15",
@@ -99,7 +220,7 @@
     "value": "Daryl A. Nibbs, Cumberland Estates Community Association, Inc., State of Indiana et al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_0bb570dc908acd06",
     "field": "owner_name",
     "record_id": "raw_0bb570dc908acd06",
@@ -110,7 +231,128 @@
     "value": "Midwest Restorations LLC c/o David Ayala, Resident Agent, Forward Financing LLC, State of Indiana-Dept of Revenueet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0bf4e9cd95ef7c70",
+    "field": "owner_name",
+    "record_id": "raw_0bf4e9cd95ef7c70",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541716/shearl-dean-atwood/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0c6dba3d25731d64",
+    "field": "owner_name",
+    "record_id": "raw_0c6dba3d25731d64",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73523328/kenneth-ray-thomas-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0cbe7aa19e5d254a",
+    "field": "owner_name",
+    "record_id": "raw_0cbe7aa19e5d254a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73522777/jason-patrick-little-sr-and-jennifer-elaine-little/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0cea4587c1b02f6d",
+    "field": "owner_name",
+    "record_id": "raw_0cea4587c1b02f6d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528570/ronald-steven-howes/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0df4edebd3204430",
+    "field": "owner_name",
+    "record_id": "raw_0df4edebd3204430",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73511995/kristina-renea-hawk/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0e602caa5eed546b",
+    "field": "owner_name",
+    "record_id": "raw_0e602caa5eed546b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540026/katrina-marie-adegbenjo/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0f5e8fd36d572fad",
+    "field": "owner_name",
+    "record_id": "raw_0f5e8fd36d572fad",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535180/amy-sue-crosley/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_0f6f04b238ba3520",
+    "field": "owner_name",
+    "record_id": "raw_0f6f04b238ba3520",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501087/billy-fitzgerald-drones/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_11271361d6f3ec54",
+    "field": "owner_name",
+    "record_id": "raw_11271361d6f3ec54",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503258/angela-nicole-swope/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_117d09068c3d421e",
+    "field": "owner_name",
+    "record_id": "raw_117d09068c3d421e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538862/trenton-joe-robling/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_135034fa2e6be003",
+    "field": "owner_name",
+    "record_id": "raw_135034fa2e6be003",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513630/billy-joe-thurston-and-allison-sueann-thurston/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_14ad2ae6974f5515",
     "field": "owner_name",
     "record_id": "raw_14ad2ae6974f5515",
@@ -121,7 +363,29 @@
     "value": "HOMEWELL INVESTMENTS LLC, CHRISTOPHER BARTON WELLMAN, LINDSEY STEPHENSet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_14adba4fe21c7c4b",
+    "field": "owner_name",
+    "record_id": "raw_14adba4fe21c7c4b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73529702/william-earl-croft/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_14dfea2fd8beda70",
+    "field": "owner_name",
+    "record_id": "raw_14dfea2fd8beda70",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73520785/caitlyn-renee-wyatt/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_1513f2392fce79e9",
     "field": "owner_name",
     "record_id": "raw_1513f2392fce79e9",
@@ -132,7 +396,18 @@
     "value": "OWNEZ ASSET MANAGEMENT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_15218f135e628e6e",
+    "field": "owner_name",
+    "record_id": "raw_15218f135e628e6e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73506765/bradley-eugene-jones/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_15647ae137c5a829",
     "field": "owner_name",
     "record_id": "raw_15647ae137c5a829",
@@ -143,7 +418,51 @@
     "value": "GRISE HOME AND PROPERTY GROUP"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_157a45544254c767",
+    "field": "owner_name",
+    "record_id": "raw_157a45544254c767",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528584/melissa-dawn-wilson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1607a043e5e3cea8",
+    "field": "owner_name",
+    "record_id": "raw_1607a043e5e3cea8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521131/kenyatta-maurice-leche-x-tyler/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1632023d0d6c0726",
+    "field": "owner_name",
+    "record_id": "raw_1632023d0d6c0726",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538624/jessica-ann-fidler/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_17d4db378ad979f1",
+    "field": "owner_name",
+    "record_id": "raw_17d4db378ad979f1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521699/amber-renee-rubiolo/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_191a64d7f2051c63",
     "field": "owner_name",
     "record_id": "raw_191a64d7f2051c63",
@@ -154,7 +473,51 @@
     "value": "AP ALPINE LLC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_191cf48193b3adec",
+    "field": "owner_name",
+    "record_id": "raw_191cf48193b3adec",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524666/tony-kenneth-young/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1964497c85a2ad25",
+    "field": "owner_name",
+    "record_id": "raw_1964497c85a2ad25",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73519040/daphane-m-anderson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_19a5d313724a3f82",
+    "field": "owner_name",
+    "record_id": "raw_19a5d313724a3f82",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73531191/norman-robert-randall-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1ad7eb9179bc2a9c",
+    "field": "owner_name",
+    "record_id": "raw_1ad7eb9179bc2a9c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73529133/mary-elizabeth-dilbeck/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_1c2d5b8e25a186be",
     "field": "owner_name",
     "record_id": "raw_1c2d5b8e25a186be",
@@ -165,7 +528,29 @@
     "value": "322 N REISNER TRUST"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1c4701b55a49b3c7",
+    "field": "owner_name",
+    "record_id": "raw_1c4701b55a49b3c7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538552/norman-leroy-howard-and-stephenie-howard/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1c62839c8bc05fcf",
+    "field": "owner_name",
+    "record_id": "raw_1c62839c8bc05fcf",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73511553/thomas-calvin-dammond-dimera/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_1cf0a2239aa1ad5d",
     "field": "owner_name",
     "record_id": "raw_1cf0a2239aa1ad5d",
@@ -176,7 +561,95 @@
     "value": "WANG DANFENG"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1cfa3c3a4f6a3c21",
+    "field": "owner_name",
+    "record_id": "raw_1cfa3c3a4f6a3c21",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503421/james-keith-sprinkle-and-lindsey-renee-sprinkle/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1d02251dc0c7530f",
+    "field": "owner_name",
+    "record_id": "raw_1d02251dc0c7530f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528580/edward-allen-hall/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1d47929f2a0ae18c",
+    "field": "owner_name",
+    "record_id": "raw_1d47929f2a0ae18c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533969/gary-kevin-campbell/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1d4fee68f976ebf4",
+    "field": "owner_name",
+    "record_id": "raw_1d4fee68f976ebf4",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73499200/david-allen-brink-and-tracy-e-brink/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1dc75f236dd10004",
+    "field": "owner_name",
+    "record_id": "raw_1dc75f236dd10004",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73520688/john-david-steckling/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1e1c84e1ac0f2c07",
+    "field": "owner_name",
+    "record_id": "raw_1e1c84e1ac0f2c07",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73500152/kasey-renae-andrews/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1e523783488b876b",
+    "field": "owner_name",
+    "record_id": "raw_1e523783488b876b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73542436/lawrnetta-rogina-stacker-and-takisha-ann-stacker/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_1fdd09c66ee716e2",
+    "field": "owner_name",
+    "record_id": "raw_1fdd09c66ee716e2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524772/eleis-laviet-penter/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_20353ea1cbdf0ef6",
     "field": "owner_name",
     "record_id": "raw_20353ea1cbdf0ef6",
@@ -187,7 +660,7 @@
     "value": "SOUTHWICK JERLYN S"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_20c6eafa9f44cd9b",
     "field": "owner_name",
     "record_id": "raw_20c6eafa9f44cd9b",
@@ -198,7 +671,73 @@
     "value": "DAS ACQUISITION CO"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2129557fd633c6b1",
+    "field": "owner_name",
+    "record_id": "raw_2129557fd633c6b1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501085/chastity-lynn-apple-and-drew-wyatt-apple/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2170193a18393b1e",
+    "field": "owner_name",
+    "record_id": "raw_2170193a18393b1e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539710/dorothy-amber-crowder/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2182293bb60350af",
+    "field": "owner_name",
+    "record_id": "raw_2182293bb60350af",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532787/billy-joe-massingill/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_21cba451c9540186",
+    "field": "owner_name",
+    "record_id": "raw_21cba451c9540186",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526934/jessica-cristeen-rieder/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_221c2f8a2dd58fb8",
+    "field": "owner_name",
+    "record_id": "raw_221c2f8a2dd58fb8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73494254/khrishawn-stevie-ruffin/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2238d24eff809d28",
+    "field": "owner_name",
+    "record_id": "raw_2238d24eff809d28",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73530895/johnny-darrell-long-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_22603c8acc1d333b",
     "field": "owner_name",
     "record_id": "raw_22603c8acc1d333b",
@@ -209,7 +748,18 @@
     "value": "VANES GREGORY J"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_22f8a93da5b6c9e3",
+    "field": "owner_name",
+    "record_id": "raw_22f8a93da5b6c9e3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503434/paul-altiery/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_2378ad4d5c3d8cc4",
     "field": "owner_name",
     "record_id": "raw_2378ad4d5c3d8cc4",
@@ -220,7 +770,18 @@
     "value": "HIDALGO BRIAN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_247bf19f4fe656d4",
+    "field": "owner_name",
+    "record_id": "raw_247bf19f4fe656d4",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508141/tiffany-machelle-richmond/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_24d507e993e4f1b0",
     "field": "owner_name",
     "record_id": "raw_24d507e993e4f1b0",
@@ -231,7 +792,7 @@
     "value": "SPARROW ELIZABETH"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_2509bfa5f5ec45cd",
     "field": "owner_name",
     "record_id": "raw_2509bfa5f5ec45cd",
@@ -242,7 +803,29 @@
     "value": "RAGER GRANT ALAN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_252211b6c9b7274c",
+    "field": "owner_name",
+    "record_id": "raw_252211b6c9b7274c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73497441/robvis-dalynd-montae-stamp-and-lauren-a-stamp/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_256f2007cb8428d0",
+    "field": "owner_name",
+    "record_id": "raw_256f2007cb8428d0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73522562/wendy-nichole-kincaide/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_259a0d21adb43ed0",
     "field": "owner_name",
     "record_id": "raw_259a0d21adb43ed0",
@@ -253,7 +836,18 @@
     "value": "WILMINGTON SAVINGS FUND SOCIETY"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_25c2bc2aa1c0ff79",
+    "field": "owner_name",
+    "record_id": "raw_25c2bc2aa1c0ff79",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512331/stephanie-michelle-smith/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_26b6ee2c415d6e0a",
     "field": "owner_name",
     "record_id": "raw_26b6ee2c415d6e0a",
@@ -264,7 +858,18 @@
     "value": "SMITH DENNIS"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2739ef30f1c5534d",
+    "field": "owner_name",
+    "record_id": "raw_2739ef30f1c5534d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528862/victoria-r-nolley/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_280ef94f0e34fcfe",
     "field": "owner_name",
     "record_id": "raw_280ef94f0e34fcfe",
@@ -275,7 +880,7 @@
     "value": "IRA CLUB FBO NIKHIL GUPTA IRA 2001454"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_283643f80ceef929",
     "field": "owner_name",
     "record_id": "raw_283643f80ceef929",
@@ -286,7 +891,29 @@
     "value": "STENGEL JANET L"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_296908a81de2aa0e",
+    "field": "owner_name",
+    "record_id": "raw_296908a81de2aa0e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73520009/tosha-denise-dixon/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2a1856208a791f81",
+    "field": "owner_name",
+    "record_id": "raw_2a1856208a791f81",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540839/royale-nicole-baldwin/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_2a3b6890ec407c22",
     "field": "owner_name",
     "record_id": "raw_2a3b6890ec407c22",
@@ -297,7 +924,106 @@
     "value": "VANDERMARK GLEN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2a965712ce245447",
+    "field": "owner_name",
+    "record_id": "raw_2a965712ce245447",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515784/martin-magallanes/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2aec27522191bcfb",
+    "field": "owner_name",
+    "record_id": "raw_2aec27522191bcfb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73504167/johnathan-dallas-likens-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2c666250b6ec88b9",
+    "field": "owner_name",
+    "record_id": "raw_2c666250b6ec88b9",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538483/jeffrey-allan-lockwood-and-ellen-elizabeth-lockwood/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2d06ebd4223ab796",
+    "field": "owner_name",
+    "record_id": "raw_2d06ebd4223ab796",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73497124/melina-spring-joslin/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2d0b2670023d2288",
+    "field": "owner_name",
+    "record_id": "raw_2d0b2670023d2288",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73536872/jerrod-lee-hope/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2da087eaa682197e",
+    "field": "owner_name",
+    "record_id": "raw_2da087eaa682197e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508704/kyara-mychelle-ortiz-ramos/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2ee5cbac1a6ef8ae",
+    "field": "owner_name",
+    "record_id": "raw_2ee5cbac1a6ef8ae",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73506101/casey-cherie-welsh/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2efd4a9228bf1f06",
+    "field": "owner_name",
+    "record_id": "raw_2efd4a9228bf1f06",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73516011/amber-jena-songer/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_2f3e4e25918f74be",
+    "field": "owner_name",
+    "record_id": "raw_2f3e4e25918f74be",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73510430/nayely-carolina-molina-reyes/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_2fb1d5e535028091",
     "field": "owner_name",
     "record_id": "raw_2fb1d5e535028091",
@@ -308,7 +1034,62 @@
     "value": "Cynthia J. Powell, Cynthia J. Powell, Personal Representative, Marilyn G. Perettiet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3055d0d116518e8f",
+    "field": "owner_name",
+    "record_id": "raw_3055d0d116518e8f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528582/amy-lynn-omalley/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_30bf364eeb56cbd5",
+    "field": "owner_name",
+    "record_id": "raw_30bf364eeb56cbd5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73502355/christa-roshelle-henderson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_31137e388b0eb270",
+    "field": "owner_name",
+    "record_id": "raw_31137e388b0eb270",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498131/nicole-rose-heiberger/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_311c5684964b25e7",
+    "field": "owner_name",
+    "record_id": "raw_311c5684964b25e7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503771/william-wayne-duncan-and-vickie-marie-duncan/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_313e230e28707f92",
+    "field": "owner_name",
+    "record_id": "raw_313e230e28707f92",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73496800/harley-dean-music/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_3186d7bff42c18b3",
     "field": "owner_name",
     "record_id": "raw_3186d7bff42c18b3",
@@ -319,7 +1100,29 @@
     "value": "MITCHELL EDRIC DWIGHT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_31be92507eeeb359",
+    "field": "owner_name",
+    "record_id": "raw_31be92507eeeb359",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73497762/chad-alan-parks/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_33029581ffa8e855",
+    "field": "owner_name",
+    "record_id": "raw_33029581ffa8e855",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73518908/james-lee-bond/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_37caabf1fc8a4c43",
     "field": "owner_name",
     "record_id": "raw_37caabf1fc8a4c43",
@@ -330,7 +1133,29 @@
     "value": "STOCK YARDS BANK AND TRUST CO"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_381f0966450af633",
+    "field": "owner_name",
+    "record_id": "raw_381f0966450af633",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73530838/larita-sherrell-gholston/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3890f62d0a2493fe",
+    "field": "owner_name",
+    "record_id": "raw_3890f62d0a2493fe",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509602/michael-gary-priddy-jr-and-sheri-lynn-priddy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_3a60e8386d21ddc4",
     "field": "owner_name",
     "record_id": "raw_3a60e8386d21ddc4",
@@ -341,7 +1166,73 @@
     "value": "Sergio Cereceres, Indiana Farm Bureau Insurance a/s/o Michael Shiplett, Metropolitan Development Commissionet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3ad61e7cf235f40a",
+    "field": "owner_name",
+    "record_id": "raw_3ad61e7cf235f40a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73504168/julius-lamont-bellamy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3b264b8b59f67f63",
+    "field": "owner_name",
+    "record_id": "raw_3b264b8b59f67f63",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512086/logan-andrew-terrell-and-kayla-marie-terrell/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3b4e2f436928d22a",
+    "field": "owner_name",
+    "record_id": "raw_3b4e2f436928d22a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513518/allan-vincent-marshall-sr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3b69782519c624d1",
+    "field": "owner_name",
+    "record_id": "raw_3b69782519c624d1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541957/aryauna-herron/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3b97eb68f8e8e62c",
+    "field": "owner_name",
+    "record_id": "raw_3b97eb68f8e8e62c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73495691/charlene-lavette-collier/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3c3ae1dfbb8062c1",
+    "field": "owner_name",
+    "record_id": "raw_3c3ae1dfbb8062c1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508270/brian-lamont-thrash/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_3c58d767f9ae0e7e",
     "field": "owner_name",
     "record_id": "raw_3c58d767f9ae0e7e",
@@ -352,7 +1243,7 @@
     "value": "TURNBOW MITCHELL L"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_3dc7a29a9b330541",
     "field": "owner_name",
     "record_id": "raw_3dc7a29a9b330541",
@@ -363,7 +1254,18 @@
     "value": "LARNER JOHN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3efdfe042abe2d3d",
+    "field": "owner_name",
+    "record_id": "raw_3efdfe042abe2d3d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498431/lynn-ann-sanders/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_3f53fecfa0e2cea6",
     "field": "owner_name",
     "record_id": "raw_3f53fecfa0e2cea6",
@@ -374,7 +1276,73 @@
     "value": "FRANCISCAN HEALTH INDIANAPOLIS"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3f5c171625379ae0",
+    "field": "owner_name",
+    "record_id": "raw_3f5c171625379ae0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503440/collin-michael-tarr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_3f9945377d750abe",
+    "field": "owner_name",
+    "record_id": "raw_3f9945377d750abe",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526418/monica-rose-peterson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_40b91b9059bbf1a7",
+    "field": "owner_name",
+    "record_id": "raw_40b91b9059bbf1a7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538034/jasmine-allene-anderson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_40de7d9942ca892a",
+    "field": "owner_name",
+    "record_id": "raw_40de7d9942ca892a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521702/scot-l-thixton/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_417dc54528b682f9",
+    "field": "owner_name",
+    "record_id": "raw_417dc54528b682f9",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73530918/lakeisha-sharice-ellis/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_43b684562cecefa0",
+    "field": "owner_name",
+    "record_id": "raw_43b684562cecefa0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512302/jason-lewis-jones/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_43f924ee05414c5f",
     "field": "owner_name",
     "record_id": "raw_43f924ee05414c5f",
@@ -385,7 +1353,29 @@
     "value": "Kelly L Brawner, SECRETARY OF HOUSING AND URBAN DEVELOPMENT, Portfolio Recovery Associates, LLC et al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_44a4af6eb5665928",
+    "field": "owner_name",
+    "record_id": "raw_44a4af6eb5665928",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73499803/raven-michelle-boykin/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_45117afc25f88e77",
+    "field": "owner_name",
+    "record_id": "raw_45117afc25f88e77",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538937/tasha-litchford/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_454d85008b0dc554",
     "field": "owner_name",
     "record_id": "raw_454d85008b0dc554",
@@ -396,7 +1386,7 @@
     "value": "Abdulazeez Omoloja, The Islands Village Townhomes Homeowners Association, Inc., Woodhaven Parket al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_456e7e6208f442b5",
     "field": "owner_name",
     "record_id": "raw_456e7e6208f442b5",
@@ -407,7 +1397,18 @@
     "value": "DECK ANDREW J"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4672ba30de39726f",
+    "field": "owner_name",
+    "record_id": "raw_4672ba30de39726f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73529221/abiodun-isaac-adegbite/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_47a609a6a15fff3d",
     "field": "owner_name",
     "record_id": "raw_47a609a6a15fff3d",
@@ -418,7 +1419,95 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_47f4f71b9e49572b",
+    "field": "owner_name",
+    "record_id": "raw_47f4f71b9e49572b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541007/daven-matthew-justice-and-anna-kaitlynn-justice/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4872863934ed5be5",
+    "field": "owner_name",
+    "record_id": "raw_4872863934ed5be5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533959/melvin-leon-mccullough/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_48ca7f8d1e599196",
+    "field": "owner_name",
+    "record_id": "raw_48ca7f8d1e599196",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73497098/cera-marie-kinser/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_48d845537f6eec6e",
+    "field": "owner_name",
+    "record_id": "raw_48d845537f6eec6e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540024/nicholas-patrick-badger/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_492df96097e257db",
+    "field": "owner_name",
+    "record_id": "raw_492df96097e257db",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73518167/cody-robert-lee-miller/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_497030d9b8d3a052",
+    "field": "owner_name",
+    "record_id": "raw_497030d9b8d3a052",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73510543/randas-leronaldo-burns-sr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_498ca7eb9a20765a",
+    "field": "owner_name",
+    "record_id": "raw_498ca7eb9a20765a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73493573/davina-dee-curtis/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_49a033c4381cbac2",
+    "field": "owner_name",
+    "record_id": "raw_49a033c4381cbac2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73517182/guillermo-laguna-cervantes/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_4a8eca872ae4701c",
     "field": "owner_name",
     "record_id": "raw_4a8eca872ae4701c",
@@ -429,7 +1518,51 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4ac75810283df8d6",
+    "field": "owner_name",
+    "record_id": "raw_4ac75810283df8d6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73511881/jennifer-lynn-shattuck/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4b369a4a42d303b8",
+    "field": "owner_name",
+    "record_id": "raw_4b369a4a42d303b8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508254/brandi-janel-johnson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4c4ff6ae4ba973d0",
+    "field": "owner_name",
+    "record_id": "raw_4c4ff6ae4ba973d0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524896/charles-anthony-brown/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4c7dd923a0e1bae6",
+    "field": "owner_name",
+    "record_id": "raw_4c7dd923a0e1bae6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73504829/latara-dominique-hunter/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_4d1d9b674504885b",
     "field": "owner_name",
     "record_id": "raw_4d1d9b674504885b",
@@ -440,7 +1573,62 @@
     "value": "Christopher N. Bennett"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4d9d60702918927f",
+    "field": "owner_name",
+    "record_id": "raw_4d9d60702918927f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73518929/debra-susan-price/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4dcdba0370ab6154",
+    "field": "owner_name",
+    "record_id": "raw_4dcdba0370ab6154",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498341/gerald-wayne-garmon-and-lisa-kaye-garmon/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_4dfe1bbb5465b58b",
+    "field": "owner_name",
+    "record_id": "raw_4dfe1bbb5465b58b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521856/jalen-michaels-bender/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_50c16bb3d088c607",
+    "field": "owner_name",
+    "record_id": "raw_50c16bb3d088c607",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73531546/bobbi-lynn-deneese-bryant/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_50e6558a494e3337",
+    "field": "owner_name",
+    "record_id": "raw_50e6558a494e3337",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73534437/donna-marie-pavese/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_51b86f974f363ea4",
     "field": "owner_name",
     "record_id": "raw_51b86f974f363ea4",
@@ -451,7 +1639,40 @@
     "value": "JIMENEZ DONNA"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_524d9a17c07a858a",
+    "field": "owner_name",
+    "record_id": "raw_524d9a17c07a858a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73518212/kenneth-jarod-speech/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_53668d2c2d6a1ef3",
+    "field": "owner_name",
+    "record_id": "raw_53668d2c2d6a1ef3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541729/karrah-k-smith/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_557f4199abe42a23",
+    "field": "owner_name",
+    "record_id": "raw_557f4199abe42a23",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528726/emily-reagan-haynes/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_56313a13067f8567",
     "field": "owner_name",
     "record_id": "raw_56313a13067f8567",
@@ -462,7 +1683,7 @@
     "value": "PATEL JITEN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_57ffb52e67242bef",
     "field": "owner_name",
     "record_id": "raw_57ffb52e67242bef",
@@ -473,7 +1694,18 @@
     "value": "BRUTON HOWARD"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_58655e753d9bb4fe",
+    "field": "owner_name",
+    "record_id": "raw_58655e753d9bb4fe",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512550/april-jean-pickett/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_59c514c7dbab6ebb",
     "field": "owner_name",
     "record_id": "raw_59c514c7dbab6ebb",
@@ -484,7 +1716,7 @@
     "value": "AVERITTE PEGGY"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_59c53646caa7f324",
     "field": "owner_name",
     "record_id": "raw_59c53646caa7f324",
@@ -495,7 +1727,95 @@
     "value": "THOMPSON JAMAR ANTHONY"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5aace6330fcb0544",
+    "field": "owner_name",
+    "record_id": "raw_5aace6330fcb0544",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73518089/annabel-lackey/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5ad5b518ba1735d2",
+    "field": "owner_name",
+    "record_id": "raw_5ad5b518ba1735d2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535973/megan-shonnice-gibson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5b226043178512aa",
+    "field": "owner_name",
+    "record_id": "raw_5b226043178512aa",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498133/garry-lee-comer-jr-and-amanda-lynn-comer/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5b4a160a35c1be92",
+    "field": "owner_name",
+    "record_id": "raw_5b4a160a35c1be92",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73518777/jeffrey-alan-earle/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5b7efda98e09d199",
+    "field": "owner_name",
+    "record_id": "raw_5b7efda98e09d199",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532185/floyd-silas-fingar/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5b88cbaa6f8bf0a2",
+    "field": "owner_name",
+    "record_id": "raw_5b88cbaa6f8bf0a2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539984/linda-d-tucci/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5ba96837c95d683a",
+    "field": "owner_name",
+    "record_id": "raw_5ba96837c95d683a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541284/lilly-maria-mejia/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5c2252c58e90a339",
+    "field": "owner_name",
+    "record_id": "raw_5c2252c58e90a339",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73519107/krystal-lavon-osborn/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_5d83c07e251f4128",
     "field": "owner_name",
     "record_id": "raw_5d83c07e251f4128",
@@ -506,7 +1826,18 @@
     "value": "PATEL JITEN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5d85c63011c2851b",
+    "field": "owner_name",
+    "record_id": "raw_5d85c63011c2851b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533424/lian-cung-nung/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_5e6366d44cb7c3af",
     "field": "owner_name",
     "record_id": "raw_5e6366d44cb7c3af",
@@ -517,7 +1848,7 @@
     "value": "Nicholas A. Krudy, BFS Group LLC, D/B/A Builders Firstsource, A/K/A Pro-Build, Eco..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_5ea4b7e76478e3d5",
     "field": "owner_name",
     "record_id": "raw_5ea4b7e76478e3d5",
@@ -528,7 +1859,18 @@
     "value": "JONES RACHEL"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5ef4171792786880",
+    "field": "owner_name",
+    "record_id": "raw_5ef4171792786880",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73507266/eileen-ann-guerrieri/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_5f9d902bc69d9baf",
     "field": "owner_name",
     "record_id": "raw_5f9d902bc69d9baf",
@@ -539,7 +1881,95 @@
     "value": "Tressa Thompson, INDIANA HOUSING & COMMUNITY DEVELOPMENT AUTHORITY, SECRETARY OF HOUSING AND URBAN DEVELOPMENTet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_5fb62e6074efb7a7",
+    "field": "owner_name",
+    "record_id": "raw_5fb62e6074efb7a7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540020/yolanda-relios-harris/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6006af7517ef39ff",
+    "field": "owner_name",
+    "record_id": "raw_6006af7517ef39ff",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521464/brett-adam-pittman-and-jamie-lynn-pittman/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_608aee344838084e",
+    "field": "owner_name",
+    "record_id": "raw_608aee344838084e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73494228/kristy-yvonne-alexander/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_60a004c3bf6811de",
+    "field": "owner_name",
+    "record_id": "raw_60a004c3bf6811de",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498825/chet-allen-klave-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_60dcfb488396c8f8",
+    "field": "owner_name",
+    "record_id": "raw_60dcfb488396c8f8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73505850/jerred-wayne-richardson-and-kendra-marie-richardson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_61ee0a1d391c3ac2",
+    "field": "owner_name",
+    "record_id": "raw_61ee0a1d391c3ac2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73529688/randi-faith-mckinley-mills/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_627d27b5b0ae9b88",
+    "field": "owner_name",
+    "record_id": "raw_627d27b5b0ae9b88",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508368/jacquita-lachelle-pettigrew/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_632c723e9df635a4",
+    "field": "owner_name",
+    "record_id": "raw_632c723e9df635a4",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73517037/adrianne-rene-mccloud/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_63f1f282bd73a8b3",
     "field": "owner_name",
     "record_id": "raw_63f1f282bd73a8b3",
@@ -550,7 +1980,29 @@
     "value": "REEVES YOLANDA R"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_644d56803bd8c9db",
+    "field": "owner_name",
+    "record_id": "raw_644d56803bd8c9db",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526263/danice-leigh-rodgers/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_649352cb6d9d934a",
+    "field": "owner_name",
+    "record_id": "raw_649352cb6d9d934a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533911/steven-richard-rayka/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_64fb80f6ed333a26",
     "field": "owner_name",
     "record_id": "raw_64fb80f6ed333a26",
@@ -561,7 +2013,18 @@
     "value": "DAMRON JAMES ROBERT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_65572290e6ad751d",
+    "field": "owner_name",
+    "record_id": "raw_65572290e6ad751d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526732/traci-dawn-nelson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_65d6299be677c9e7",
     "field": "owner_name",
     "record_id": "raw_65d6299be677c9e7",
@@ -572,7 +2035,7 @@
     "value": "KHUAL Z. LIAN AKA KHAUL ZA LIAN, STATE OF INDIANA DEPARTMENT OF REVENUE"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_67259a21447c4421",
     "field": "owner_name",
     "record_id": "raw_67259a21447c4421",
@@ -583,7 +2046,95 @@
     "value": "INMAY LLC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6819988f67673634",
+    "field": "owner_name",
+    "record_id": "raw_6819988f67673634",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508272/michael-joseph-sanders/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_681de3bb9d16033e",
+    "field": "owner_name",
+    "record_id": "raw_681de3bb9d16033e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540022/rushine-nabeela-moore/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_682d0229bb84795c",
+    "field": "owner_name",
+    "record_id": "raw_682d0229bb84795c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73531646/shannon-lynn-adelung/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_68878ba4471ab2b4",
+    "field": "owner_name",
+    "record_id": "raw_68878ba4471ab2b4",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532427/sean-lyle-metcalf/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6889171d86ed1eb8",
+    "field": "owner_name",
+    "record_id": "raw_6889171d86ed1eb8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541724/kayla-lynn-boyd/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_68aa14f008985128",
+    "field": "owner_name",
+    "record_id": "raw_68aa14f008985128",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73534824/alicia-gabrielle-louise-kubley/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_691d210b004b98d7",
+    "field": "owner_name",
+    "record_id": "raw_691d210b004b98d7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73536820/james-hiram-protsman-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6a1c78f1caa09169",
+    "field": "owner_name",
+    "record_id": "raw_6a1c78f1caa09169",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73534430/jericah-l-fletcher/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_6a3256ba0e12e4f7",
     "field": "owner_name",
     "record_id": "raw_6a3256ba0e12e4f7",
@@ -594,7 +2145,29 @@
     "value": "NEDDER JOSEPH STEPHEN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6ac9672237f8132c",
+    "field": "owner_name",
+    "record_id": "raw_6ac9672237f8132c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528021/little-legrande-ford-and-theresa-michelle-allison/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6b37a3f2bbcafc3e",
+    "field": "owner_name",
+    "record_id": "raw_6b37a3f2bbcafc3e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73495437/rodney-dale-henderson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_6b42b2e29773add0",
     "field": "owner_name",
     "record_id": "raw_6b42b2e29773add0",
@@ -605,7 +2178,29 @@
     "value": "THE UNKNOWN HEIRS AT LAW OF EDWARD R. GILMAN, DECEASED, OCCUPANT(S) OF 1117 S TREMONT STREET, INDIANAPOLIS, IN 46221, Julia Jo..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6b5775cce12bda2e",
+    "field": "owner_name",
+    "record_id": "raw_6b5775cce12bda2e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73536143/timothy-cecil-callahan-and-karen-sue-callahan/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6b68ff8e86a2573b",
+    "field": "owner_name",
+    "record_id": "raw_6b68ff8e86a2573b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513352/jacob-jeremy-rollins/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_6baff949c2792b31",
     "field": "owner_name",
     "record_id": "raw_6baff949c2792b31",
@@ -616,7 +2211,62 @@
     "value": "HARRIS TIARA"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6bd12335fbc9d5eb",
+    "field": "owner_name",
+    "record_id": "raw_6bd12335fbc9d5eb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73542437/michelle-r-gunning/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6c0206363455af4b",
+    "field": "owner_name",
+    "record_id": "raw_6c0206363455af4b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73502607/kejbir-singh-bal/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6c5cd0fbda6ec3cb",
+    "field": "owner_name",
+    "record_id": "raw_6c5cd0fbda6ec3cb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521181/justin-allen-wade/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6cb43b092ab1b00d",
+    "field": "owner_name",
+    "record_id": "raw_6cb43b092ab1b00d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540413/candace-dawn-markle/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6cefbf3a09cdaaf0",
+    "field": "owner_name",
+    "record_id": "raw_6cefbf3a09cdaaf0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73495770/marino-marques-howard/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_6d1c93c5df0bde54",
     "field": "owner_name",
     "record_id": "raw_6d1c93c5df0bde54",
@@ -627,7 +2277,18 @@
     "value": "ROBERTS JOHN MARK PRESTON"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6d387c13b5967d1c",
+    "field": "owner_name",
+    "record_id": "raw_6d387c13b5967d1c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541301/molly-sue-beach/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_6e0ed062b66c2416",
     "field": "owner_name",
     "record_id": "raw_6e0ed062b66c2416",
@@ -638,7 +2299,95 @@
     "value": "BROOKS HUGH"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6e1045e1f8ce8a44",
+    "field": "owner_name",
+    "record_id": "raw_6e1045e1f8ce8a44",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73505754/brian-alberto-jimenez/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6e4bba7bf15f0174",
+    "field": "owner_name",
+    "record_id": "raw_6e4bba7bf15f0174",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526885/zachary-robert-charles-enlow/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6e4fd867f29dc98f",
+    "field": "owner_name",
+    "record_id": "raw_6e4fd867f29dc98f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513137/tamasha-sharie-shepherd/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6e555d6c441178e0",
+    "field": "owner_name",
+    "record_id": "raw_6e555d6c441178e0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73518846/andrea-diane-jacobsen/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6f33922cfdbb536a",
+    "field": "owner_name",
+    "record_id": "raw_6f33922cfdbb536a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528918/angela-marie-clifford/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6f83bb52e729fbb7",
+    "field": "owner_name",
+    "record_id": "raw_6f83bb52e729fbb7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73516467/richard-donovan-allen/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_6f94da69ee7c832d",
+    "field": "owner_name",
+    "record_id": "raw_6f94da69ee7c832d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498539/rodney-d-hester/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_70f0f1b8b7d631e5",
+    "field": "owner_name",
+    "record_id": "raw_70f0f1b8b7d631e5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73536058/steven-m-buford/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_715bca0ef4ebf2f0",
     "field": "owner_name",
     "record_id": "raw_715bca0ef4ebf2f0",
@@ -649,7 +2398,18 @@
     "value": "HESS WILLIAM A"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7194bc85e47a6683",
+    "field": "owner_name",
+    "record_id": "raw_7194bc85e47a6683",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73531856/james-roy-stalnaker/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_71f265aec033af4f",
     "field": "owner_name",
     "record_id": "raw_71f265aec033af4f",
@@ -660,7 +2420,7 @@
     "value": "STACEY L STALCUP, INDIVIDUALLY AND PR OF THE ESTATE OF NANCY S. STALCUP, U.S. BANK TRUST NATIONAL ASSOCIATION, YMA INVESTMENT, LLC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_72b4ec66bda395cc",
     "field": "owner_name",
     "record_id": "raw_72b4ec66bda395cc",
@@ -671,7 +2431,18 @@
     "value": "WEATHER KALI M"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_746557ffb28f6132",
+    "field": "owner_name",
+    "record_id": "raw_746557ffb28f6132",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73542711/jennifer-l-hatt/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_7579d013d97c26e8",
     "field": "owner_name",
     "record_id": "raw_7579d013d97c26e8",
@@ -682,7 +2453,7 @@
     "value": "HENRY LAURA"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_75c7ecc93dc45e21",
     "field": "owner_name",
     "record_id": "raw_75c7ecc93dc45e21",
@@ -693,7 +2464,51 @@
     "value": "BUMB JAMES"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_768f555bd3a03635",
+    "field": "owner_name",
+    "record_id": "raw_768f555bd3a03635",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524031/mychel-laurise-morgan/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_76fdf1147bb30471",
+    "field": "owner_name",
+    "record_id": "raw_76fdf1147bb30471",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73505580/amber-nicole-smith/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_772a0802de222224",
+    "field": "owner_name",
+    "record_id": "raw_772a0802de222224",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528572/jerrika-raenell-blackamore/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_77822c095c5f0d4e",
+    "field": "owner_name",
+    "record_id": "raw_77822c095c5f0d4e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508271/amber-loshe-rice/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_77d58448497e0fe1",
     "field": "owner_name",
     "record_id": "raw_77d58448497e0fe1",
@@ -704,7 +2519,73 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_77dad4f35ba18f40",
+    "field": "owner_name",
+    "record_id": "raw_77dad4f35ba18f40",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73523925/quinton-edward-gaston/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7808afe73487679e",
+    "field": "owner_name",
+    "record_id": "raw_7808afe73487679e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538283/jessica-marie-boyd/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_78599f17c0b06f3f",
+    "field": "owner_name",
+    "record_id": "raw_78599f17c0b06f3f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73517734/kiimon-tyree-kennedy-and-lania-cherre-kennedy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_78a6a3ce32bfa4f3",
+    "field": "owner_name",
+    "record_id": "raw_78a6a3ce32bfa4f3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73496507/allyn-jessica-boley-and-jerome-edmund-ducommun/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_78f4089d74594806",
+    "field": "owner_name",
+    "record_id": "raw_78f4089d74594806",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524014/seth-allen-devore/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_79104f52cbdb3e65",
+    "field": "owner_name",
+    "record_id": "raw_79104f52cbdb3e65",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515431/alisha-vanette-edmonds/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_79f95e1d519a2d31",
     "field": "owner_name",
     "record_id": "raw_79f95e1d519a2d31",
@@ -715,7 +2596,40 @@
     "value": "OWNEZ ASSET MANAGEMENT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7a0ac3a8b917d303",
+    "field": "owner_name",
+    "record_id": "raw_7a0ac3a8b917d303",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73517168/glen-michael-georges/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7a6602cf15094fb3",
+    "field": "owner_name",
+    "record_id": "raw_7a6602cf15094fb3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541738/doris-christine-lee-taylor/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7b468d10a355dcd5",
+    "field": "owner_name",
+    "record_id": "raw_7b468d10a355dcd5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73496779/amber-dlee-townsend/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_7babc4e65ebb65f4",
     "field": "owner_name",
     "record_id": "raw_7babc4e65ebb65f4",
@@ -726,7 +2640,7 @@
     "value": "Erinn K. McCluney, SECRETARY OF HOUSING AND URBAN DEVELOPMENT, CF1-HIL2 SELLER TRUST"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_7c12f3883579c008",
     "field": "owner_name",
     "record_id": "raw_7c12f3883579c008",
@@ -737,7 +2651,51 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7c238e8367488d20",
+    "field": "owner_name",
+    "record_id": "raw_7c238e8367488d20",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501051/kenneth-lee-anthony-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7ccf70e057e754c7",
+    "field": "owner_name",
+    "record_id": "raw_7ccf70e057e754c7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538330/alexis-regan-jimenez-greene/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7d2c3894aa523f29",
+    "field": "owner_name",
+    "record_id": "raw_7d2c3894aa523f29",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73500120/lois-ann-smith/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7d75eca3d6d26100",
+    "field": "owner_name",
+    "record_id": "raw_7d75eca3d6d26100",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541005/danielle-elizabeth-lange/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_7de3cde880846f01",
     "field": "owner_name",
     "record_id": "raw_7de3cde880846f01",
@@ -748,7 +2706,18 @@
     "value": "JACKSON COUNTY BANK"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7de482cd1aaab20b",
+    "field": "owner_name",
+    "record_id": "raw_7de482cd1aaab20b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512089/cory-lamont-murray/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_7f7b9317a3e46628",
     "field": "owner_name",
     "record_id": "raw_7f7b9317a3e46628",
@@ -759,7 +2728,7 @@
     "value": "GVC MORTGAGE"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_7f9d2ce0037f725e",
     "field": "owner_name",
     "record_id": "raw_7f9d2ce0037f725e",
@@ -770,7 +2739,40 @@
     "value": "Jennifer Lynne Smith, Craig Madsen, Eagle Finance Companyet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7fc57b5374015ea8",
+    "field": "owner_name",
+    "record_id": "raw_7fc57b5374015ea8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512329/quental-dewayne-lamar-weston/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_7fda9b8a00bdecf3",
+    "field": "owner_name",
+    "record_id": "raw_7fda9b8a00bdecf3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73514494/jeremiah-dewayne-smith-and-sheila-lynn-smith/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_800495e10c598aaf",
+    "field": "owner_name",
+    "record_id": "raw_800495e10c598aaf",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73517150/charissa-dawn-godown/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_802d265c4c7c168d",
     "field": "owner_name",
     "record_id": "raw_802d265c4c7c168d",
@@ -781,7 +2783,18 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8110cb1fa7753ded",
+    "field": "owner_name",
+    "record_id": "raw_8110cb1fa7753ded",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73530105/april-lynn-beatty/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_817ce458387ca7da",
     "field": "owner_name",
     "record_id": "raw_817ce458387ca7da",
@@ -792,7 +2805,7 @@
     "value": "MACPHERSON ROBERT A"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_81a99ae91ed78403",
     "field": "owner_name",
     "record_id": "raw_81a99ae91ed78403",
@@ -803,7 +2816,29 @@
     "value": "NORMAN SCOTT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_81bf7c765edfb94d",
+    "field": "owner_name",
+    "record_id": "raw_81bf7c765edfb94d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501570/lexis-lanee-mitchell/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_834df54a461f72af",
+    "field": "owner_name",
+    "record_id": "raw_834df54a461f72af",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521270/paul-henry-goodwin-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_8433b127cdfa50a6",
     "field": "owner_name",
     "record_id": "raw_8433b127cdfa50a6",
@@ -814,7 +2849,51 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_848d9be02c54d983",
+    "field": "owner_name",
+    "record_id": "raw_848d9be02c54d983",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521701/curtis-henry-darlage/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_858d36c8e8b48dca",
+    "field": "owner_name",
+    "record_id": "raw_858d36c8e8b48dca",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535246/gazelle-may-salmo/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_86ef42f3bf7a1538",
+    "field": "owner_name",
+    "record_id": "raw_86ef42f3bf7a1538",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498266/heather-nicole-angel/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_87d0e02d36c0a192",
+    "field": "owner_name",
+    "record_id": "raw_87d0e02d36c0a192",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73529926/gloria-evadine-white/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_87f93a8ca2497d68",
     "field": "owner_name",
     "record_id": "raw_87f93a8ca2497d68",
@@ -825,7 +2904,29 @@
     "value": "Midwest Restorations LLC c/o David Ayala Resident Agent, Forward Financing LLC, State of Indiana-Dept of Revenueet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8838f524b25592b3",
+    "field": "owner_name",
+    "record_id": "raw_8838f524b25592b3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509000/craig-nmn-regans/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_886a07c58f630f9b",
+    "field": "owner_name",
+    "record_id": "raw_886a07c58f630f9b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512759/jeffrey-talbott-wingate/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_8880e9677ac6ccf9",
     "field": "owner_name",
     "record_id": "raw_8880e9677ac6ccf9",
@@ -836,7 +2937,18 @@
     "value": "Victoria Del Rio, Indiana Housing & Community Development Authority, The Secretary of Housing and Urban Development"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_88dc828a0c8efc44",
+    "field": "owner_name",
+    "record_id": "raw_88dc828a0c8efc44",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73527744/daniel-ryan-pea/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_89361634be732d57",
     "field": "owner_name",
     "record_id": "raw_89361634be732d57",
@@ -847,7 +2959,18 @@
     "value": "Joseph A. Thomas aka Joseph Alan Thomas, Penn Arts Apartments, by Middletown Property Group as Managing Agent, Portfolio Recovery As..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_895fafd792eb7897",
+    "field": "owner_name",
+    "record_id": "raw_895fafd792eb7897",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73500101/michael-clay-jennings/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_89670154828599ca",
     "field": "owner_name",
     "record_id": "raw_89670154828599ca",
@@ -858,7 +2981,7 @@
     "value": "PERRY DEVON"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_8978525b7dd9d73a",
     "field": "owner_name",
     "record_id": "raw_8978525b7dd9d73a",
@@ -869,7 +2992,29 @@
     "value": "GERMAIN MICHAEL E"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8a1f1200446db620",
+    "field": "owner_name",
+    "record_id": "raw_8a1f1200446db620",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73529951/thomas-nalepka/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8a73f0f02cabc7da",
+    "field": "owner_name",
+    "record_id": "raw_8a73f0f02cabc7da",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524055/christopher-paul-mcgaughey/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_8ad4565649b35bce",
     "field": "owner_name",
     "record_id": "raw_8ad4565649b35bce",
@@ -880,7 +3025,51 @@
     "value": "WICKER CHARLES D III"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8b810328bfb2fac0",
+    "field": "owner_name",
+    "record_id": "raw_8b810328bfb2fac0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535470/mollie-darlene-wilson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8bd5ff6c37ea5f9c",
+    "field": "owner_name",
+    "record_id": "raw_8bd5ff6c37ea5f9c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73520087/bradley-scott-dowling-and-danielle-leigh-dowling/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8cadb3237ba6e5f1",
+    "field": "owner_name",
+    "record_id": "raw_8cadb3237ba6e5f1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540023/sharell-donshan-ivey-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8d646ee553fed4c8",
+    "field": "owner_name",
+    "record_id": "raw_8d646ee553fed4c8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73530782/judah-coles/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_8da0433aa156731d",
     "field": "owner_name",
     "record_id": "raw_8da0433aa156731d",
@@ -891,7 +3080,7 @@
     "value": "Darrell Gene Gibson, II, United States of America, Lake Castleton Apartments LLCet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_8e224502b61f5737",
     "field": "owner_name",
     "record_id": "raw_8e224502b61f5737",
@@ -902,7 +3091,18 @@
     "value": "Tracie Lowe, Brandon Lowe"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8e6b7ecc15a09419",
+    "field": "owner_name",
+    "record_id": "raw_8e6b7ecc15a09419",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73507353/crystal-renee-goodman/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_8ebd54932917912b",
     "field": "owner_name",
     "record_id": "raw_8ebd54932917912b",
@@ -913,7 +3113,40 @@
     "value": "Cara Godfrey, Mark Daniel Godfrey, Mortgage Electronic Registration Systems, Inc., as nominee for Tucker Mortgage, LLCet..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8edf9f92a3316e62",
+    "field": "owner_name",
+    "record_id": "raw_8edf9f92a3316e62",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73496993/michelle-lea-anderson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_8f5e450488a97480",
+    "field": "owner_name",
+    "record_id": "raw_8f5e450488a97480",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73525226/stephen-ray-conley-and-debra-jean-conley/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9023803ee06670ce",
+    "field": "owner_name",
+    "record_id": "raw_9023803ee06670ce",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503441/jacob-charles-king/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_902454ea692245c8",
     "field": "owner_name",
     "record_id": "raw_902454ea692245c8",
@@ -924,7 +3157,62 @@
     "value": "JACKSON COUNTY BANK"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9092912587b48fcc",
+    "field": "owner_name",
+    "record_id": "raw_9092912587b48fcc",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513733/karen-ann-kriner/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_914d7cc7397bb430",
+    "field": "owner_name",
+    "record_id": "raw_914d7cc7397bb430",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73525467/shantel-shereece-stubbs/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9197dc1afe0a5cdd",
+    "field": "owner_name",
+    "record_id": "raw_9197dc1afe0a5cdd",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73511943/timothy-alan-dewitt-and-kimberly-nicole-baker-dewitt/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9200ec7466c6267d",
+    "field": "owner_name",
+    "record_id": "raw_9200ec7466c6267d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501887/holly-ann-bandy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_93421a4522b51116",
+    "field": "owner_name",
+    "record_id": "raw_93421a4522b51116",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73531001/daron-tetsugin-dogans/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_93c821fe543ecec4",
     "field": "owner_name",
     "record_id": "raw_93c821fe543ecec4",
@@ -935,7 +3223,51 @@
     "value": "JOHNSON CYRANO L"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_94170874fc086b00",
+    "field": "owner_name",
+    "record_id": "raw_94170874fc086b00",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73516221/aaron-davis-trayler-and-darrah-lynn-trayler/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_95026bdd9edb4bc1",
+    "field": "owner_name",
+    "record_id": "raw_95026bdd9edb4bc1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73504512/austin-victor-malherbe/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9680e2a788d6321d",
+    "field": "owner_name",
+    "record_id": "raw_9680e2a788d6321d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541717/amy-jo-ball/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_97300f4b6bdc11ec",
+    "field": "owner_name",
+    "record_id": "raw_97300f4b6bdc11ec",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539402/mikel-danielle-hogg/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_97655de1028fb766",
     "field": "owner_name",
     "record_id": "raw_97655de1028fb766",
@@ -946,7 +3278,7 @@
     "value": "JOHNSON CYRANO"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_98a126592d51c306",
     "field": "owner_name",
     "record_id": "raw_98a126592d51c306",
@@ -957,7 +3289,62 @@
     "value": "Ramsey Johnson, Linda J. Johnson, Ben Davis Conservancy Districtet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_990e59fe1eed1450",
+    "field": "owner_name",
+    "record_id": "raw_990e59fe1eed1450",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533967/justin-edward-zieman/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_994ac7ed3f0a120a",
+    "field": "owner_name",
+    "record_id": "raw_994ac7ed3f0a120a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540204/myanique-emma-minor/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9a150c30ae5a04d0",
+    "field": "owner_name",
+    "record_id": "raw_9a150c30ae5a04d0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512042/nichole-janice-taylor/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9abff9ae8d8d8c3f",
+    "field": "owner_name",
+    "record_id": "raw_9abff9ae8d8d8c3f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540742/darren-dale-clem/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9b6f742d0a0ccf04",
+    "field": "owner_name",
+    "record_id": "raw_9b6f742d0a0ccf04",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512336/anadelia-gonzalez/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_9b7b354952956020",
     "field": "owner_name",
     "record_id": "raw_9b7b354952956020",
@@ -968,7 +3355,18 @@
     "value": "ROQUE-PANDOLFI JOSE MARTIN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_9cd5c10116cd3826",
+    "field": "owner_name",
+    "record_id": "raw_9cd5c10116cd3826",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73500128/kate-nicole-caward/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_9cfd001075c577ed",
     "field": "owner_name",
     "record_id": "raw_9cfd001075c577ed",
@@ -979,7 +3377,29 @@
     "value": "CARY HEATHER"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a0a6efc10d2291c1",
+    "field": "owner_name",
+    "record_id": "raw_a0a6efc10d2291c1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509123/adam-chadwick-may/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a0c6897755734176",
+    "field": "owner_name",
+    "record_id": "raw_a0c6897755734176",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73531006/daniel-rivera-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a1fc8f60812261e0",
     "field": "owner_name",
     "record_id": "raw_a1fc8f60812261e0",
@@ -990,7 +3410,18 @@
     "value": "FLORES MIGUEL VILLEGAS"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a379f9a1e459ecab",
+    "field": "owner_name",
+    "record_id": "raw_a379f9a1e459ecab",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503568/charmaine-clarice-cacapit-placido/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a3941aeb8d186118",
     "field": "owner_name",
     "record_id": "raw_a3941aeb8d186118",
@@ -1001,7 +3432,7 @@
     "value": "MARTINEZ CALDERON ERNESTO M"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a411189ca526913c",
     "field": "owner_name",
     "record_id": "raw_a411189ca526913c",
@@ -1012,7 +3443,29 @@
     "value": "WINTERS NANCY A"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a438b95b85adb374",
+    "field": "owner_name",
+    "record_id": "raw_a438b95b85adb374",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526326/zachary-david-harmon/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a47242fc665244a9",
+    "field": "owner_name",
+    "record_id": "raw_a47242fc665244a9",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73534432/brian-lee-mccallister-and-agatha-may-mccallister/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a4830c0770e3aec4",
     "field": "owner_name",
     "record_id": "raw_a4830c0770e3aec4",
@@ -1023,7 +3476,40 @@
     "value": "OTTO KELLEY L"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a54a6f3d556b3cdf",
+    "field": "owner_name",
+    "record_id": "raw_a54a6f3d556b3cdf",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73527286/travis-adam-stafford-and-nevada-darlene-stafford/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a6d82697b21eac32",
+    "field": "owner_name",
+    "record_id": "raw_a6d82697b21eac32",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503438/benjamin-r-newlon/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a72b3316aba0408f",
+    "field": "owner_name",
+    "record_id": "raw_a72b3316aba0408f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508343/toneisha-michelle-williams/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a74de365fcb62aff",
     "field": "owner_name",
     "record_id": "raw_a74de365fcb62aff",
@@ -1034,7 +3520,29 @@
     "value": "Barrington Hodges, SECRETARY OF HOUSING AND URBAN DEVELOPMENT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a7df51c9fded8ef3",
+    "field": "owner_name",
+    "record_id": "raw_a7df51c9fded8ef3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535348/rodney-keith-smith/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a7e2114c4e1e3f7b",
+    "field": "owner_name",
+    "record_id": "raw_a7e2114c4e1e3f7b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528581/kaden-james-nolan/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a88133f6d8723149",
     "field": "owner_name",
     "record_id": "raw_a88133f6d8723149",
@@ -1045,7 +3553,7 @@
     "value": "HOLMES-WHERITY AMANDA"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a8882c6a5e9cd8b5",
     "field": "owner_name",
     "record_id": "raw_a8882c6a5e9cd8b5",
@@ -1056,7 +3564,29 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a94a81e2559d28f4",
+    "field": "owner_name",
+    "record_id": "raw_a94a81e2559d28f4",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73502717/miriam-michelle-flake/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a963160870242b60",
+    "field": "owner_name",
+    "record_id": "raw_a963160870242b60",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508387/tonya-kay-wright/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_a9790bd2bb8b270c",
     "field": "owner_name",
     "record_id": "raw_a9790bd2bb8b270c",
@@ -1067,7 +3597,18 @@
     "value": "State of Indiana, Felicia D. Coleman"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_a9ee5f71ee3fbde6",
+    "field": "owner_name",
+    "record_id": "raw_a9ee5f71ee3fbde6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501186/indravadan-k-patel-and-bharti-i-patel/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_aa5c99ef94d703eb",
     "field": "owner_name",
     "record_id": "raw_aa5c99ef94d703eb",
@@ -1078,7 +3619,7 @@
     "value": "Madeline L. Danner, Mortgage Electronic Registration Systems, Inc., as nominee for America's Wholesale Lender, John Doe/Mary Doe, as Unknown Oc..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_acad3a8f46d9553d",
     "field": "owner_name",
     "record_id": "raw_acad3a8f46d9553d",
@@ -1089,7 +3630,51 @@
     "value": "CAKE ERIC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_acaf369fea769377",
+    "field": "owner_name",
+    "record_id": "raw_acaf369fea769377",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526594/corey-darnell-pryor/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ad9c11217d7ee884",
+    "field": "owner_name",
+    "record_id": "raw_ad9c11217d7ee884",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73507262/donte-antoine-sullivan-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ae334747869cdb18",
+    "field": "owner_name",
+    "record_id": "raw_ae334747869cdb18",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73495795/patricia-ann-kennedy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ae8519cbb234bad0",
+    "field": "owner_name",
+    "record_id": "raw_ae8519cbb234bad0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509850/debra-lynne-allison/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_aec8eea97a2aba5e",
     "field": "owner_name",
     "record_id": "raw_aec8eea97a2aba5e",
@@ -1100,7 +3685,7 @@
     "value": "KLEYN DAVID EARLE"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_af41bc168a37bd6a",
     "field": "owner_name",
     "record_id": "raw_af41bc168a37bd6a",
@@ -1111,7 +3696,51 @@
     "value": "HOOKS ROCHELLE D"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_af86cab7b944c2eb",
+    "field": "owner_name",
+    "record_id": "raw_af86cab7b944c2eb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73514064/deanna-terri-letsinger/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_affe54832edd205d",
+    "field": "owner_name",
+    "record_id": "raw_affe54832edd205d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508318/deasha-larie-redding/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b01aa64c7bb2bf2b",
+    "field": "owner_name",
+    "record_id": "raw_b01aa64c7bb2bf2b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524329/victoria-lynn-wilson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b0e26dcc3cadc67b",
+    "field": "owner_name",
+    "record_id": "raw_b0e26dcc3cadc67b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539890/christian-michael-cox/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_b0f9014932b00171",
     "field": "owner_name",
     "record_id": "raw_b0f9014932b00171",
@@ -1122,7 +3751,29 @@
     "value": "Kevin Alexis Luna Reynoso, Virginia Yamileth Silva Silva Calderon, Capital One, N.A. s/b/m Discover Bank"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b1d87f352b8b999d",
+    "field": "owner_name",
+    "record_id": "raw_b1d87f352b8b999d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515077/cieairra-monique-lipscombe/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b263622c2d98ef46",
+    "field": "owner_name",
+    "record_id": "raw_b263622c2d98ef46",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73525882/samantha-jane-kelso/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_b267b8e506b2e3bd",
     "field": "owner_name",
     "record_id": "raw_b267b8e506b2e3bd",
@@ -1133,7 +3784,95 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b283d87a53b35b4c",
+    "field": "owner_name",
+    "record_id": "raw_b283d87a53b35b4c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73523240/jillian-rose-lindauer/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b2c253eaabba5f0d",
+    "field": "owner_name",
+    "record_id": "raw_b2c253eaabba5f0d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73493611/kalynn-todd-ault/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b2fe1dbee18bfd40",
+    "field": "owner_name",
+    "record_id": "raw_b2fe1dbee18bfd40",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509915/cara-beth-dean/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b332c2dbe13c20f5",
+    "field": "owner_name",
+    "record_id": "raw_b332c2dbe13c20f5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532720/paula-sue-adler/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b3834abfb6cea90b",
+    "field": "owner_name",
+    "record_id": "raw_b3834abfb6cea90b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508620/jennifer-kathleen-alexander/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b3a7dceddce3c5c2",
+    "field": "owner_name",
+    "record_id": "raw_b3a7dceddce3c5c2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515429/david-alexander-greene/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b3cd8b64224d2ed5",
+    "field": "owner_name",
+    "record_id": "raw_b3cd8b64224d2ed5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73525543/rebecca-s-hollon/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b4950b3f698e0241",
+    "field": "owner_name",
+    "record_id": "raw_b4950b3f698e0241",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509321/anthony-steven-folk/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_b4a85bfab4d3e895",
     "field": "owner_name",
     "record_id": "raw_b4a85bfab4d3e895",
@@ -1144,7 +3883,7 @@
     "value": "Missouri Farral, THE PRESERVE ON ALLISONVILLE BY PMR COMPANIES AS MANAGING AGENT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_b4b780bd37a051a4",
     "field": "owner_name",
     "record_id": "raw_b4b780bd37a051a4",
@@ -1155,7 +3894,18 @@
     "value": "RENDER MARIA E"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b528a2c77a922ad5",
+    "field": "owner_name",
+    "record_id": "raw_b528a2c77a922ad5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73525456/ronald-l-torr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_b6590d6663ea2bd0",
     "field": "owner_name",
     "record_id": "raw_b6590d6663ea2bd0",
@@ -1166,7 +3916,73 @@
     "value": "LYNHURST BAPTIST CHURCH"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b6749e5844bc4222",
+    "field": "owner_name",
+    "record_id": "raw_b6749e5844bc4222",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521798/edward-h-hall-ii-and-beverly-j-hall/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b717cd0b9907d8a8",
+    "field": "owner_name",
+    "record_id": "raw_b717cd0b9907d8a8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524054/lanishia-danielle-mack/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b7ade15a1a867610",
+    "field": "owner_name",
+    "record_id": "raw_b7ade15a1a867610",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539735/misty-dawn-thompson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b7c0bad69190f148",
+    "field": "owner_name",
+    "record_id": "raw_b7c0bad69190f148",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73531654/zachary-david-coleman/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b8209f24a783b8c0",
+    "field": "owner_name",
+    "record_id": "raw_b8209f24a783b8c0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528439/barbara-jean-mccollum/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b8bf00fce403ad6f",
+    "field": "owner_name",
+    "record_id": "raw_b8bf00fce403ad6f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532872/kenneth-wayne-mcmichel-and-francita-lynn-mcmichel/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_b8c57c6daa29b6ef",
     "field": "owner_name",
     "record_id": "raw_b8c57c6daa29b6ef",
@@ -1177,7 +3993,51 @@
     "value": "Brice K. Webster, a/k/a Brice K. Webster-Easter, Brynn Webster a/k/a Brynn Easter, Indianapolis Neighborhood Ho..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b9642c4bbf3ff45d",
+    "field": "owner_name",
+    "record_id": "raw_b9642c4bbf3ff45d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528577/scott-andrew-poynter/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b9b10618a9379a78",
+    "field": "owner_name",
+    "record_id": "raw_b9b10618a9379a78",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73523294/karri-lynn-garcia/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_b9ee64bc34c9cea3",
+    "field": "owner_name",
+    "record_id": "raw_b9ee64bc34c9cea3",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528728/britton-aaron-brown/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bb375c667a3ece32",
+    "field": "owner_name",
+    "record_id": "raw_bb375c667a3ece32",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73536636/kailin-nicole-scales/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_bb64da4e6c5b389a",
     "field": "owner_name",
     "record_id": "raw_bb64da4e6c5b389a",
@@ -1188,7 +4048,106 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bb75981d6543bd3f",
+    "field": "owner_name",
+    "record_id": "raw_bb75981d6543bd3f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533823/anthony-manuel-rosa-and-nemesis-nunez/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bb9dd08ec1d32e90",
+    "field": "owner_name",
+    "record_id": "raw_bb9dd08ec1d32e90",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73542309/gregory-julius-firestone/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bba4a5ffc79ad717",
+    "field": "owner_name",
+    "record_id": "raw_bba4a5ffc79ad717",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512900/william-fredrick-moffett/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bbac998033f5dc6f",
+    "field": "owner_name",
+    "record_id": "raw_bbac998033f5dc6f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521180/james-m-hartwell-and-pamela-l-hartwell/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bbfca0ec735d6d00",
+    "field": "owner_name",
+    "record_id": "raw_bbfca0ec735d6d00",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515783/kenneth-issac-derby/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bc90a9b1dbfb1a18",
+    "field": "owner_name",
+    "record_id": "raw_bc90a9b1dbfb1a18",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509038/salathiel-belvin-iii/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bccb4a92e9093514",
+    "field": "owner_name",
+    "record_id": "raw_bccb4a92e9093514",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73542414/nathan-ray-carr-and-emiley-kay-carr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bdc9e902683875aa",
+    "field": "owner_name",
+    "record_id": "raw_bdc9e902683875aa",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73521700/mateka-mistake-young/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_bdd9b78a77eca907",
+    "field": "owner_name",
+    "record_id": "raw_bdd9b78a77eca907",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515427/celeste-ann-holderfield/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_bec8d53f970fb620",
     "field": "owner_name",
     "record_id": "raw_bec8d53f970fb620",
@@ -1199,7 +4158,7 @@
     "value": "WILMINGTON SAVINGS FUND SOCIETY"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_bed4b4a19f47e2a2",
     "field": "owner_name",
     "record_id": "raw_bed4b4a19f47e2a2",
@@ -1210,7 +4169,7 @@
     "value": "TAYLOR CORDARYL"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_bffc96f43275fd81",
     "field": "owner_name",
     "record_id": "raw_bffc96f43275fd81",
@@ -1221,7 +4180,40 @@
     "value": "ROMMEL ERWIN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c02d297805aa8558",
+    "field": "owner_name",
+    "record_id": "raw_c02d297805aa8558",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73495458/kelly-lynn-carf-and-paula-jean-carf/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c1681d83987287c7",
+    "field": "owner_name",
+    "record_id": "raw_c1681d83987287c7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73500141/james-christopher-layne/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c1730f725e4ac9a7",
+    "field": "owner_name",
+    "record_id": "raw_c1730f725e4ac9a7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73496284/christopher-anthony-howland/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_c253010abfc5ff0e",
     "field": "owner_name",
     "record_id": "raw_c253010abfc5ff0e",
@@ -1232,7 +4224,18 @@
     "value": "DYKES MARILYN D"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c4751e90f057053f",
+    "field": "owner_name",
+    "record_id": "raw_c4751e90f057053f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73512088/tommy-ty-shaun-king/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_c4e2b5aaf7f37f99",
     "field": "owner_name",
     "record_id": "raw_c4e2b5aaf7f37f99",
@@ -1243,7 +4246,18 @@
     "value": "DISCOVER BANK"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c50104f5bc7986f5",
+    "field": "owner_name",
+    "record_id": "raw_c50104f5bc7986f5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501993/chad-allen-cooper/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_c528c599ad7146d5",
     "field": "owner_name",
     "record_id": "raw_c528c599ad7146d5",
@@ -1254,7 +4268,7 @@
     "value": "TAYLOR CORDARYL"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_c5769c2a1c768c68",
     "field": "owner_name",
     "record_id": "raw_c5769c2a1c768c68",
@@ -1265,7 +4279,62 @@
     "value": "GRANT DANIEL B"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c6339accfe6809ad",
+    "field": "owner_name",
+    "record_id": "raw_c6339accfe6809ad",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73528027/charles-joseph-stumpf-and-diane-k-stumpf/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c6d76e2d2560be02",
+    "field": "owner_name",
+    "record_id": "raw_c6d76e2d2560be02",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532336/jeffrey-allen-wilkie-jr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c71abad55aab96d2",
+    "field": "owner_name",
+    "record_id": "raw_c71abad55aab96d2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73527885/glenda-washington/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c76be9df9046ffa6",
+    "field": "owner_name",
+    "record_id": "raw_c76be9df9046ffa6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73504916/rickey-dwayne-white/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c7ba41bc0b63db76",
+    "field": "owner_name",
+    "record_id": "raw_c7ba41bc0b63db76",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503331/toni-deneen-bond/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_c8212c0cd9a67618",
     "field": "owner_name",
     "record_id": "raw_c8212c0cd9a67618",
@@ -1276,7 +4345,7 @@
     "value": "JONES REUBEN A"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_c9512afd86b1528c",
     "field": "owner_name",
     "record_id": "raw_c9512afd86b1528c",
@@ -1287,7 +4356,18 @@
     "value": "Maria G. Angeles, Mortgage Electronic Registration Systems, Inc., as nominee for The Huntington National Bank, John Doe/Mary D..."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_c96b3d064218765b",
+    "field": "owner_name",
+    "record_id": "raw_c96b3d064218765b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532908/robin-paulene-adair-marrapodi/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_ca64ee16ca7dfb40",
     "field": "owner_name",
     "record_id": "raw_ca64ee16ca7dfb40",
@@ -1298,7 +4378,106 @@
     "value": "POHL BRYAN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cacb1e4fdd17fd23",
+    "field": "owner_name",
+    "record_id": "raw_cacb1e4fdd17fd23",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503443/jerry-don-cooper/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cb0da3c4b0c91982",
+    "field": "owner_name",
+    "record_id": "raw_cb0da3c4b0c91982",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533338/geoffrey-payton-carr/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cb5034c21003512f",
+    "field": "owner_name",
+    "record_id": "raw_cb5034c21003512f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73499743/nicole-leslie-greer/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cb677c188a8d2f1c",
+    "field": "owner_name",
+    "record_id": "raw_cb677c188a8d2f1c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73537005/laura-c-robis/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cbd93649bd0a29f1",
+    "field": "owner_name",
+    "record_id": "raw_cbd93649bd0a29f1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509679/amanda-m-simonetti/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cc637f35363ec088",
+    "field": "owner_name",
+    "record_id": "raw_cc637f35363ec088",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508268/ashley-diane-umbarger/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cccf21936532674f",
+    "field": "owner_name",
+    "record_id": "raw_cccf21936532674f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73510637/megan-anne-kimball/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cddce0623300deb6",
+    "field": "owner_name",
+    "record_id": "raw_cddce0623300deb6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73516014/trenton-eugene-turner/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ce17002f6272c6ed",
+    "field": "owner_name",
+    "record_id": "raw_ce17002f6272c6ed",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532570/cora-jean-hicks/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_ce2f99d188b8c1bb",
     "field": "owner_name",
     "record_id": "raw_ce2f99d188b8c1bb",
@@ -1309,7 +4488,7 @@
     "value": "Narinder Kumar, The Timbers of Indianapolis, Inc."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_ce481d33adffb2e1",
     "field": "owner_name",
     "record_id": "raw_ce481d33adffb2e1",
@@ -1320,7 +4499,62 @@
     "value": "LITTLE MARY"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ce98c38fc914044d",
+    "field": "owner_name",
+    "record_id": "raw_ce98c38fc914044d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73501296/cherie-madeline-bartel/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cf20f1582a94ea4a",
+    "field": "owner_name",
+    "record_id": "raw_cf20f1582a94ea4a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539150/hailey-ann-kennedy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cfa2412145aea88e",
+    "field": "owner_name",
+    "record_id": "raw_cfa2412145aea88e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73497680/sandra-lea-wood/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cfeaaabd29055500",
+    "field": "owner_name",
+    "record_id": "raw_cfeaaabd29055500",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73525171/jacob-andrew-frahn/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_cffb6ceee2d2cca6",
+    "field": "owner_name",
+    "record_id": "raw_cffb6ceee2d2cca6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513443/todd-allen-elsey/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_d00b273b87e2b564",
     "field": "owner_name",
     "record_id": "raw_d00b273b87e2b564",
@@ -1331,7 +4565,18 @@
     "value": "KNIGHT MADISON"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d022861cb7346c27",
+    "field": "owner_name",
+    "record_id": "raw_d022861cb7346c27",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513732/hayley-danielle-roach/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_d04a1aa659530084",
     "field": "owner_name",
     "record_id": "raw_d04a1aa659530084",
@@ -1342,7 +4587,29 @@
     "value": "Joyce M Winborn aka Joyce Marie Winborn, Indiana Housing and Community Development Authority, United States of America"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d04a98bda2cb0237",
+    "field": "owner_name",
+    "record_id": "raw_d04a98bda2cb0237",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73510432/ian-douglas-macwhinney-and-amber-dawn-macwhinney/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d09d8f7149ac7207",
+    "field": "owner_name",
+    "record_id": "raw_d09d8f7149ac7207",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73499078/jaden-luke-duchene/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_d0a539a795cc5123",
     "field": "owner_name",
     "record_id": "raw_d0a539a795cc5123",
@@ -1353,7 +4620,73 @@
     "value": "AP ALPINE LLC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d1df5a3ac931cbc5",
+    "field": "owner_name",
+    "record_id": "raw_d1df5a3ac931cbc5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509816/rhonda-leah-steele/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d20c6784d3b1420c",
+    "field": "owner_name",
+    "record_id": "raw_d20c6784d3b1420c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503089/patience-n-greer/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d234758b0ef96eeb",
+    "field": "owner_name",
+    "record_id": "raw_d234758b0ef96eeb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73534431/christy-ellen-henderson-and-frank-e-henderson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d2c17852714dacfe",
+    "field": "owner_name",
+    "record_id": "raw_d2c17852714dacfe",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73494211/victoria-princess-whetstone/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d2d07b396752a95d",
+    "field": "owner_name",
+    "record_id": "raw_d2d07b396752a95d",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73533525/patricia-darlene-perkins/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d30ceb74d2a3df79",
+    "field": "owner_name",
+    "record_id": "raw_d30ceb74d2a3df79",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524216/shelanne-anderson-byrd/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_d36d3675bcb5298b",
     "field": "owner_name",
     "record_id": "raw_d36d3675bcb5298b",
@@ -1364,7 +4697,29 @@
     "value": "David L. Martin, LAKE CASTLETON APARTMENTS LLC BY STERLING MANAGEMENT LTD INC, AS MANAGING AGENT, Jeffrey Hartet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d3bfa60540778cc6",
+    "field": "owner_name",
+    "record_id": "raw_d3bfa60540778cc6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73532112/daniel-hunter-floore/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d45cd1b2b0c757c2",
+    "field": "owner_name",
+    "record_id": "raw_d45cd1b2b0c757c2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524393/yalena-iris-luyando/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_d4bc6840bb7aa9e8",
     "field": "owner_name",
     "record_id": "raw_d4bc6840bb7aa9e8",
@@ -1375,7 +4730,117 @@
     "value": "OWNEZ ASSET MANAGEMENT"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d4d70a8e630c34ae",
+    "field": "owner_name",
+    "record_id": "raw_d4d70a8e630c34ae",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73519398/adauntea-shameek-sowell/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d5085d087feea880",
+    "field": "owner_name",
+    "record_id": "raw_d5085d087feea880",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73527386/gregory-allen-sherels/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d5548060eea0b3b7",
+    "field": "owner_name",
+    "record_id": "raw_d5548060eea0b3b7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73530919/heather-marie-bohn/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d5af09f54fe26b51",
+    "field": "owner_name",
+    "record_id": "raw_d5af09f54fe26b51",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73542219/raymond-carl-warren/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d7afa6746bd0b6ce",
+    "field": "owner_name",
+    "record_id": "raw_d7afa6746bd0b6ce",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73497776/gary-r-stoner/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d8161c553d58992c",
+    "field": "owner_name",
+    "record_id": "raw_d8161c553d58992c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535177/jade-deandra-shelton/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d8a19e1aff8b3eea",
+    "field": "owner_name",
+    "record_id": "raw_d8a19e1aff8b3eea",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539331/brandi-jo-greenlee/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d8b52601a79759e7",
+    "field": "owner_name",
+    "record_id": "raw_d8b52601a79759e7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73524999/natalie-szwez/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d8b52e9e47e3f968",
+    "field": "owner_name",
+    "record_id": "raw_d8b52e9e47e3f968",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73527143/rhonda-cylle-king/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_d978deb5811872f2",
+    "field": "owner_name",
+    "record_id": "raw_d978deb5811872f2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73496437/tony-l-phillips/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_d9bcd5a2786f089e",
     "field": "owner_name",
     "record_id": "raw_d9bcd5a2786f089e",
@@ -1386,7 +4851,7 @@
     "value": "PECK JON ALLEN"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_d9d82abd5d3ed7c3",
     "field": "owner_name",
     "record_id": "raw_d9d82abd5d3ed7c3",
@@ -1397,7 +4862,7 @@
     "value": "NEWREZ LLC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_da3fe7726db96c39",
     "field": "owner_name",
     "record_id": "raw_da3fe7726db96c39",
@@ -1408,7 +4873,51 @@
     "value": "synthetic"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_db2a140544f2a9c9",
+    "field": "owner_name",
+    "record_id": "raw_db2a140544f2a9c9",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73494872/samantha-s-keeton/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_dbf73ea9ec464892",
+    "field": "owner_name",
+    "record_id": "raw_dbf73ea9ec464892",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508269/daralice-ann-johnson/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_dceb72fd1da035d9",
+    "field": "owner_name",
+    "record_id": "raw_dceb72fd1da035d9",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73516403/ashleigh-renee-woolums/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_dddde7fd32beebf1",
+    "field": "owner_name",
+    "record_id": "raw_dddde7fd32beebf1",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73511620/verna-dean-love/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_de93713930861b3f",
     "field": "owner_name",
     "record_id": "raw_de93713930861b3f",
@@ -1419,7 +4928,18 @@
     "value": "Daphane Buggs, Bank United, Inc., Kenyana Shacole Stone RVOC Living Trustet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_dec24968401e77c5",
+    "field": "owner_name",
+    "record_id": "raw_dec24968401e77c5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73507289/kristi-ann-hubbard/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_df1a6955243e8061",
     "field": "owner_name",
     "record_id": "raw_df1a6955243e8061",
@@ -1430,7 +4950,51 @@
     "value": "JOHNSON CYRANO"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e0feb7c83a07e6ea",
+    "field": "owner_name",
+    "record_id": "raw_e0feb7c83a07e6ea",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73519933/hannah-elizabeth-rothkopf/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e1f6d316031f7f58",
+    "field": "owner_name",
+    "record_id": "raw_e1f6d316031f7f58",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535665/dax-ahmad-ingle/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e2299a7c88ba2865",
+    "field": "owner_name",
+    "record_id": "raw_e2299a7c88ba2865",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73510679/sukhdeep-singh/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e2f38cf986d153a0",
+    "field": "owner_name",
+    "record_id": "raw_e2f38cf986d153a0",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503667/mykenzee-layne-sugg/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_e3539ec7feca5569",
     "field": "owner_name",
     "record_id": "raw_e3539ec7feca5569",
@@ -1441,7 +5005,73 @@
     "value": "Louise A. Gilbert, LVNV Funding, LLC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e5220e1af96e51ca",
+    "field": "owner_name",
+    "record_id": "raw_e5220e1af96e51ca",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73538719/dora-lee-hardacker/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e57abce4a7012c40",
+    "field": "owner_name",
+    "record_id": "raw_e57abce4a7012c40",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73517806/ronesia-danae-mosier/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e62f09430deefc47",
+    "field": "owner_name",
+    "record_id": "raw_e62f09430deefc47",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73540941/richard-j-weisbach-ii/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e65178e4191d6221",
+    "field": "owner_name",
+    "record_id": "raw_e65178e4191d6221",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73508964/christopher-wayne-rhea-and-shannon-leigh-rhea/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e65ef4dca08c0c86",
+    "field": "owner_name",
+    "record_id": "raw_e65ef4dca08c0c86",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73523102/william-allen-rainey/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e6e3e814b5ccbf80",
+    "field": "owner_name",
+    "record_id": "raw_e6e3e814b5ccbf80",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73530181/jeremiah-ray-bass-and-abrin-dawn-white/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_e7a393fe544e95c5",
     "field": "owner_name",
     "record_id": "raw_e7a393fe544e95c5",
@@ -1452,7 +5082,29 @@
     "value": "HOLDER MELISSA"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e815062126a06989",
+    "field": "owner_name",
+    "record_id": "raw_e815062126a06989",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498132/kim-denise-gray/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e82465769c7c3758",
+    "field": "owner_name",
+    "record_id": "raw_e82465769c7c3758",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73519523/ratasha-monique-simon/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_e8bec0b3967106e6",
     "field": "owner_name",
     "record_id": "raw_e8bec0b3967106e6",
@@ -1463,7 +5115,40 @@
     "value": "Rafael Briseno, John Doe/Mary Doe, as Unknown Occupants"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_e9fa98f8b9eb8ac2",
+    "field": "owner_name",
+    "record_id": "raw_e9fa98f8b9eb8ac2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541288/brooke-nicole-esche/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_eabc76d66597e2c8",
+    "field": "owner_name",
+    "record_id": "raw_eabc76d66597e2c8",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515177/aaron-allan-ney/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_eba192a52841537b",
+    "field": "owner_name",
+    "record_id": "raw_eba192a52841537b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73503788/amy-jo-coutz/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_ebf0f244f591ad3c",
     "field": "owner_name",
     "record_id": "raw_ebf0f244f591ad3c",
@@ -1474,7 +5159,51 @@
     "value": "FIFTH THIRD BANK"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ec378c5935e75df7",
+    "field": "owner_name",
+    "record_id": "raw_ec378c5935e75df7",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73509884/tyler-alexis-honeywood/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ed4a8725391600d6",
+    "field": "owner_name",
+    "record_id": "raw_ed4a8725391600d6",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73523308/matthew-edward-stephens/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ed54eb307a8183ea",
+    "field": "owner_name",
+    "record_id": "raw_ed54eb307a8183ea",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73515432/dominick-elias-tyaire-king/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ee043a4709b6ff52",
+    "field": "owner_name",
+    "record_id": "raw_ee043a4709b6ff52",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73522497/richard-romone-young/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_ef4fa3f195299349",
     "field": "owner_name",
     "record_id": "raw_ef4fa3f195299349",
@@ -1485,7 +5214,51 @@
     "value": "CLOTILE SKATES, FOX RIDGE HOMEOWNERS ASSOCIATION, INC."
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f00f10e0bfa21ab9",
+    "field": "owner_name",
+    "record_id": "raw_f00f10e0bfa21ab9",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73498537/joseph-c-spanyer-iii-and-jessica-l-spanyer/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f108aa059959a06a",
+    "field": "owner_name",
+    "record_id": "raw_f108aa059959a06a",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73517160/angela-maria-rice/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f28d89d1bab456e5",
+    "field": "owner_name",
+    "record_id": "raw_f28d89d1bab456e5",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73519674/destiney-tonil-wallace/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f2904ed6bf353a05",
+    "field": "owner_name",
+    "record_id": "raw_f2904ed6bf353a05",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73499281/billy-ray-murphy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_f2c85a0f47e88f78",
     "field": "owner_name",
     "record_id": "raw_f2c85a0f47e88f78",
@@ -1496,7 +5269,7 @@
     "value": "WILMINGTON SAVINGS FUND SOCIETY"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_f2efc9e99bff3d03",
     "field": "owner_name",
     "record_id": "raw_f2efc9e99bff3d03",
@@ -1507,7 +5280,40 @@
     "value": "Donald I. Ward, Ben Davis Conservancy District"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f2f95b235633763f",
+    "field": "owner_name",
+    "record_id": "raw_f2f95b235633763f",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73541726/cynthia-m-bean/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f30860113168ef38",
+    "field": "owner_name",
+    "record_id": "raw_f30860113168ef38",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73513706/michael-todd-weatherly/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f38f7e7e892170b4",
+    "field": "owner_name",
+    "record_id": "raw_f38f7e7e892170b4",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73539063/yvette-renee-denning/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_f61a5fc73d9ee03f",
     "field": "owner_name",
     "record_id": "raw_f61a5fc73d9ee03f",
@@ -1518,7 +5324,18 @@
     "value": "Jersey Construction & Towing LLC, Dewayne Davis, Christopher Parishet al"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f6c74eb004a6a2eb",
+    "field": "owner_name",
+    "record_id": "raw_f6c74eb004a6a2eb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535753/stephanie-susette-renner-and-paul-eliam-renner/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_f7811cdb28afba31",
     "field": "owner_name",
     "record_id": "raw_f7811cdb28afba31",
@@ -1529,7 +5346,29 @@
     "value": "IRELAND AIDEN N"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f878954582c61f9b",
+    "field": "owner_name",
+    "record_id": "raw_f878954582c61f9b",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73526168/leila-marie-cooper/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f8c82a98157ef129",
+    "field": "owner_name",
+    "record_id": "raw_f8c82a98157ef129",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73519485/matthew-christopher-murphy/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_f8dba7789533c006",
     "field": "owner_name",
     "record_id": "raw_f8dba7789533c006",
@@ -1540,7 +5379,18 @@
     "value": "Reginald Moran, Robin L. Moran, GOLDEN WEST HOMEOWNERS ASSOCIATION, INC"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_f8dd1a95304574c2",
+    "field": "owner_name",
+    "record_id": "raw_f8dd1a95304574c2",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73535175/wisam-nureddin-gherfal/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_f9928e6fd6cc6993",
     "field": "owner_name",
     "record_id": "raw_f9928e6fd6cc6993",
@@ -1551,7 +5401,40 @@
     "value": "OZSOY OZGUR"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_fa112bb9697eef5c",
+    "field": "owner_name",
+    "record_id": "raw_fa112bb9697eef5c",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73500151/carrie-ann-saucerman/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_fa81855337425930",
+    "field": "owner_name",
+    "record_id": "raw_fa81855337425930",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73523318/lauren-ashley-carter/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_fc44a0cd6911ebfb",
+    "field": "owner_name",
+    "record_id": "raw_fc44a0cd6911ebfb",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73495891/trisha-renee-ratliff/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_fc8c0c84734fd47f",
     "field": "owner_name",
     "record_id": "raw_fc8c0c84734fd47f",
@@ -1562,7 +5445,40 @@
     "value": "JOHNSON CYRANO"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_fcd9a18a375f7f12",
+    "field": "owner_name",
+    "record_id": "raw_fcd9a18a375f7f12",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73522728/clifford-glenn-woods/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ff326eb79f9b0527",
+    "field": "owner_name",
+    "record_id": "raw_ff326eb79f9b0527",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73514352/keysha-laura-fanord/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ff63fd3254eee1f9",
+    "field": "owner_name",
+    "record_id": "raw_ff63fd3254eee1f9",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73527606/dwayne-a-manthei-and-marina-chantelle-manthei/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_ff646f0575594846",
     "field": "owner_name",
     "record_id": "raw_ff646f0575594846",
@@ -1573,7 +5489,7 @@
     "value": "ORO INVESTORS INDIANA LLC, OMAR RUIZ OLIVER, UNKNOWN OCCUPANT(S)"
   },
   {
-    "captured_at": "2026-06-26T21:55:02Z",
+    "captured_at": "2026-06-26T22:12:51Z",
     "evidence_id": "ev_ff69584497c8d6ce",
     "field": "owner_name",
     "record_id": "raw_ff69584497c8d6ce",
@@ -1582,5 +5498,27 @@
     "source_url": "https://tapestry.fidlar.com/Tapestry2/LinkToTapestry.aspx?County=Marion&State=IN&DocNum=A202600051273",
     "status": "Confirmed",
     "value": "JACKSON COUNTY BANK"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ffae79a0bf9d2641",
+    "field": "owner_name",
+    "record_id": "raw_ffae79a0bf9d2641",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73520997/gregory-allen-van-horn-and-lidia-van-horn/",
+    "status": "Confirmed",
+    "value": "synthetic"
+  },
+  {
+    "captured_at": "2026-06-26T22:12:51Z",
+    "evidence_id": "ev_ffd5d6d59fb1085e",
+    "field": "owner_name",
+    "record_id": "raw_ffd5d6d59fb1085e",
+    "source_id": "bankruptcy_filings",
+    "source_reliability_grade": "A",
+    "source_url": "https://www.courtlistener.com/docket/73496005/deandre-martel-taylor/",
+    "status": "Confirmed",
+    "value": "synthetic"
   }
 ]
