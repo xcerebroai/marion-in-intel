@@ -166,6 +166,10 @@ def is_exempt_path(rel_path):
     if rel_str == "scaffold/pipeline/sale_date_rules.py":
         return True
 
+    # Session-state scratch file at repo root — not framework code.
+    if rel_str == "SESSION_STATE.md":
+        return True
+
     # v5.3.0: matcher.py carries an all-US-states code set
     # (a 50-state validation frozenset). Every state code is present
     # by design — this is universal validation data, not a

@@ -116,7 +116,7 @@ def translate_csv_static_list(
         )
         # For tax doc types, the taxpayer IS the debtor owner (§17 rule expects TP role).
         # Emit as both grantor and taxpayer so the debtor engine resolves correctly.
-        _is_tax_type = canonical in (
+        _is_tax_type = canonical.lower() in (
             "tax_foreclosure_notice", "tax_sale_certificate", "tax_deed",
             "state_tax_lien", "federal_tax_lien",
         )
