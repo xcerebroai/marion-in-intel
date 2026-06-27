@@ -8,8 +8,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-06-26T22:19:16Z",
-    "last_successful_at": "2026-06-26T22:19:16Z",
+    "last_attempted_at": "2026-06-27T00:46:30Z",
+    "last_successful_at": "2026-06-27T00:46:30Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 358,
@@ -29,7 +29,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from bankruptcy_filings",
-        "timestamp": "2026-06-26T22:19:16Z"
+        "timestamp": "2026-06-27T00:46:30Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
@@ -44,8 +44,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-06-26T22:19:16Z",
-    "last_successful_at": "2026-06-26T22:19:16Z",
+    "last_attempted_at": "2026-06-27T00:46:30Z",
+    "last_successful_at": "2026-06-27T00:46:30Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 44,
@@ -65,7 +65,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from court_filings",
-        "timestamp": "2026-06-26T22:19:16Z"
+        "timestamp": "2026-06-27T00:46:30Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
@@ -80,8 +80,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-06-26T22:19:16Z",
-    "last_successful_at": "2026-06-26T22:19:16Z",
+    "last_attempted_at": "2026-06-27T00:46:30Z",
+    "last_successful_at": "2026-06-27T00:46:30Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 90,
@@ -101,7 +101,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from marion_recorder",
-        "timestamp": "2026-06-26T22:19:16Z"
+        "timestamp": "2026-06-27T00:46:30Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
@@ -116,8 +116,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-06-26T22:19:16Z",
-    "last_successful_at": "2026-06-26T22:19:16Z",
+    "last_attempted_at": "2026-06-27T00:46:30Z",
+    "last_successful_at": "2026-06-27T00:46:30Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 113,
@@ -137,7 +137,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from parcel_master",
-        "timestamp": "2026-06-26T22:19:16Z"
+        "timestamp": "2026-06-27T00:46:30Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
@@ -152,8 +152,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-06-26T22:19:16Z",
-    "last_successful_at": "2026-06-26T22:19:16Z",
+    "last_attempted_at": "2026-06-27T00:46:30Z",
+    "last_successful_at": "2026-06-27T00:46:30Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 103,
@@ -173,7 +173,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from probate_estates",
-        "timestamp": "2026-06-26T22:19:16Z"
+        "timestamp": "2026-06-27T00:46:30Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
@@ -188,8 +188,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-06-26T22:19:16Z",
-    "last_successful_at": "2026-06-26T22:19:16Z",
+    "last_attempted_at": "2026-06-27T00:46:30Z",
+    "last_successful_at": "2026-06-27T00:46:30Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 766,
@@ -209,7 +209,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from tax_delinquency",
-        "timestamp": "2026-06-26T22:19:16Z"
+        "timestamp": "2026-06-27T00:46:30Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
