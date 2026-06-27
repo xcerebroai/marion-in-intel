@@ -536,7 +536,8 @@
 
   async function boot() {
     wireEvents();
-    const isSynthetic = new URL(window.location.href).searchParams.get("synthetic") !== "0";
+    // Default to production data. Add ?synthetic=1 to force synthetic mode.
+    const isSynthetic = new URL(window.location.href).searchParams.get("synthetic") === "1";
     const paths = isSynthetic
       ? DATA_PATHS_SYNTH.concat(DATA_PATHS_PROD)
       : DATA_PATHS_PROD.concat(DATA_PATHS_SYNTH);
