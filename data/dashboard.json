@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-27T00:46:30Z",
+  "generated_at": "2026-06-27T01:05:54Z",
   "build_label": "FULL_BUILD",
   "mode": "production",
   "county": "Marion County",
   "state": "IN",
   "semantic_verdict": "DEPLOY_OK",
-  "lead_total": 1469,
+  "lead_total": 1508,
   "new_lead_count": 0,
   "enrichment_breakdown": {
     "ENRICHED": 37,
-    "UNENRICHED": 1432
+    "UNENRICHED": 1471
   },
   "pattern_counts": {
-    "estate": 147,
+    "estate": 155,
     "foreclosure": 402,
     "lien": 1,
     "tax": 766,
-    "transfer": 106
+    "transfer": 137
   },
   "attribute_counts": {
     "absentee": 9,
@@ -25,14 +25,14 @@
   },
   "stack_depth_distribution": {
     "0": 52,
-    "1": 1412,
+    "1": 1451,
     "2": 5
   },
   "deal_path_distribution": {
     "flip": 9,
     "partial_interest": 5,
     "sub_to": 9,
-    "wholesale": 1417
+    "wholesale": 1456
   },
   "records": [
     {
@@ -75834,6 +75834,2034 @@
       "enrichment_status": "UNENRICHED",
       "primary_source_urls": [
         "about:owner-name/parcel_master/MARIN-REC-C83B06195974#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-02FB8C796102",
+      "scored_lead_id": "processed_5caa044cb9ba22cc",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-02FB8C796102#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-06DAA1DA87D6",
+      "scored_lead_id": "processed_f861af4d9a2311e6",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-06DAA1DA87D6#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-096D9FD24486",
+      "scored_lead_id": "processed_b0d78990f6831611",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-096D9FD24486#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-0FA08EA51464",
+      "scored_lead_id": "processed_4d81c0ee27702eb8",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-0FA08EA51464#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-11D9F3F9CB09",
+      "scored_lead_id": "processed_7fc3e6e8f7611b5a",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-11D9F3F9CB09#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-1668246BAB3E",
+      "scored_lead_id": "processed_8951fd1b5860c25b",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-1668246BAB3E#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-17C25A372CD3",
+      "scored_lead_id": "processed_20040acfcfe60ab7",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-17C25A372CD3#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-187BA7D49347",
+      "scored_lead_id": "processed_77ebc796eda0f08f",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-187BA7D49347#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-20E5D386252D",
+      "scored_lead_id": "processed_7cef94d85503f47e",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-20E5D386252D#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-29F223C007EA",
+      "scored_lead_id": "processed_7ded20ee853505e2",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-29F223C007EA#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-430A1F974305",
+      "scored_lead_id": "processed_dc751d2610790ceb",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-430A1F974305#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-476FCEF0F4F5",
+      "scored_lead_id": "processed_4b5a44d4c449d056",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-476FCEF0F4F5#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-47D7D0554252",
+      "scored_lead_id": "processed_3a24e320649cd4c4",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-47D7D0554252#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-53A96A28C8FD",
+      "scored_lead_id": "processed_f6bc7cfaa191c9c9",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-53A96A28C8FD#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-5F9F2FC3F794",
+      "scored_lead_id": "processed_839d62eb3124f2ca",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-5F9F2FC3F794#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-62822EA393EE",
+      "scored_lead_id": "processed_45b68142727d9cd7",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-62822EA393EE#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-69130E8519AC",
+      "scored_lead_id": "processed_e94e36afd1112999",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-69130E8519AC#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-6E136A3218AB",
+      "scored_lead_id": "processed_6438bda50f7f8c23",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-6E136A3218AB#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-818ACC6181E2",
+      "scored_lead_id": "processed_95615c52ad106d25",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-818ACC6181E2#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-82EBFDCE36F5",
+      "scored_lead_id": "processed_f2cc09d40de1a595",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-82EBFDCE36F5#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-8773635377D7",
+      "scored_lead_id": "processed_fd372fc494a9252e",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-8773635377D7#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-893B54779764",
+      "scored_lead_id": "processed_8be55cb9b709522f",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-893B54779764#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-8EF692354D35",
+      "scored_lead_id": "processed_4e335a3174954695",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-8EF692354D35#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-92B8C8BA7AD8",
+      "scored_lead_id": "processed_6cf94770e4980e25",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-92B8C8BA7AD8#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-98023CB71727",
+      "scored_lead_id": "processed_08df659403a8e48e",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-98023CB71727#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-ABCA22841996",
+      "scored_lead_id": "processed_a8b5e2d497d47b58",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-ABCA22841996#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-B0956375ACE6",
+      "scored_lead_id": "processed_a290cbcc18195835",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-B0956375ACE6#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-B13EAFA1F017",
+      "scored_lead_id": "processed_6555266dab8dcfe5",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-B13EAFA1F017#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-B624667DF9CB",
+      "scored_lead_id": "processed_fc93cc374e40b119",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-B624667DF9CB#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-BC93E80C03A0",
+      "scored_lead_id": "processed_bc6ab93afadece7b",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-BC93E80C03A0#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-C3A926883E26",
+      "scored_lead_id": "processed_1c19fdb12d09de0f",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-C3A926883E26#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-C87C2032CECC",
+      "scored_lead_id": "processed_a9047fa8682c2896",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-C87C2032CECC#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-CD0331052B52",
+      "scored_lead_id": "processed_e132bd9e144fbf80",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-CD0331052B52#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-EAA4F1B970E8",
+      "scored_lead_id": "processed_a21afba232adfd06",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-EAA4F1B970E8#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-EAB26A5E1CF9",
+      "scored_lead_id": "processed_22779ba8ec45dbe7",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-EAB26A5E1CF9#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-EC5BD7317DBC",
+      "scored_lead_id": "processed_9839ef39da01f6ef",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-EC5BD7317DBC#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-ED79B5CAAB30",
+      "scored_lead_id": "processed_84430cc55b86be21",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "estate_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "estate"
+      ],
+      "stack_contrib_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "moderate",
+          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-ED79B5CAAB30#estate"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-FA776F3E5072",
+      "scored_lead_id": "processed_e327a7aec8e711fb",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-FA776F3E5072#trust"
+      ],
+      "primary_event_date": null,
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+      ],
+      "is_new": false,
+      "first_seen_date": "2026-06-26"
+    },
+    {
+      "lead_id": "lead_unresolved_OWNER-MARIN-TX-FBE13F2AE438",
+      "scored_lead_id": "processed_91eaa6fd9d931847",
+      "primary_parcel_id": null,
+      "display_address": "",
+      "display_owner": "living_trust_owner_name_pattern against unidentified party",
+      "display_patterns": [
+        "transfer"
+      ],
+      "stack_contrib_patterns": [
+        "transfer"
+      ],
+      "display_pattern_set": [
+        "transfer"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_deal_path_details": [
+        {
+          "path": "wholesale",
+          "confidence": "low",
+          "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+        }
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_last_sale_price": null,
+      "display_last_sale_date": null,
+      "display_year_built": null,
+      "display_match_confidence": 0,
+      "stack_depth": 1,
+      "owner_type": "UNKNOWN",
+      "mailing_address": null,
+      "mailing_city": null,
+      "mailing_state": null,
+      "mailing_zip": null,
+      "property_class": null,
+      "year_built": null,
+      "enrichment_status": "UNENRICHED",
+      "primary_source_urls": [
+        "about:owner-name/parcel_master/MARIN-TX-FBE13F2AE438#trust"
       ],
       "primary_event_date": null,
       "review_flags": [

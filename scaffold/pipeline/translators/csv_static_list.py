@@ -110,10 +110,23 @@ def translate_csv_static_list(
 
         h = hashlib.sha1(address.upper().encode("utf-8")).hexdigest()[:12].upper()
         parcel_id = f"{parcel_id_prefix}{h}" if parcel_id_prefix.endswith("-") else f"{parcel_id_prefix}-{h}"
+        # Read owner/grantor from the raw record so it flows through to the dashboard.
+        owner_name = (
+            payload.get("grantor") or payload.get("owner_name") or payload.get("grantee") or None
+        )
+        # For tax doc types, the taxpayer IS the debtor owner (§17 rule expects TP role).
+        # Emit as both grantor and taxpayer so the debtor engine resolves correctly.
+        _is_tax_type = canonical in (
+            "tax_foreclosure_notice", "tax_sale_certificate", "tax_deed",
+            "state_tax_lien", "federal_tax_lien",
+        )
         parcels.append({
             "parcel_id": parcel_id,
             "address": address,
-            "owner_name": None,
+            "situs_address": address,
+            "situs_city": (payload.get("city") or "").strip() or None,
+            "situs_state": (payload.get("state") or "").strip() or None,
+            "owner_name": owner_name,
             "parcel_master_status": "placeholder_pending_enrichment",
         })
 
@@ -132,6 +145,16 @@ def translate_csv_static_list(
             "primary_parcel_id": parcel_id,
             "filing_date": payload.get(filing_date_field),
             "parser_confidence": raw.get("parser_confidence", 80),
+            # Pass owner/party fields through so §17 debtor engine can resolve them.
+            # Tax doc types expect 'taxpayer' (TP) role; others use 'grantor' (GR).
+            "grantor": None if _is_tax_type else owner_name,
+            "taxpayer": owner_name if _is_tax_type else None,
+            "grantee": (payload.get("grantee") or None),
+            "owner_name": owner_name,
+            "address": address,
+            "city": (payload.get("city") or "").strip() or None,
+            "state": (payload.get("state") or "").strip() or None,
+            "zip": (payload.get("zip") or "").strip() or None,
         }
         signals.append(signal)
         per_signal_meta_by_url[source_url] = {
